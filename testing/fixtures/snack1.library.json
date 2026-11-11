@@ -1,0 +1,689 @@
+{
+  "_meta": {
+    "file": "snack1.library.json",
+    "provenance": "REAL. Verbatim from SNACK-LIBRARY.md sections 1.1-1.6 (all 60 entries, names, components and season tags). Nothing in this file is invented.",
+    "source": "SNACK-LIBRARY.md §1",
+    "notes": [
+      "Snack 1 entries are not recipes (ARCHITECTURE.md §2.3): no role, no page, no method.",
+      "family values are slugged from the SNACK-LIBRARY.md §1.1-§1.6 subsection headings; the headings are real, the slugs are this fixture's encoding.",
+      "Entry 41 'Raw papaya salad' has an EMPTY season cell in SNACK-LIBRARY.md §1.4 (a trailing '| |'). Read here as no season, i.e. all year. See CRITERIA-MAP.md gap G-07.",
+      "seasonPools below is DERIVED from the season tags, not copied from SNACK-LIBRARY.md §3 -- §3's claim ('60 from July to February, 54 outside it') disagrees with its own tags. See gap G-01."
+    ]
+  },
+  "entries": [
+    {
+      "id": "s1-cucumber-kosumbari",
+      "libraryNumber": 1,
+      "name": "Cucumber kosumbari",
+      "components": "Soaked moong dal, cucumber, coconut, coriander, lemon",
+      "family": "kosumbari"
+    },
+    {
+      "id": "s1-carrot-kosumbari",
+      "libraryNumber": 2,
+      "name": "Carrot kosumbari",
+      "components": "Soaked moong dal, grated carrot, coconut, coriander",
+      "family": "kosumbari"
+    },
+    {
+      "id": "s1-channa-dal-kosumbari",
+      "libraryNumber": 3,
+      "name": "Channa dal kosumbari",
+      "components": "Soaked channa dal, cucumber, green chilli, coconut",
+      "family": "kosumbari"
+    },
+    {
+      "id": "s1-tomato-kosumbari",
+      "libraryNumber": 4,
+      "name": "Tomato kosumbari",
+      "components": "Soaked moong dal, tomato, onion, coriander",
+      "family": "kosumbari"
+    },
+    {
+      "id": "s1-radish-kosumbari",
+      "libraryNumber": 5,
+      "name": "Radish kosumbari",
+      "components": "Soaked moong dal, grated white radish, coconut",
+      "family": "kosumbari"
+    },
+    {
+      "id": "s1-cabbage-kosumbari",
+      "libraryNumber": 6,
+      "name": "Cabbage kosumbari",
+      "components": "Soaked moong dal, shredded cabbage, carrot, lemon",
+      "family": "kosumbari"
+    },
+    {
+      "id": "s1-raw-mango-kosumbari",
+      "libraryNumber": 7,
+      "name": "Raw mango kosumbari",
+      "components": "Soaked channa dal, grated raw mango, coconut",
+      "family": "kosumbari",
+      "season": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "s1-beetroot-kosumbari",
+      "libraryNumber": 8,
+      "name": "Beetroot kosumbari",
+      "components": "Soaked moong dal, grated beetroot, coconut, lemon",
+      "family": "kosumbari"
+    },
+    {
+      "id": "s1-capsicum-kosumbari",
+      "libraryNumber": 9,
+      "name": "Capsicum kosumbari",
+      "components": "Soaked moong dal, chopped capsicum, coriander",
+      "family": "kosumbari"
+    },
+    {
+      "id": "s1-double-dal-kosumbari",
+      "libraryNumber": 10,
+      "name": "Double-dal kosumbari",
+      "components": "Soaked moong and channa dal, cucumber, coconut",
+      "family": "kosumbari"
+    },
+    {
+      "id": "s1-ridge-gourd-kosumbari",
+      "libraryNumber": 11,
+      "name": "Ridge gourd kosumbari",
+      "components": "Soaked moong dal, tender ridge gourd, coconut",
+      "family": "kosumbari"
+    },
+    {
+      "id": "s1-pomegranate-kosumbari",
+      "libraryNumber": 12,
+      "name": "Pomegranate kosumbari",
+      "components": "Soaked moong dal, pomegranate, coconut, mint",
+      "family": "kosumbari"
+    },
+    {
+      "id": "s1-plain-moong-sprouts",
+      "libraryNumber": 13,
+      "name": "Plain moong sprouts",
+      "components": "Sprouted green gram, salt, lemon",
+      "family": "sprouts"
+    },
+    {
+      "id": "s1-sprouts-chaat",
+      "libraryNumber": 14,
+      "name": "Sprouts chaat",
+      "components": "Moong sprouts, onion, tomato, chaat masala",
+      "family": "sprouts"
+    },
+    {
+      "id": "s1-sprouts-with-pomegranate",
+      "libraryNumber": 15,
+      "name": "Sprouts with pomegranate",
+      "components": "Moong sprouts, pomegranate, mint, lemon",
+      "family": "sprouts"
+    },
+    {
+      "id": "s1-matki-sprouts",
+      "libraryNumber": 16,
+      "name": "Matki sprouts",
+      "components": "Sprouted moth beans, onion, coriander",
+      "family": "sprouts"
+    },
+    {
+      "id": "s1-chana-sprouts",
+      "libraryNumber": 17,
+      "name": "Chana sprouts",
+      "components": "Sprouted brown chickpeas, coconut, green chilli",
+      "family": "sprouts"
+    },
+    {
+      "id": "s1-sprouts-and-cucumber",
+      "libraryNumber": 18,
+      "name": "Sprouts and cucumber",
+      "components": "Moong sprouts, cucumber, coconut",
+      "family": "sprouts"
+    },
+    {
+      "id": "s1-mixed-sprouts",
+      "libraryNumber": 19,
+      "name": "Mixed sprouts",
+      "components": "Moong and matki, onion, lemon",
+      "family": "sprouts"
+    },
+    {
+      "id": "s1-steamed-sprouts",
+      "libraryNumber": 20,
+      "name": "Steamed sprouts",
+      "components": "Lightly steamed moong sprouts, salt, pepper",
+      "family": "sprouts"
+    },
+    {
+      "id": "s1-sprouts-with-raw-mango",
+      "libraryNumber": 21,
+      "name": "Sprouts with raw mango",
+      "components": "Moong sprouts, grated raw mango, coriander",
+      "family": "sprouts",
+      "season": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "s1-horse-gram-sprouts",
+      "libraryNumber": 22,
+      "name": "Horse gram sprouts",
+      "components": "Sprouted horse gram, coconut, curry leaf",
+      "family": "sprouts"
+    },
+    {
+      "id": "s1-papaya",
+      "libraryNumber": 23,
+      "name": "Papaya",
+      "components": "Cut papaya, lemon",
+      "family": "cut-fruit"
+    },
+    {
+      "id": "s1-watermelon",
+      "libraryNumber": 24,
+      "name": "Watermelon",
+      "components": "Cut watermelon, mint",
+      "family": "cut-fruit",
+      "season": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "s1-banana-and-apple",
+      "libraryNumber": 25,
+      "name": "Banana and apple",
+      "components": "Sliced banana, apple",
+      "family": "cut-fruit"
+    },
+    {
+      "id": "s1-guava",
+      "libraryNumber": 26,
+      "name": "Guava",
+      "components": "Cut guava, chilli salt",
+      "family": "cut-fruit"
+    },
+    {
+      "id": "s1-musk-melon",
+      "libraryNumber": 27,
+      "name": "Musk melon",
+      "components": "Cut musk melon",
+      "family": "cut-fruit",
+      "season": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "s1-mixed-fruit-bowl",
+      "libraryNumber": 28,
+      "name": "Mixed fruit bowl",
+      "components": "Whatever three fruits are in the house",
+      "family": "cut-fruit"
+    },
+    {
+      "id": "s1-orange-and-pomegranate",
+      "libraryNumber": 29,
+      "name": "Orange and pomegranate",
+      "components": "Segmented orange, pomegranate",
+      "family": "cut-fruit"
+    },
+    {
+      "id": "s1-chikoo-and-banana",
+      "libraryNumber": 30,
+      "name": "Chikoo and banana",
+      "components": "Sliced chikoo, banana",
+      "family": "cut-fruit"
+    },
+    {
+      "id": "s1-pineapple",
+      "libraryNumber": 31,
+      "name": "Pineapple",
+      "components": "Cut pineapple, chilli salt",
+      "family": "cut-fruit",
+      "season": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "s1-mango",
+      "libraryNumber": 32,
+      "name": "Mango",
+      "components": "Cut ripe mango",
+      "family": "cut-fruit",
+      "season": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "s1-cucumber-and-tomato",
+      "libraryNumber": 33,
+      "name": "Cucumber and tomato",
+      "components": "Cucumber, tomato, onion, lemon",
+      "family": "chopped-salad"
+    },
+    {
+      "id": "s1-grated-beetroot",
+      "libraryNumber": 34,
+      "name": "Grated beetroot",
+      "components": "Beetroot, coconut, lemon",
+      "family": "chopped-salad"
+    },
+    {
+      "id": "s1-cabbage-and-carrot",
+      "libraryNumber": 35,
+      "name": "Cabbage and carrot",
+      "components": "Shredded cabbage, carrot, lemon",
+      "family": "chopped-salad"
+    },
+    {
+      "id": "s1-cucumber-sticks",
+      "libraryNumber": 36,
+      "name": "Cucumber sticks",
+      "components": "Cucumber, carrot, chilli salt",
+      "family": "chopped-salad"
+    },
+    {
+      "id": "s1-onion-and-tomato",
+      "libraryNumber": 37,
+      "name": "Onion and tomato",
+      "components": "Onion, tomato, coriander, lemon",
+      "family": "chopped-salad"
+    },
+    {
+      "id": "s1-grated-carrot",
+      "libraryNumber": 38,
+      "name": "Grated carrot",
+      "components": "Carrot, coconut, coriander",
+      "family": "chopped-salad"
+    },
+    {
+      "id": "s1-sweet-corn-chaat",
+      "libraryNumber": 39,
+      "name": "Sweet corn chaat",
+      "components": "Boiled sweet corn, onion, chaat masala",
+      "family": "chopped-salad"
+    },
+    {
+      "id": "s1-cucumber-and-pomegranate",
+      "libraryNumber": 40,
+      "name": "Cucumber and pomegranate",
+      "components": "Cucumber, pomegranate, mint",
+      "family": "chopped-salad"
+    },
+    {
+      "id": "s1-raw-papaya-salad",
+      "libraryNumber": 41,
+      "name": "Raw papaya salad",
+      "components": "Grated raw papaya, peanut, lemon",
+      "family": "chopped-salad"
+    },
+    {
+      "id": "s1-tender-coconut",
+      "libraryNumber": 42,
+      "name": "Tender coconut",
+      "components": "Tender coconut flesh and water",
+      "family": "chopped-salad"
+    },
+    {
+      "id": "s1-cucumber-raita",
+      "libraryNumber": 43,
+      "name": "Cucumber raita",
+      "components": "Curd, cucumber, cumin",
+      "family": "curd"
+    },
+    {
+      "id": "s1-carrot-raita",
+      "libraryNumber": 44,
+      "name": "Carrot raita",
+      "components": "Curd, grated carrot",
+      "family": "curd"
+    },
+    {
+      "id": "s1-tomato-and-onion-raita",
+      "libraryNumber": 45,
+      "name": "Tomato and onion raita",
+      "components": "Curd, tomato, onion",
+      "family": "curd"
+    },
+    {
+      "id": "s1-beetroot-raita",
+      "libraryNumber": 46,
+      "name": "Beetroot raita",
+      "components": "Curd, grated beetroot",
+      "family": "curd"
+    },
+    {
+      "id": "s1-plain-curd-and-fruit",
+      "libraryNumber": 47,
+      "name": "Plain curd and fruit",
+      "components": "Curd, chopped banana or apple",
+      "family": "curd"
+    },
+    {
+      "id": "s1-mint-raita",
+      "libraryNumber": 48,
+      "name": "Mint raita",
+      "components": "Curd, mint, cumin",
+      "family": "curd"
+    },
+    {
+      "id": "s1-boondi-free-spiced-curd",
+      "libraryNumber": 49,
+      "name": "Boondi-free spiced curd",
+      "components": "Curd, cumin, salt, coriander",
+      "family": "curd"
+    },
+    {
+      "id": "s1-curd-and-pomegranate",
+      "libraryNumber": 50,
+      "name": "Curd and pomegranate",
+      "components": "Curd, pomegranate, honey",
+      "family": "curd"
+    },
+    {
+      "id": "s1-soaked-peanuts",
+      "libraryNumber": 51,
+      "name": "Soaked peanuts",
+      "components": "Overnight-soaked raw peanuts, salt",
+      "family": "soaked-roasted"
+    },
+    {
+      "id": "s1-soaked-almonds",
+      "libraryNumber": 52,
+      "name": "Soaked almonds",
+      "components": "Overnight-soaked almonds",
+      "family": "soaked-roasted"
+    },
+    {
+      "id": "s1-roasted-chana",
+      "libraryNumber": 53,
+      "name": "Roasted chana",
+      "components": "Roasted brown chana, salt",
+      "family": "soaked-roasted"
+    },
+    {
+      "id": "s1-roasted-makhana",
+      "libraryNumber": 54,
+      "name": "Roasted makhana",
+      "components": "Roasted fox nuts, pepper",
+      "family": "soaked-roasted"
+    },
+    {
+      "id": "s1-boiled-channa",
+      "libraryNumber": 55,
+      "name": "Boiled channa",
+      "components": "Boiled white chickpeas, onion, lemon",
+      "family": "soaked-roasted"
+    },
+    {
+      "id": "s1-soaked-methi-seeds",
+      "libraryNumber": 56,
+      "name": "Soaked methi seeds",
+      "components": "Soaked fenugreek, lemon",
+      "family": "soaked-roasted"
+    },
+    {
+      "id": "s1-roasted-peanuts",
+      "libraryNumber": 57,
+      "name": "Roasted peanuts",
+      "components": "Roasted peanuts, chilli powder",
+      "family": "soaked-roasted"
+    },
+    {
+      "id": "s1-mixed-nuts",
+      "libraryNumber": 58,
+      "name": "Mixed nuts",
+      "components": "Almond, walnut, cashew, few of each",
+      "family": "soaked-roasted"
+    },
+    {
+      "id": "s1-boiled-peanuts",
+      "libraryNumber": 59,
+      "name": "Boiled peanuts",
+      "components": "Boiled raw peanuts, salt",
+      "family": "soaked-roasted"
+    },
+    {
+      "id": "s1-puffed-rice-chaat",
+      "libraryNumber": 60,
+      "name": "Puffed rice chaat",
+      "components": "Puffed rice, onion, tomato, lemon",
+      "family": "soaked-roasted"
+    }
+  ],
+  "seasonPools": {
+    "_note": "Per calendar month: how many of the 60 are in season, the resulting Snack 1 repeat window (pool-1, ARCHITECTURE.md §3.3), which ids are excluded, and the in-season size of each family. Authoritative input for VAR-03, VAR-07, VAR-08 and VAR-04 feasibility.",
+    "byMonth": {
+      "1": {
+        "inSeasonCount": 54,
+        "repeatWindowDays": 53,
+        "excludedIds": [
+          "s1-raw-mango-kosumbari",
+          "s1-sprouts-with-raw-mango",
+          "s1-watermelon",
+          "s1-musk-melon",
+          "s1-pineapple",
+          "s1-mango"
+        ],
+        "familyCounts": {
+          "chopped-salad": 10,
+          "curd": 8,
+          "cut-fruit": 6,
+          "kosumbari": 11,
+          "soaked-roasted": 10,
+          "sprouts": 9
+        }
+      },
+      "2": {
+        "inSeasonCount": 54,
+        "repeatWindowDays": 53,
+        "excludedIds": [
+          "s1-raw-mango-kosumbari",
+          "s1-sprouts-with-raw-mango",
+          "s1-watermelon",
+          "s1-musk-melon",
+          "s1-pineapple",
+          "s1-mango"
+        ],
+        "familyCounts": {
+          "chopped-salad": 10,
+          "curd": 8,
+          "cut-fruit": 6,
+          "kosumbari": 11,
+          "soaked-roasted": 10,
+          "sprouts": 9
+        }
+      },
+      "3": {
+        "inSeasonCount": 59,
+        "repeatWindowDays": 58,
+        "excludedIds": [
+          "s1-mango"
+        ],
+        "familyCounts": {
+          "chopped-salad": 10,
+          "curd": 8,
+          "cut-fruit": 9,
+          "kosumbari": 12,
+          "soaked-roasted": 10,
+          "sprouts": 10
+        }
+      },
+      "4": {
+        "inSeasonCount": 60,
+        "repeatWindowDays": 59,
+        "excludedIds": [],
+        "familyCounts": {
+          "chopped-salad": 10,
+          "curd": 8,
+          "cut-fruit": 10,
+          "kosumbari": 12,
+          "soaked-roasted": 10,
+          "sprouts": 10
+        }
+      },
+      "5": {
+        "inSeasonCount": 60,
+        "repeatWindowDays": 59,
+        "excludedIds": [],
+        "familyCounts": {
+          "chopped-salad": 10,
+          "curd": 8,
+          "cut-fruit": 10,
+          "kosumbari": 12,
+          "soaked-roasted": 10,
+          "sprouts": 10
+        }
+      },
+      "6": {
+        "inSeasonCount": 60,
+        "repeatWindowDays": 59,
+        "excludedIds": [],
+        "familyCounts": {
+          "chopped-salad": 10,
+          "curd": 8,
+          "cut-fruit": 10,
+          "kosumbari": 12,
+          "soaked-roasted": 10,
+          "sprouts": 10
+        }
+      },
+      "7": {
+        "inSeasonCount": 56,
+        "repeatWindowDays": 55,
+        "excludedIds": [
+          "s1-raw-mango-kosumbari",
+          "s1-sprouts-with-raw-mango",
+          "s1-watermelon",
+          "s1-musk-melon"
+        ],
+        "familyCounts": {
+          "chopped-salad": 10,
+          "curd": 8,
+          "cut-fruit": 8,
+          "kosumbari": 11,
+          "soaked-roasted": 10,
+          "sprouts": 9
+        }
+      },
+      "8": {
+        "inSeasonCount": 54,
+        "repeatWindowDays": 53,
+        "excludedIds": [
+          "s1-raw-mango-kosumbari",
+          "s1-sprouts-with-raw-mango",
+          "s1-watermelon",
+          "s1-musk-melon",
+          "s1-pineapple",
+          "s1-mango"
+        ],
+        "familyCounts": {
+          "chopped-salad": 10,
+          "curd": 8,
+          "cut-fruit": 6,
+          "kosumbari": 11,
+          "soaked-roasted": 10,
+          "sprouts": 9
+        }
+      },
+      "9": {
+        "inSeasonCount": 54,
+        "repeatWindowDays": 53,
+        "excludedIds": [
+          "s1-raw-mango-kosumbari",
+          "s1-sprouts-with-raw-mango",
+          "s1-watermelon",
+          "s1-musk-melon",
+          "s1-pineapple",
+          "s1-mango"
+        ],
+        "familyCounts": {
+          "chopped-salad": 10,
+          "curd": 8,
+          "cut-fruit": 6,
+          "kosumbari": 11,
+          "soaked-roasted": 10,
+          "sprouts": 9
+        }
+      },
+      "10": {
+        "inSeasonCount": 54,
+        "repeatWindowDays": 53,
+        "excludedIds": [
+          "s1-raw-mango-kosumbari",
+          "s1-sprouts-with-raw-mango",
+          "s1-watermelon",
+          "s1-musk-melon",
+          "s1-pineapple",
+          "s1-mango"
+        ],
+        "familyCounts": {
+          "chopped-salad": 10,
+          "curd": 8,
+          "cut-fruit": 6,
+          "kosumbari": 11,
+          "soaked-roasted": 10,
+          "sprouts": 9
+        }
+      },
+      "11": {
+        "inSeasonCount": 54,
+        "repeatWindowDays": 53,
+        "excludedIds": [
+          "s1-raw-mango-kosumbari",
+          "s1-sprouts-with-raw-mango",
+          "s1-watermelon",
+          "s1-musk-melon",
+          "s1-pineapple",
+          "s1-mango"
+        ],
+        "familyCounts": {
+          "chopped-salad": 10,
+          "curd": 8,
+          "cut-fruit": 6,
+          "kosumbari": 11,
+          "soaked-roasted": 10,
+          "sprouts": 9
+        }
+      },
+      "12": {
+        "inSeasonCount": 54,
+        "repeatWindowDays": 53,
+        "excludedIds": [
+          "s1-raw-mango-kosumbari",
+          "s1-sprouts-with-raw-mango",
+          "s1-watermelon",
+          "s1-musk-melon",
+          "s1-pineapple",
+          "s1-mango"
+        ],
+        "familyCounts": {
+          "chopped-salad": 10,
+          "curd": 8,
+          "cut-fruit": 6,
+          "kosumbari": 11,
+          "soaked-roasted": 10,
+          "sprouts": 9
+        }
+      }
+    }
+  }
+}

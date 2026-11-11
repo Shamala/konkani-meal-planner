@@ -1,0 +1,399 @@
+[
+  {
+    "id": "s1-cucumber-kosumbari",
+    "name": "Cucumber kosumbari",
+    "components": "Soaked moong dal, cucumber, coconut, coriander, lemon",
+    "family": "kosumbari"
+  },
+  {
+    "id": "s1-carrot-kosumbari",
+    "name": "Carrot kosumbari",
+    "components": "Soaked moong dal, grated carrot, coconut, coriander",
+    "family": "kosumbari"
+  },
+  {
+    "id": "s1-channa-dal-kosumbari",
+    "name": "Channa dal kosumbari",
+    "components": "Soaked channa dal, cucumber, green chilli, coconut",
+    "family": "kosumbari"
+  },
+  {
+    "id": "s1-tomato-kosumbari",
+    "name": "Tomato kosumbari",
+    "components": "Soaked moong dal, tomato, onion, coriander",
+    "family": "kosumbari"
+  },
+  {
+    "id": "s1-radish-kosumbari",
+    "name": "Radish kosumbari",
+    "components": "Soaked moong dal, grated white radish, coconut",
+    "family": "kosumbari"
+  },
+  {
+    "id": "s1-cabbage-kosumbari",
+    "name": "Cabbage kosumbari",
+    "components": "Soaked moong dal, shredded cabbage, carrot, lemon",
+    "family": "kosumbari"
+  },
+  {
+    "id": "s1-raw-mango-kosumbari",
+    "name": "Raw mango kosumbari",
+    "components": "Soaked channa dal, grated raw mango, coconut",
+    "family": "kosumbari",
+    "season": [
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": "s1-beetroot-kosumbari",
+    "name": "Beetroot kosumbari",
+    "components": "Soaked moong dal, grated beetroot, coconut, lemon",
+    "family": "kosumbari"
+  },
+  {
+    "id": "s1-capsicum-kosumbari",
+    "name": "Capsicum kosumbari",
+    "components": "Soaked moong dal, chopped capsicum, coriander",
+    "family": "kosumbari"
+  },
+  {
+    "id": "s1-double-dal-kosumbari",
+    "name": "Double-dal kosumbari",
+    "components": "Soaked moong and channa dal, cucumber, coconut",
+    "family": "kosumbari"
+  },
+  {
+    "id": "s1-ridge-gourd-kosumbari",
+    "name": "Ridge gourd kosumbari",
+    "components": "Soaked moong dal, tender ridge gourd, coconut",
+    "family": "kosumbari"
+  },
+  {
+    "id": "s1-pomegranate-kosumbari",
+    "name": "Pomegranate kosumbari",
+    "components": "Soaked moong dal, pomegranate, coconut, mint",
+    "family": "kosumbari"
+  },
+  {
+    "id": "s1-plain-moong-sprouts",
+    "name": "Plain moong sprouts",
+    "components": "Sprouted green gram, salt, lemon",
+    "family": "sprouts"
+  },
+  {
+    "id": "s1-sprouts-chaat",
+    "name": "Sprouts chaat",
+    "components": "Moong sprouts, onion, tomato, chaat masala",
+    "family": "sprouts"
+  },
+  {
+    "id": "s1-sprouts-with-pomegranate",
+    "name": "Sprouts with pomegranate",
+    "components": "Moong sprouts, pomegranate, mint, lemon",
+    "family": "sprouts"
+  },
+  {
+    "id": "s1-matki-sprouts",
+    "name": "Matki sprouts",
+    "components": "Sprouted moth beans, onion, coriander",
+    "family": "sprouts"
+  },
+  {
+    "id": "s1-chana-sprouts",
+    "name": "Chana sprouts",
+    "components": "Sprouted brown chickpeas, coconut, green chilli",
+    "family": "sprouts"
+  },
+  {
+    "id": "s1-sprouts-and-cucumber",
+    "name": "Sprouts and cucumber",
+    "components": "Moong sprouts, cucumber, coconut",
+    "family": "sprouts"
+  },
+  {
+    "id": "s1-mixed-sprouts",
+    "name": "Mixed sprouts",
+    "components": "Moong and matki, onion, lemon",
+    "family": "sprouts"
+  },
+  {
+    "id": "s1-steamed-sprouts",
+    "name": "Steamed sprouts",
+    "components": "Lightly steamed moong sprouts, salt, pepper",
+    "family": "sprouts"
+  },
+  {
+    "id": "s1-sprouts-with-raw-mango",
+    "name": "Sprouts with raw mango",
+    "components": "Moong sprouts, grated raw mango, coriander",
+    "family": "sprouts",
+    "season": [
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": "s1-horse-gram-sprouts",
+    "name": "Horse gram sprouts",
+    "components": "Sprouted horse gram, coconut, curry leaf",
+    "family": "sprouts"
+  },
+  {
+    "id": "s1-papaya",
+    "name": "Papaya",
+    "components": "Cut papaya, lemon",
+    "family": "cut-fruit"
+  },
+  {
+    "id": "s1-watermelon",
+    "name": "Watermelon",
+    "components": "Cut watermelon, mint",
+    "family": "cut-fruit",
+    "season": [
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": "s1-banana-and-apple",
+    "name": "Banana and apple",
+    "components": "Sliced banana, apple",
+    "family": "cut-fruit"
+  },
+  {
+    "id": "s1-guava",
+    "name": "Guava",
+    "components": "Cut guava, chilli salt",
+    "family": "cut-fruit"
+  },
+  {
+    "id": "s1-musk-melon",
+    "name": "Musk melon",
+    "components": "Cut musk melon",
+    "family": "cut-fruit",
+    "season": [
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": "s1-mixed-fruit-bowl",
+    "name": "Mixed fruit bowl",
+    "components": "Whatever three fruits are in the house",
+    "family": "cut-fruit"
+  },
+  {
+    "id": "s1-orange-and-pomegranate",
+    "name": "Orange and pomegranate",
+    "components": "Segmented orange, pomegranate",
+    "family": "cut-fruit"
+  },
+  {
+    "id": "s1-chikoo-and-banana",
+    "name": "Chikoo and banana",
+    "components": "Sliced chikoo, banana",
+    "family": "cut-fruit"
+  },
+  {
+    "id": "s1-pineapple",
+    "name": "Pineapple",
+    "components": "Cut pineapple, chilli salt",
+    "family": "cut-fruit",
+    "season": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "id": "s1-mango",
+    "name": "Mango",
+    "components": "Cut ripe mango",
+    "family": "cut-fruit",
+    "season": [
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "id": "s1-cucumber-and-tomato",
+    "name": "Cucumber and tomato",
+    "components": "Cucumber, tomato, onion, lemon",
+    "family": "chopped-salad"
+  },
+  {
+    "id": "s1-grated-beetroot",
+    "name": "Grated beetroot",
+    "components": "Beetroot, coconut, lemon",
+    "family": "chopped-salad"
+  },
+  {
+    "id": "s1-cabbage-and-carrot",
+    "name": "Cabbage and carrot",
+    "components": "Shredded cabbage, carrot, lemon",
+    "family": "chopped-salad"
+  },
+  {
+    "id": "s1-cucumber-sticks",
+    "name": "Cucumber sticks",
+    "components": "Cucumber, carrot, chilli salt",
+    "family": "chopped-salad"
+  },
+  {
+    "id": "s1-onion-and-tomato",
+    "name": "Onion and tomato",
+    "components": "Onion, tomato, coriander, lemon",
+    "family": "chopped-salad"
+  },
+  {
+    "id": "s1-grated-carrot",
+    "name": "Grated carrot",
+    "components": "Carrot, coconut, coriander",
+    "family": "chopped-salad"
+  },
+  {
+    "id": "s1-sweet-corn-chaat",
+    "name": "Sweet corn chaat",
+    "components": "Boiled sweet corn, onion, chaat masala",
+    "family": "chopped-salad"
+  },
+  {
+    "id": "s1-cucumber-and-pomegranate",
+    "name": "Cucumber and pomegranate",
+    "components": "Cucumber, pomegranate, mint",
+    "family": "chopped-salad"
+  },
+  {
+    "id": "s1-raw-papaya-salad",
+    "name": "Raw papaya salad",
+    "components": "Grated raw papaya, peanut, lemon",
+    "family": "chopped-salad"
+  },
+  {
+    "id": "s1-tender-coconut",
+    "name": "Tender coconut",
+    "components": "Tender coconut flesh and water",
+    "family": "chopped-salad"
+  },
+  {
+    "id": "s1-cucumber-raita",
+    "name": "Cucumber raita",
+    "components": "Curd, cucumber, cumin",
+    "family": "curd"
+  },
+  {
+    "id": "s1-carrot-raita",
+    "name": "Carrot raita",
+    "components": "Curd, grated carrot",
+    "family": "curd"
+  },
+  {
+    "id": "s1-tomato-and-onion-raita",
+    "name": "Tomato and onion raita",
+    "components": "Curd, tomato, onion",
+    "family": "curd"
+  },
+  {
+    "id": "s1-beetroot-raita",
+    "name": "Beetroot raita",
+    "components": "Curd, grated beetroot",
+    "family": "curd"
+  },
+  {
+    "id": "s1-plain-curd-and-fruit",
+    "name": "Plain curd and fruit",
+    "components": "Curd, chopped banana or apple",
+    "family": "curd"
+  },
+  {
+    "id": "s1-mint-raita",
+    "name": "Mint raita",
+    "components": "Curd, mint, cumin",
+    "family": "curd"
+  },
+  {
+    "id": "s1-boondi-free-spiced-curd",
+    "name": "Boondi-free spiced curd",
+    "components": "Curd, cumin, salt, coriander",
+    "family": "curd"
+  },
+  {
+    "id": "s1-curd-and-pomegranate",
+    "name": "Curd and pomegranate",
+    "components": "Curd, pomegranate, honey",
+    "family": "curd"
+  },
+  {
+    "id": "s1-soaked-peanuts",
+    "name": "Soaked peanuts",
+    "components": "Overnight-soaked raw peanuts, salt",
+    "family": "soaked-roasted"
+  },
+  {
+    "id": "s1-soaked-almonds",
+    "name": "Soaked almonds",
+    "components": "Overnight-soaked almonds",
+    "family": "soaked-roasted"
+  },
+  {
+    "id": "s1-roasted-chana",
+    "name": "Roasted chana",
+    "components": "Roasted brown chana, salt",
+    "family": "soaked-roasted"
+  },
+  {
+    "id": "s1-roasted-makhana",
+    "name": "Roasted makhana",
+    "components": "Roasted fox nuts, pepper",
+    "family": "soaked-roasted"
+  },
+  {
+    "id": "s1-boiled-channa",
+    "name": "Boiled channa",
+    "components": "Boiled white chickpeas, onion, lemon",
+    "family": "soaked-roasted"
+  },
+  {
+    "id": "s1-soaked-methi-seeds",
+    "name": "Soaked methi seeds",
+    "components": "Soaked fenugreek, lemon",
+    "family": "soaked-roasted"
+  },
+  {
+    "id": "s1-roasted-peanuts",
+    "name": "Roasted peanuts",
+    "components": "Roasted peanuts, chilli powder",
+    "family": "soaked-roasted"
+  },
+  {
+    "id": "s1-mixed-nuts",
+    "name": "Mixed nuts",
+    "components": "Almond, walnut, cashew, few of each",
+    "family": "soaked-roasted"
+  },
+  {
+    "id": "s1-boiled-peanuts",
+    "name": "Boiled peanuts",
+    "components": "Boiled raw peanuts, salt",
+    "family": "soaked-roasted"
+  },
+  {
+    "id": "s1-puffed-rice-chaat",
+    "name": "Puffed rice chaat",
+    "components": "Puffed rice, onion, tomato, lemon",
+    "family": "soaked-roasted"
+  }
+]

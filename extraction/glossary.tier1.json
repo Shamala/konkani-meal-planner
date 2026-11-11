@@ -1,0 +1,481 @@
+{
+  "_meta": {
+    "status": "DRAFT, read from 85 dpi rotated page images, NOT yet proof-read.",
+    "source": "jayavshenoy_gsb_cook_book.pdf, PDF pages 167-169 (printed 168-170), pages are printed sideways.",
+    "columns": "English and Kannada only. The other six languages (Gujarati, Hindi, Malayalam, Marathi, Tamil, Telugu) are not extracted.",
+    "alignment": "Rows are skewed by the scan. English and Kannada were paired by order within each group and the Hindi column was used as a cross-check on counts.",
+    "coverage": "78 foodstuffs. This is the book's own list, not a full ingredient list: coconut, rice (raw), salt, oil, jaggery varieties, most dals and many others used in recipes are absent. An ingredient that matches nothing here is unresolved (DSH-06).",
+    "idRule": "lowercase English name, non-alphanumeric runs become one hyphen, trimmed.",
+    "notDishNames": "This lists foodstuffs. It cannot supply Kannada names for dishes."
+  },
+  "items": [
+    {
+      "id": "ragi",
+      "english": "Ragi",
+      "kannada": "Ragi",
+      "group": "Cereal Grains and Products"
+    },
+    {
+      "id": "rice-boiled",
+      "english": "Rice, boiled",
+      "kannada": "Kusubalakki",
+      "group": "Cereal Grains and Products"
+    },
+    {
+      "id": "rice-beaten",
+      "english": "Rice, beaten",
+      "kannada": "Avalakki",
+      "group": "Cereal Grains and Products"
+    },
+    {
+      "id": "wheat-flour",
+      "english": "Wheat flour",
+      "kannada": "Godhihittu",
+      "group": "Cereal Grains and Products"
+    },
+    {
+      "id": "bengal-gram",
+      "english": "Bengal gram",
+      "kannada": "Kadale",
+      "group": "Pulses"
+    },
+    {
+      "id": "bengal-gram-roasted",
+      "english": "Bengal gram, roasted",
+      "kannada": "Hurikadale",
+      "group": "Pulses"
+    },
+    {
+      "id": "black-gram-dhal",
+      "english": "Black gram dhal",
+      "kannada": "Uddina bele",
+      "group": "Pulses"
+    },
+    {
+      "id": "cow-pea",
+      "english": "Cow pea",
+      "kannada": "Alasande",
+      "group": "Pulses"
+    },
+    {
+      "id": "green-gram",
+      "english": "Green gram",
+      "kannada": "Hesaru kalu",
+      "group": "Pulses"
+    },
+    {
+      "id": "horse-gram",
+      "english": "Horse gram",
+      "kannada": "Huruli",
+      "group": "Pulses"
+    },
+    {
+      "id": "peas",
+      "english": "Peas",
+      "kannada": "Batani",
+      "group": "Pulses"
+    },
+    {
+      "id": "thur-dhal",
+      "english": "Thur dhal",
+      "kannada": "Thogari bele",
+      "group": "Pulses"
+    },
+    {
+      "id": "cabbage",
+      "english": "Cabbage",
+      "kannada": "Elekosu",
+      "group": "Leafy Vegetables"
+    },
+    {
+      "id": "colocasia",
+      "english": "Colocasia",
+      "kannada": "Samagadde",
+      "group": "Leafy Vegetables"
+    },
+    {
+      "id": "coriander-leaves",
+      "english": "Coriander leaves",
+      "kannada": "Kothumbari soppu",
+      "group": "Leafy Vegetables"
+    },
+    {
+      "id": "curry-leaves",
+      "english": "Curry leaves",
+      "kannada": "Karibevu soppu",
+      "group": "Leafy Vegetables"
+    },
+    {
+      "id": "spinach",
+      "english": "Spinach",
+      "kannada": "Basale",
+      "group": "Leafy Vegetables"
+    },
+    {
+      "id": "carrot",
+      "english": "Carrot",
+      "kannada": "Gajjare",
+      "group": "Roots and Tubers"
+    },
+    {
+      "id": "onion",
+      "english": "Onion",
+      "kannada": "Neerulli",
+      "group": "Roots and Tubers"
+    },
+    {
+      "id": "potato",
+      "english": "Potato",
+      "kannada": "Alu gadde",
+      "group": "Roots and Tubers"
+    },
+    {
+      "id": "radish",
+      "english": "Radish",
+      "kannada": "Mullangi",
+      "group": "Roots and Tubers"
+    },
+    {
+      "id": "suran",
+      "english": "Suran",
+      "kannada": "Suvarna gadde",
+      "group": "Roots and Tubers"
+    },
+    {
+      "id": "sweet-potato",
+      "english": "Sweet potato",
+      "kannada": "Genasu",
+      "group": "Roots and Tubers"
+    },
+    {
+      "id": "tapioca",
+      "english": "Tapioca",
+      "kannada": "Mara genasu",
+      "group": "Roots and Tubers"
+    },
+    {
+      "id": "ash-gourd",
+      "english": "Ash gourd",
+      "kannada": "Boodugumbalakai",
+      "group": "Other Vegetables"
+    },
+    {
+      "id": "banana-raw",
+      "english": "Banana, raw",
+      "kannada": "Balekai",
+      "group": "Other Vegetables"
+    },
+    {
+      "id": "bitter-gourd",
+      "english": "Bitter gourd",
+      "kannada": "Hagalakai",
+      "group": "Other Vegetables"
+    },
+    {
+      "id": "bottle-gourd",
+      "english": "Bottle gourd",
+      "kannada": "Sorekai",
+      "group": "Other Vegetables"
+    },
+    {
+      "id": "breadfruit",
+      "english": "Breadfruit",
+      "kannada": "Deevigujje",
+      "group": "Other Vegetables"
+    },
+    {
+      "id": "brinjal",
+      "english": "Brinjal",
+      "kannada": "Badane",
+      "group": "Other Vegetables"
+    },
+    {
+      "id": "capsicum",
+      "english": "Capsicum",
+      "kannada": "Dodmensinakai",
+      "group": "Other Vegetables"
+    },
+    {
+      "id": "cauliflower",
+      "english": "Cauliflower",
+      "kannada": "Hookosu",
+      "group": "Other Vegetables"
+    },
+    {
+      "id": "cucumber",
+      "english": "Cucumber",
+      "kannada": "Southekai",
+      "group": "Other Vegetables"
+    },
+    {
+      "id": "drumstick",
+      "english": "Drumstick",
+      "kannada": "Nuggekayi",
+      "group": "Other Vegetables"
+    },
+    {
+      "id": "gherkins",
+      "english": "Gherkins",
+      "kannada": "Tondekayi",
+      "group": "Other Vegetables"
+    },
+    {
+      "id": "jack-tender",
+      "english": "Jack, tender",
+      "kannada": "Halasu (yele)",
+      "group": "Other Vegetables"
+    },
+    {
+      "id": "lady-s-fingers",
+      "english": "Lady's fingers",
+      "kannada": "Bendekai",
+      "group": "Other Vegetables"
+    },
+    {
+      "id": "pumpkin",
+      "english": "Pumpkin",
+      "kannada": "Sihikumbala kayi",
+      "group": "Other Vegetables"
+    },
+    {
+      "id": "ridge-gourd",
+      "english": "Ridge gourd",
+      "kannada": "Heerekayi",
+      "group": "Other Vegetables"
+    },
+    {
+      "id": "snake-gourd",
+      "english": "Snake gourd",
+      "kannada": "Paduvalkayi",
+      "group": "Other Vegetables"
+    },
+    {
+      "id": "cashewnut",
+      "english": "Cashewnut",
+      "kannada": "Gerubeeja",
+      "group": "Nuts and Oilseeds"
+    },
+    {
+      "id": "peanut",
+      "english": "Peanut",
+      "kannada": "Kadalekai",
+      "group": "Nuts and Oilseeds"
+    },
+    {
+      "id": "thil",
+      "english": "Thil",
+      "kannada": "Ellu",
+      "group": "Nuts and Oilseeds"
+    },
+    {
+      "id": "banana-ripe",
+      "english": "Banana, ripe",
+      "kannada": "Balehannu",
+      "group": "Fruits"
+    },
+    {
+      "id": "gooseberry",
+      "english": "Gooseberry",
+      "kannada": "Nellikai",
+      "group": "Fruits"
+    },
+    {
+      "id": "hog-plum",
+      "english": "Hog-plum",
+      "kannada": "Amtekayi",
+      "group": "Fruits"
+    },
+    {
+      "id": "jackfruit",
+      "english": "Jackfruit",
+      "kannada": "Halasu",
+      "group": "Fruits"
+    },
+    {
+      "id": "kokum",
+      "english": "Kokum",
+      "kannada": "Murugin Huli",
+      "group": "Fruits"
+    },
+    {
+      "id": "lime-lemon",
+      "english": "Lime (Lemon)",
+      "kannada": "Nimbe",
+      "group": "Fruits"
+    },
+    {
+      "id": "mango-ripe",
+      "english": "Mango, ripe",
+      "kannada": "Mavinahannu",
+      "group": "Fruits"
+    },
+    {
+      "id": "papaya",
+      "english": "Papaya",
+      "kannada": "Pharangi",
+      "group": "Fruits"
+    },
+    {
+      "id": "pineapple",
+      "english": "Pineapple",
+      "kannada": "Ananas",
+      "group": "Fruits"
+    },
+    {
+      "id": "orange",
+      "english": "Orange",
+      "kannada": "Kithilai",
+      "group": "Fruits"
+    },
+    {
+      "id": "raisins",
+      "english": "Raisins",
+      "kannada": "Drakshi",
+      "group": "Fruits"
+    },
+    {
+      "id": "aniseed",
+      "english": "Aniseed",
+      "kannada": "Bedesepu",
+      "group": "Condiments and Spices"
+    },
+    {
+      "id": "asafoetida",
+      "english": "Asafoetida",
+      "kannada": "Hingu",
+      "group": "Condiments and Spices"
+    },
+    {
+      "id": "cardamom",
+      "english": "Cardamom",
+      "kannada": "Yelakki",
+      "group": "Condiments and Spices"
+    },
+    {
+      "id": "chillies",
+      "english": "Chillies",
+      "kannada": "Mensinakayi",
+      "group": "Condiments and Spices"
+    },
+    {
+      "id": "cinnamon",
+      "english": "Cinnamon",
+      "kannada": "Dalchini",
+      "group": "Condiments and Spices"
+    },
+    {
+      "id": "cloves",
+      "english": "Cloves",
+      "kannada": "Lavanga",
+      "group": "Condiments and Spices"
+    },
+    {
+      "id": "coriander-seeds",
+      "english": "Coriander seeds",
+      "kannada": "Kothambari",
+      "group": "Condiments and Spices"
+    },
+    {
+      "id": "cumin-seeds",
+      "english": "Cumin seeds",
+      "kannada": "Jeerige",
+      "group": "Condiments and Spices"
+    },
+    {
+      "id": "fenugreek-seeds",
+      "english": "Fenugreek seeds",
+      "kannada": "Menthya",
+      "group": "Condiments and Spices"
+    },
+    {
+      "id": "garlic",
+      "english": "Garlic",
+      "kannada": "Bellulli",
+      "group": "Condiments and Spices"
+    },
+    {
+      "id": "ginger",
+      "english": "Ginger",
+      "kannada": "Shunti",
+      "group": "Condiments and Spices"
+    },
+    {
+      "id": "mustard-seeds",
+      "english": "Mustard seeds",
+      "kannada": "Sasive",
+      "group": "Condiments and Spices"
+    },
+    {
+      "id": "nutmeg",
+      "english": "Nutmeg",
+      "kannada": "Jajikai",
+      "group": "Condiments and Spices"
+    },
+    {
+      "id": "omum",
+      "english": "Omum",
+      "kannada": "Oma",
+      "group": "Condiments and Spices"
+    },
+    {
+      "id": "pepper-corns",
+      "english": "Pepper corns",
+      "kannada": "Karimenasu",
+      "group": "Condiments and Spices"
+    },
+    {
+      "id": "poppy-seeds",
+      "english": "Poppy seeds",
+      "kannada": "Gasgase",
+      "group": "Condiments and Spices"
+    },
+    {
+      "id": "tamarind",
+      "english": "Tamarind",
+      "kannada": "Hunisehannu",
+      "group": "Condiments and Spices"
+    },
+    {
+      "id": "turmeric",
+      "english": "Turmeric",
+      "kannada": "Arshina",
+      "group": "Condiments and Spices"
+    },
+    {
+      "id": "butter",
+      "english": "Butter",
+      "kannada": "Benne",
+      "group": "Milk Products"
+    },
+    {
+      "id": "butter-milk",
+      "english": "Butter milk",
+      "kannada": "Majjige",
+      "group": "Milk Products"
+    },
+    {
+      "id": "curds",
+      "english": "Curds",
+      "kannada": "Mosaru",
+      "group": "Milk Products"
+    },
+    {
+      "id": "ghee",
+      "english": "Ghee",
+      "kannada": "Thuppa",
+      "group": "Milk Products"
+    },
+    {
+      "id": "sago",
+      "english": "Sago",
+      "kannada": "Sabakki",
+      "group": "Other Foodstuffs"
+    },
+    {
+      "id": "jaggery",
+      "english": "Jaggery",
+      "kannada": "Bella",
+      "group": "Other Foodstuffs"
+    }
+  ]
+}

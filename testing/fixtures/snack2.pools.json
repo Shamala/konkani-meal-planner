@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "file": "snack2.pools.json",
+    "provenance": "MIXED. sectionProxy and authoredAdditions are REAL, verbatim from SNACK-LIBRARY.md §2.1 and §2.2. The id slugs are this fixture's encoding.",
+    "source": "SNACK-LIBRARY.md §2",
+    "notes": [
+      "Snack 2 has two sources (ARCHITECTURE.md §2.3): book recipes whose section is in the 'in' list, and authored entries shaped like Snack 1 entries.",
+      "The authored additions carry no page and no season (SNACK-LIBRARY.md §3). They also carry no 'family', so the VAR-04 no-consecutive-family rule has nothing to act on in this slot - see CRITERIA-MAP.md gap G-08.",
+      "SNACK-LIBRARY.md §2.2 says 'a dozen' and lists 12. Confirmed: 12 entries below."
+    ]
+  },
+
+  "sectionProxy": {
+    "_note": "REAL. SNACK-LIBRARY.md §2.1. Kid-friendly is approximated by section, not hand-tagged. GEN-06.",
+    "in": [
+      { "section": 17, "name": "Breakfast Dishes" },
+      { "section": 18, "name": "Idlis and Idiappam" },
+      { "section": 19, "name": "Dosai Varieties" },
+      { "section": 20, "name": "Appe, Mudde and Patholi" },
+      { "section": 21, "name": "Bhakri, Roti and Cutlets" },
+      { "section": 23, "name": "Bondas and Vadais" },
+      { "section": 24, "name": "Bajes, Pakora and Samosa" },
+      { "section": 25, "name": "Savouries" },
+      { "section": 26, "name": "Sweets" }
+    ],
+    "out": [
+      { "section": 10, "name": "Masala Curries" },
+      { "section": 11, "name": "Pickle Type Curries" },
+      { "section": 2, "name": "Saars, Rasams and Soups" },
+      { "section": 4, "name": "Sambars, Kolambus and Hulis" },
+      { "section": 28, "name": "Pickles" }
+    ],
+    "_contradiction": "Section 21 'Bhakri, Roti and Cutlets' is in the Snack 2 'in' list, yet roti is also a main-meal composition role (REQUIREMENTS.md §3.3, 'rice or roti'). The two synthetic roti records in recipes.book.SYNTHETIC.json therefore carry slots ['main'] only, which contradicts the section proxy. See CRITERIA-MAP.md gap G-05.",
+    "_unlisted": "Sections 1, 3, 5-9, 12-16, 22, 27, 29 and 30 appear in neither list. The documents never enumerate all 30 headings, so whether an unlisted section is in or out of Snack 2 is undefined. See CRITERIA-MAP.md gap G-06."
+  },
+
+  "authoredAdditions": [
+    { "id": "s2-moong-dal-chilla", "name": "Moong dal chilla", "components": "Savoury lentil pancake; rolls up well" },
+    { "id": "s2-dahi-poha", "name": "Dahi poha", "components": "Curd with flattened rice; no cooking" },
+    { "id": "s2-corn-chaat", "name": "Corn chaat", "components": "Boiled sweet corn, chaat masala" },
+    { "id": "s2-roasted-chickpeas", "name": "Roasted chickpeas", "components": "Chaat masala, salt, lime" },
+    { "id": "s2-roasted-makhana", "name": "Roasted makhana", "components": "Fox nuts, salt and pepper" },
+    { "id": "s2-paneer-nuggets", "name": "Paneer nuggets", "components": "Shallow-fried, simple masala" },
+    { "id": "s2-thalipeeth", "name": "Thalipeeth", "components": "Multigrain flatbread" },
+    { "id": "s2-chutney-roll", "name": "Chutney roll", "components": "Phulka, ghee, chutney. The no-cook fallback" },
+    { "id": "s2-date-and-nut-balls", "name": "Date and nut balls", "components": "No added sugar" },
+    { "id": "s2-bajra-ladoo", "name": "Bajra ladoo", "components": "Pearl millet; slow-release energy" },
+    { "id": "s2-vegetable-upma", "name": "Vegetable upma", "components": "Semolina with vegetables" },
+    { "id": "s2-banana-nut-milkshake", "name": "Banana and nut milkshake", "components": "Blended, no added sugar" }
+  ],
+
+  "derivedPool": {
+    "_note": "The Snack 2 pool against recipes.book.SYNTHETIC.json: book records whose section is in sectionProxy.in AND whose slots include 'snack2', plus all 12 authored additions.",
+    "fromBook": [
+      "syn-upma", "syn-avalakki-phova", "syn-rice-idli", "syn-idiappam",
+      "syn-neer-dosai", "syn-set-dosai", "syn-colocasia-patholi",
+      "syn-appe-sweet", "syn-chakli"
+    ],
+    "fromAuthored": 12,
+    "totalWithRespectSeasonsOff": 21,
+    "totalWithRespectSeasonsOnNovember": 20,
+    "_seasonNote": "syn-colocasia-patholi (season 6-9) drops out in every month except Jun-Sep, leaving 20.",
+    "mustNeverAppear": ["syn-brinjal-masala-curry", "syn-cabbage-masala-curry", "syn-lime-pickle", "kokum-saar", "syn-tomato-saar", "syn-dalithoy", "syn-ridge-gourd-sambar", "syn-ash-gourd-kolambu"],
+    "repeatWindowDays": 14,
+    "_windowVsPool": "VAR-05 sets the Snack 2 window at 14 days against a pool of 21 in this fixture. That is survivable. Against a pool of 14 or fewer it is not, and the GEN-08 fallback fires every day - which is why the authored additions matter to the arithmetic, not just the nutrition."
+  }
+}

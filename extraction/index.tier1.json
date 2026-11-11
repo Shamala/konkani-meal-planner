@@ -1,0 +1,3094 @@
+{
+ "_meta": {
+  "status": "PROOF-READ 2026-11-11 against 100 dpi page tiles: 416 of 416 entries match the printed index (names and page numbers). Not yet checked against the recipe pages themselves, except Kokum saar.",
+  "source": "jayavshenoy_gsb_cook_book.pdf, PDF pages 170-172 (printed 171-173), read from 60 dpi page images by a vision model. No OCR.",
+  "pageNumbers": "PRINTED page numbers as the index gives them (printed N = PDF page N-1). Never PDF numbers.",
+  "section": "Derived, not read: the section whose Contents start page is the highest one not above the entry's FIRST page. A proxy for role; REQUIREMENTS 3.3 says role comes from the section heading.",
+  "namesVerbatim": "Spelling, capitalisation and apparent misprints are kept as printed (e.g. 'Burgar', 'Cutlet, vegetale'). Fix in recipes.json, not here.",
+  "notYetDone": [
+   "ids (id contract: never reused)",
+   "kannadaName (comes from the glossary, pp.168-170)",
+   "slots",
+   "season",
+   "roles beyond section number"
+  ],
+  "flags": [
+   "RESOLVED: Kokum saar is on printed page 9, confirmed on the recipe page. The earlier docs said page 8 and were wrong; corrected in REQUIREMENTS, README, DESIGN and the fixtures.",
+   "'Horse gram upkari' is indexed at p.8, but p.8 only says leftover cooked gram 'can be used for horse gram upkari'; it may be a pointer, not a standalone recipe. Check before it becomes a corpus entry.",
+   "'Twelve in one chutney' is on p.138, inside section 24 (Bajes, Pakora and Samosa), not a chutney section. The section proxy may mislabel it.",
+   "Section is derived from page and is only a proxy for role. The index has no roles.",
+   "D6/D7: four soups (Mixed veg. soup, Mushroom soup, Potato soup, Tomato soup) take slots ['snack2'], not 'main'. 'Pongal, sakkarai' is a dessert, excluded from the standalone rice pool."
+  ]
+ },
+ "sections": [
+  [
+   1,
+   "Pooja Sweets",
+   6
+  ],
+  [
+   2,
+   "Saars, Rasams and Soups",
+   8
+  ],
+  [
+   3,
+   "Kadis and Thamblis",
+   16
+  ],
+  [
+   4,
+   "Sambars, Kolambus and Hulis",
+   19
+  ],
+  [
+   5,
+   "Gozzus and Salads",
+   23
+  ],
+  [
+   6,
+   "Chutneys, Pachadis and Kosumbaris",
+   26
+  ],
+  [
+   7,
+   "Plain Curries",
+   33
+  ],
+  [
+   8,
+   "Mixed Vegetable Curries",
+   42
+  ],
+  [
+   9,
+   "Pathravade, Sannan and Sanna Polo",
+   44
+  ],
+  [
+   10,
+   "Masala Curries",
+   47
+  ],
+  [
+   11,
+   "Pickle Type Curries",
+   62
+  ],
+  [
+   12,
+   "Stuffed Curries",
+   66
+  ],
+  [
+   13,
+   "Fried Dishes",
+   68
+  ],
+  [
+   14,
+   "Rice Dishes",
+   71
+  ],
+  [
+   15,
+   "Payasams and Kheers",
+   81
+  ],
+  [
+   16,
+   "Sweet Dishes",
+   85
+  ],
+  [
+   17,
+   "Breakfast Dishes",
+   90
+  ],
+  [
+   18,
+   "Idlis and Idiappam",
+   94
+  ],
+  [
+   19,
+   "Dosai Varieties",
+   98
+  ],
+  [
+   20,
+   "Appe, Mudde and Patholi",
+   103
+  ],
+  [
+   21,
+   "Bhakri, Roti and Cutlets",
+   106
+  ],
+  [
+   22,
+   "Puri, Chapathi and Side Dishes",
+   109
+  ],
+  [
+   23,
+   "Bondas and Vadais",
+   133
+  ],
+  [
+   24,
+   "Bajes, Pakora and Samosa",
+   137
+  ],
+  [
+   25,
+   "Savouries",
+   139
+  ],
+  [
+   26,
+   "Sweets",
+   144
+  ],
+  [
+   27,
+   "Curry Powders and Dry Chutneys",
+   154
+  ],
+  [
+   28,
+   "Pickles",
+   157
+  ],
+  [
+   29,
+   "Papads and Vadis",
+   159
+  ],
+  [
+   30,
+   "Fruit Salad, Juices, Jams and Sauce",
+   161
+  ]
+ ],
+ "entries": [
+  [
+   "Adai",
+   [
+    102
+   ],
+   19
+  ],
+  [
+   "Adgai",
+   [
+    64
+   ],
+   11
+  ],
+  [
+   "Alambe ambat",
+   [
+    51
+   ],
+   10
+  ],
+  [
+   "Alambe buthi",
+   [
+    52
+   ],
+   10
+  ],
+  [
+   "Alambe Phanna upkari",
+   [
+    38
+   ],
+   7
+  ],
+  [
+   "Alu bonda",
+   [
+    133
+   ],
+   23
+  ],
+  [
+   "Alu dum",
+   [
+    123
+   ],
+   22
+  ],
+  [
+   "Alu fry",
+   [
+    35,
+    36
+   ],
+   7
+  ],
+  [
+   "Alu gobi",
+   [
+    36
+   ],
+   7
+  ],
+  [
+   "Alu jeera",
+   [
+    37
+   ],
+   7
+  ],
+  [
+   "Alu matar",
+   [
+    123
+   ],
+   22
+  ],
+  [
+   "Alu methi",
+   [
+    37
+   ],
+   7
+  ],
+  [
+   "Alu palak",
+   [
+    36
+   ],
+   7
+  ],
+  [
+   "Alu paratha",
+   [
+    110
+   ],
+   22
+  ],
+  [
+   "Alwathi",
+   [
+    50
+   ],
+   10
+  ],
+  [
+   "Appe",
+   [
+    103
+   ],
+   20
+  ],
+  [
+   "Arrowroot duddali",
+   [
+    88
+   ],
+   16
+  ],
+  [
+   "Arvi roots humman",
+   [
+    58
+   ],
+   10
+  ],
+  [
+   "Ash gourd saasam",
+   [
+    57
+   ],
+   10
+  ],
+  [
+   "Avial",
+   [
+    43
+   ],
+   8
+  ],
+  [
+   "Awakkai",
+   [
+    158
+   ],
+   28
+  ],
+  [
+   "Baby corn carrot curry",
+   [
+    129
+   ],
+   22
+  ],
+  [
+   "Bakala bhath",
+   [
+    92
+   ],
+   17
+  ],
+  [
+   "Bajes",
+   [
+    137
+   ],
+   24
+  ],
+  [
+   "Banana gozzu",
+   [
+    24
+   ],
+   5
+  ],
+  [
+   "Banana pudding",
+   [
+    87
+   ],
+   16
+  ],
+  [
+   "Banana relish, fried",
+   [
+    87
+   ],
+   16
+  ],
+  [
+   "Banana saasam",
+   [
+    58
+   ],
+   10
+  ],
+  [
+   "Batani bendi",
+   [
+    60
+   ],
+   10
+  ],
+  [
+   "Batat phov",
+   [
+    93
+   ],
+   17
+  ],
+  [
+   "Bendikai kolambu",
+   [
+    20
+   ],
+   4
+  ],
+  [
+   "Bengal gram ghushi",
+   [
+    47
+   ],
+   10
+  ],
+  [
+   "Bengal gram sukke",
+   [
+    54
+   ],
+   10
+  ],
+  [
+   "Bengal gram suran",
+   [
+    48
+   ],
+   10
+  ],
+  [
+   "Bengali kichidi",
+   [
+    80
+   ],
+   14
+  ],
+  [
+   "Beans curry",
+   [
+    40
+   ],
+   7
+  ],
+  [
+   "Beans menthekai",
+   [
+    59
+   ],
+   10
+  ],
+  [
+   "Beaten rice chutney",
+   [
+    93
+   ],
+   17
+  ],
+  [
+   "Beaten rice pachadi",
+   [
+    92
+   ],
+   17
+  ],
+  [
+   "Beaten rice usli",
+   [
+    93
+   ],
+   17
+  ],
+  [
+   "Bhel puri",
+   [
+    116
+   ],
+   22
+  ],
+  [
+   "Bhindi",
+   [
+    38
+   ],
+   7
+  ],
+  [
+   "Bhuri saar",
+   [
+    10
+   ],
+   2
+  ],
+  [
+   "Biscuit puri",
+   [
+    109
+   ],
+   22
+  ],
+  [
+   "Bisibele bhath",
+   [
+    72
+   ],
+   14
+  ],
+  [
+   "Bitter gourd bits",
+   [
+    64
+   ],
+   11
+  ],
+  [
+   "Bitter gourd buthi",
+   [
+    52
+   ],
+   10
+  ],
+  [
+   "Bitter gourd fries",
+   [
+    68
+   ],
+   13
+  ],
+  [
+   "Bitter gourd gunu",
+   [
+    43
+   ],
+   8
+  ],
+  [
+   "Bitter gourd kosumbari",
+   [
+    32
+   ],
+   6
+  ],
+  [
+   "Bitter gourd pickle",
+   [
+    63
+   ],
+   11
+  ],
+  [
+   "Bitter gourd rings",
+   [
+    68
+   ],
+   13
+  ],
+  [
+   "Black gram bonda",
+   [
+    134
+   ],
+   23
+  ],
+  [
+   "Bombay toast",
+   [
+    91
+   ],
+   17
+  ],
+  [
+   "Brahmi leaf chutney",
+   [
+    27
+   ],
+   6
+  ],
+  [
+   "Bread bonda",
+   [
+    134
+   ],
+   23
+  ],
+  [
+   "Bread fruit ghushi",
+   [
+    47
+   ],
+   10
+  ],
+  [
+   "Bread rolls",
+   [
+    92
+   ],
+   17
+  ],
+  [
+   "Brinda fruit drink",
+   [
+    162
+   ],
+   30
+  ],
+  [
+   "Brinjal bajji",
+   [
+    23
+   ],
+   5
+  ],
+  [
+   "Brinjal bhurta",
+   [
+    127,
+    128
+   ],
+   22
+  ],
+  [
+   "Brinjal bharth",
+   [
+    57
+   ],
+   10
+  ],
+  [
+   "Brinjal sagle",
+   [
+    67
+   ],
+   12
+  ],
+  [
+   "Brinjal upkari",
+   [
+    37
+   ],
+   7
+  ],
+  [
+   "Buns",
+   [
+    112
+   ],
+   22
+  ],
+  [
+   "Burgar",
+   [
+    118
+   ],
+   22
+  ],
+  [
+   "Burfi, ash gourd",
+   [
+    148
+   ],
+   26
+  ],
+  [
+   "Burfi, besan",
+   [
+    146
+   ],
+   26
+  ],
+  [
+   "Burfi, cashewnut",
+   [
+    148
+   ],
+   26
+  ],
+  [
+   "Burfi, coconut",
+   [
+    145
+   ],
+   26
+  ],
+  [
+   "Burfi, five star",
+   [
+    147
+   ],
+   26
+  ],
+  [
+   "Burfi, rava",
+   [
+    146
+   ],
+   26
+  ],
+  [
+   "Burfi, seven star",
+   [
+    146
+   ],
+   26
+  ],
+  [
+   "Butter milk kadi",
+   [
+    16
+   ],
+   3
+  ],
+  [
+   "Cabbage bonda",
+   [
+    69
+   ],
+   13
+  ],
+  [
+   "Cabbage hasi",
+   [
+    30
+   ],
+   6
+  ],
+  [
+   "Capsicum pickle",
+   [
+    64
+   ],
+   11
+  ],
+  [
+   "Capsicum stuffed",
+   [
+    66
+   ],
+   12
+  ],
+  [
+   "Capsicum sukke",
+   [
+    54
+   ],
+   10
+  ],
+  [
+   "Carrot kosumbari",
+   [
+    31
+   ],
+   6
+  ],
+  [
+   "Carrot pudding",
+   [
+    86
+   ],
+   16
+  ],
+  [
+   "Cashewnut baje",
+   [
+    138
+   ],
+   24
+  ],
+  [
+   "Cashewnut thambude",
+   [
+    62
+   ],
+   11
+  ],
+  [
+   "Cauliflower pickle",
+   [
+    63
+   ],
+   11
+  ],
+  [
+   "Cauliflower special",
+   [
+    124
+   ],
+   22
+  ],
+  [
+   "Chana sukka",
+   [
+    120
+   ],
+   22
+  ],
+  [
+   "Chapathi",
+   [
+    110
+   ],
+   22
+  ],
+  [
+   "Chewda",
+   [
+    143
+   ],
+   25
+  ],
+  [
+   "Chips, banana",
+   [
+    139
+   ],
+   25
+  ],
+  [
+   "Chips, potato",
+   [
+    139
+   ],
+   25
+  ],
+  [
+   "Chitranna",
+   [
+    71
+   ],
+   14
+  ],
+  [
+   "Chocolate",
+   [
+    147
+   ],
+   26
+  ],
+  [
+   "Chole batura",
+   [
+    113
+   ],
+   22
+  ],
+  [
+   "Cochin masala",
+   [
+    48
+   ],
+   10
+  ],
+  [
+   "Coconut chutney",
+   [
+    27
+   ],
+   6
+  ],
+  [
+   "Coconut sannan",
+   [
+    45
+   ],
+   9
+  ],
+  [
+   "Coconut toffee",
+   [
+    145
+   ],
+   26
+  ],
+  [
+   "Colocasia root upkari",
+   [
+    39
+   ],
+   7
+  ],
+  [
+   "Coriander leaves chutney",
+   [
+    26
+   ],
+   6
+  ],
+  [
+   "Coriander leaves thambli",
+   [
+    18
+   ],
+   3
+  ],
+  [
+   "Cucumber-cowpea huli",
+   [
+    22
+   ],
+   4
+  ],
+  [
+   "Cucumber doddak",
+   [
+    108
+   ],
+   21
+  ],
+  [
+   "Cucumber mudde",
+   [
+    104
+   ],
+   20
+  ],
+  [
+   "Cumin - pepper kadi",
+   [
+    17
+   ],
+   3
+  ],
+  [
+   "Curds rice",
+   [
+    75
+   ],
+   14
+  ],
+  [
+   "Curry leaves chutney",
+   [
+    155
+   ],
+   27
+  ],
+  [
+   "Curry leaves saar",
+   [
+    8
+   ],
+   2
+  ],
+  [
+   "Cutlets",
+   [
+    106
+   ],
+   21
+  ],
+  [
+   "Cutlet, carrot",
+   [
+    107
+   ],
+   21
+  ],
+  [
+   "Cutlet, vegetale",
+   [
+    107
+   ],
+   21
+  ],
+  [
+   "Daal",
+   [
+    14
+   ],
+   2
+  ],
+  [
+   "Daali ambat",
+   [
+    49
+   ],
+   10
+  ],
+  [
+   "Daali thoi",
+   [
+    13
+   ],
+   2
+  ],
+  [
+   "Dailath sagle",
+   [
+    55
+   ],
+   10
+  ],
+  [
+   "Dangar",
+   [
+    70
+   ],
+   13
+  ],
+  [
+   "Date halva",
+   [
+    150
+   ],
+   26
+  ],
+  [
+   "Dhai kadi",
+   [
+    16
+   ],
+   3
+  ],
+  [
+   "Dhal palak",
+   [
+    14
+   ],
+   2
+  ],
+  [
+   "Dhal rasam",
+   [
+    10
+   ],
+   2
+  ],
+  [
+   "Dhal vadai",
+   [
+    135
+   ],
+   23
+  ],
+  [
+   "Dood paak",
+   [
+    81
+   ],
+   15
+  ],
+  [
+   "Dood peda",
+   [
+    152
+   ],
+   26
+  ],
+  [
+   "Dosai chutney",
+   [
+    26
+   ],
+   6
+  ],
+  [
+   "Drumstick fries",
+   [
+    68
+   ],
+   13
+  ],
+  [
+   "Drumstick leaves curry",
+   [
+    52
+   ],
+   10
+  ],
+  [
+   "Dudi sannan",
+   [
+    104
+   ],
+   20
+  ],
+  [
+   "Eriappe",
+   [
+    103
+   ],
+   20
+  ],
+  [
+   "Erriserry",
+   [
+    49
+   ],
+   10
+  ],
+  [
+   "Fenugreek leaves bhaji",
+   [
+    35
+   ],
+   7
+  ],
+  [
+   "Fruit juices",
+   [
+    163
+   ],
+   30
+  ],
+  [
+   "Fruit salad",
+   [
+    161
+   ],
+   30
+  ],
+  [
+   "Gajbaj ambat",
+   [
+    42
+   ],
+   8
+  ],
+  [
+   "Garden greens pachadi",
+   [
+    29
+   ],
+   6
+  ],
+  [
+   "Garden greens upkari",
+   [
+    34
+   ],
+   7
+  ],
+  [
+   "Garlic chutney",
+   [
+    28
+   ],
+   6
+  ],
+  [
+   "Garlic chutney (dry)",
+   [
+    156
+   ],
+   27
+  ],
+  [
+   "Garlic pickles",
+   [
+    157
+   ],
+   28
+  ],
+  [
+   "Garlic potato",
+   [
+    59
+   ],
+   10
+  ],
+  [
+   "Ghee rice",
+   [
+    74
+   ],
+   14
+  ],
+  [
+   "Gherkins thalasan",
+   [
+    40
+   ],
+   7
+  ],
+  [
+   "Ghushi pathravade",
+   [
+    44
+   ],
+   9
+  ],
+  [
+   "Ginger chutney",
+   [
+    27
+   ],
+   6
+  ],
+  [
+   "Ginger-jaggery panak",
+   [
+    162
+   ],
+   30
+  ],
+  [
+   "Ginger pachadi",
+   [
+    29
+   ],
+   6
+  ],
+  [
+   "Golgappa",
+   [
+    114
+   ],
+   22
+  ],
+  [
+   "Gobi masala",
+   [
+    126
+   ],
+   22
+  ],
+  [
+   "Gobi matar",
+   [
+    125
+   ],
+   22
+  ],
+  [
+   "Gooseberry murabba",
+   [
+    164
+   ],
+   30
+  ],
+  [
+   "Green chilli pickles",
+   [
+    157
+   ],
+   28
+  ],
+  [
+   "Green chutney",
+   [
+    27
+   ],
+   6
+  ],
+  [
+   "Green gram dhal usli",
+   [
+    91
+   ],
+   17
+  ],
+  [
+   "Green gram dosai",
+   [
+    101
+   ],
+   19
+  ],
+  [
+   "Gulab jamun",
+   [
+    152
+   ],
+   26
+  ],
+  [
+   "Guava juice",
+   [
+    163
+   ],
+   30
+  ],
+  [
+   "Halva, ash gourd",
+   [
+    148
+   ],
+   26
+  ],
+  [
+   "Halva, banana",
+   [
+    150
+   ],
+   26
+  ],
+  [
+   "Halva, bottle gourd",
+   [
+    148
+   ],
+   26
+  ],
+  [
+   "Halva, carrot",
+   [
+    149
+   ],
+   26
+  ],
+  [
+   "Halva, plantain",
+   [
+    150
+   ],
+   26
+  ],
+  [
+   "Halva, wheat",
+   [
+    149
+   ],
+   26
+  ],
+  [
+   "Hayagreeva",
+   [
+    82
+   ],
+   15
+  ],
+  [
+   "Horse gram doddak",
+   [
+    95
+   ],
+   18
+  ],
+  [
+   "Horse gram idli",
+   [
+    95
+   ],
+   18
+  ],
+  [
+   "Horse gram kadi/saar",
+   [
+    8
+   ],
+   2
+  ],
+  [
+   "Horse gram koddel",
+   [
+    53
+   ],
+   10
+  ],
+  [
+   "Horse gram upkari",
+   [
+    8
+   ],
+   2
+  ],
+  [
+   "Ice cream",
+   [
+    161
+   ],
+   30
+  ],
+  [
+   "Idiappam",
+   [
+    97
+   ],
+   18
+  ],
+  [
+   "Idli, plain",
+   [
+    94
+   ],
+   18
+  ],
+  [
+   "Idli, sweet",
+   [
+    104
+   ],
+   20
+  ],
+  [
+   "Jack fruit payasam",
+   [
+    82
+   ],
+   15
+  ],
+  [
+   "Jam, gooseberry",
+   [
+    164
+   ],
+   30
+  ],
+  [
+   "Jam, mango",
+   [
+    163
+   ],
+   30
+  ],
+  [
+   "Jam, tomato",
+   [
+    163
+   ],
+   30
+  ],
+  [
+   "Jeera rice",
+   [
+    79
+   ],
+   14
+  ],
+  [
+   "Jilebi",
+   [
+    153
+   ],
+   26
+  ],
+  [
+   "Kadai paneer",
+   [
+    126
+   ],
+   22
+  ],
+  [
+   "Kalan",
+   [
+    48
+   ],
+   10
+  ],
+  [
+   "Kanahindri",
+   [
+    86
+   ],
+   16
+  ],
+  [
+   "Kanchipuram idli",
+   [
+    95
+   ],
+   18
+  ],
+  [
+   "Kela masala",
+   [
+    59
+   ],
+   10
+  ],
+  [
+   "Kesar bhath",
+   [
+    86
+   ],
+   16
+  ],
+  [
+   "Kharbuza rasayan",
+   [
+    85
+   ],
+   16
+  ],
+  [
+   "Kheer, white",
+   [
+    84
+   ],
+   15
+  ],
+  [
+   "Khotte",
+   [
+    94
+   ],
+   18
+  ],
+  [
+   "Kichidi",
+   [
+    88
+   ],
+   16
+  ],
+  [
+   "Kodbale",
+   [
+    141
+   ],
+   25
+  ],
+  [
+   "Kokum saar",
+   [
+    9
+   ],
+   2
+  ],
+  [
+   "Kolambu, arachi",
+   [
+    21
+   ],
+   4
+  ],
+  [
+   "Kolambu, goddu",
+   [
+    20
+   ],
+   4
+  ],
+  [
+   "Kolambu, vertal",
+   [
+    20
+   ],
+   4
+  ],
+  [
+   "Kootu",
+   [
+    51
+   ],
+   10
+  ],
+  [
+   "Kurma",
+   [
+    121
+   ],
+   22
+  ],
+  [
+   "Kurma, navaratna",
+   [
+    122
+   ],
+   22
+  ],
+  [
+   "Kurma, vegetable",
+   [
+    121
+   ],
+   22
+  ],
+  [
+   "Laddu, besan",
+   [
+    144
+   ],
+   26
+  ],
+  [
+   "Laddu, churmi",
+   [
+    144
+   ],
+   26
+  ],
+  [
+   "Laddu, sev",
+   [
+    144
+   ],
+   26
+  ],
+  [
+   "Laddu, thil",
+   [
+    145
+   ],
+   26
+  ],
+  [
+   "Lady's finger (okru) baje",
+   [
+    138
+   ],
+   24
+  ],
+  [
+   "Lady's finger gozzu",
+   [
+    24
+   ],
+   5
+  ],
+  [
+   "Lady's finger, stuffed",
+   [
+    66
+   ],
+   12
+  ],
+  [
+   "Lemon gozzu",
+   [
+    23
+   ],
+   5
+  ],
+  [
+   "Lemon sherbet",
+   [
+    162
+   ],
+   30
+  ],
+  [
+   "Lime and ginger syrup",
+   [
+    162
+   ],
+   30
+  ],
+  [
+   "Lime pickles",
+   [
+    157
+   ],
+   28
+  ],
+  [
+   "Lime salted",
+   [
+    157
+   ],
+   28
+  ],
+  [
+   "Maddur vadai",
+   [
+    136
+   ],
+   23
+  ],
+  [
+   "Madgane",
+   [
+    82
+   ],
+   15
+  ],
+  [
+   "Maida dosai",
+   [
+    98
+   ],
+   19
+  ],
+  [
+   "Majjige huli",
+   [
+    22
+   ],
+   4
+  ],
+  [
+   "Malai kofta",
+   [
+    131
+   ],
+   22
+  ],
+  [
+   "Malpuri",
+   [
+    151
+   ],
+   26
+  ],
+  [
+   "Manchuri, baby corn",
+   [
+    130
+   ],
+   22
+  ],
+  [
+   "Manchuri, gobi",
+   [
+    131
+   ],
+   22
+  ],
+  [
+   "Manchuri, palak",
+   [
+    130
+   ],
+   22
+  ],
+  [
+   "Mando",
+   [
+    89
+   ],
+   16
+  ],
+  [
+   "Mangalore bonda",
+   [
+    134
+   ],
+   23
+  ],
+  [
+   "Mango murabba",
+   [
+    164
+   ],
+   30
+  ],
+  [
+   "Mango pachadi",
+   [
+    29
+   ],
+   6
+  ],
+  [
+   "Mango pineapple saasam",
+   [
+    57
+   ],
+   10
+  ],
+  [
+   "Mango rasayan",
+   [
+    85
+   ],
+   16
+  ],
+  [
+   "Mango upkari",
+   [
+    39
+   ],
+   7
+  ],
+  [
+   "Masala butter milk",
+   [
+    17
+   ],
+   3
+  ],
+  [
+   "Masal dosai",
+   [
+    99
+   ],
+   19
+  ],
+  [
+   "Masal idli",
+   [
+    96
+   ],
+   18
+  ],
+  [
+   "Masal puri",
+   [
+    116
+   ],
+   22
+  ],
+  [
+   "Masal vadai",
+   [
+    135
+   ],
+   23
+  ],
+  [
+   "Matar misli",
+   [
+    60
+   ],
+   10
+  ],
+  [
+   "Matar paneer",
+   [
+    124
+   ],
+   22
+  ],
+  [
+   "Matar paneer masala",
+   [
+    125
+   ],
+   22
+  ],
+  [
+   "Matar mushroom",
+   [
+    129
+   ],
+   22
+  ],
+  [
+   "Menskai",
+   [
+    65
+   ],
+   11
+  ],
+  [
+   "Methi alu matar",
+   [
+    61
+   ],
+   10
+  ],
+  [
+   "Methi dosai",
+   [
+    101
+   ],
+   19
+  ],
+  [
+   "Mixed veg. soup",
+   [
+    12
+   ],
+   2
+  ],
+  [
+   "Modak",
+   [
+    6
+   ],
+   1
+  ],
+  [
+   "Molaga podi",
+   [
+    156
+   ],
+   27
+  ],
+  [
+   "Moru kolambu",
+   [
+    21
+   ],
+   4
+  ],
+  [
+   "Murku, 4 flour",
+   [
+    143
+   ],
+   25
+  ],
+  [
+   "Murku, maida",
+   [
+    142
+   ],
+   25
+  ],
+  [
+   "Murku, potato",
+   [
+    143
+   ],
+   25
+  ],
+  [
+   "Murku, rice",
+   [
+    142
+   ],
+   25
+  ],
+  [
+   "Mushroom chutput",
+   [
+    128
+   ],
+   22
+  ],
+  [
+   "Mushroom soup",
+   [
+    13
+   ],
+   2
+  ],
+  [
+   "Musti dosai",
+   [
+    99
+   ],
+   19
+  ],
+  [
+   "Mysore paak",
+   [
+    151
+   ],
+   26
+  ],
+  [
+   "Naan",
+   [
+    112
+   ],
+   22
+  ],
+  [
+   "Nevri",
+   [
+    6
+   ],
+   1
+  ],
+  [
+   "Nippat",
+   [
+    139
+   ],
+   25
+  ],
+  [
+   "Obbattu",
+   [
+    88
+   ],
+   16
+  ],
+  [
+   "Olan",
+   [
+    49
+   ],
+   10
+  ],
+  [
+   "Onion Chutney",
+   [
+    28
+   ],
+   6
+  ],
+  [
+   "Onion gozzu",
+   [
+    24
+   ],
+   5
+  ],
+  [
+   "Onion Kolambu",
+   [
+    19
+   ],
+   4
+  ],
+  [
+   "Onion thambli",
+   [
+    18
+   ],
+   3
+  ],
+  [
+   "Oothappa",
+   [
+    100
+   ],
+   19
+  ],
+  [
+   "Orange/Cola",
+   [
+    161
+   ],
+   30
+  ],
+  [
+   "Paal poli",
+   [
+    85
+   ],
+   16
+  ],
+  [
+   "Paan patholi",
+   [
+    105
+   ],
+   20
+  ],
+  [
+   "Pakodi pachadi",
+   [
+    24
+   ],
+   5
+  ],
+  [
+   "Pakora",
+   [
+    137
+   ],
+   24
+  ],
+  [
+   "Palappam",
+   [
+    101
+   ],
+   19
+  ],
+  [
+   "Palak Daal",
+   [
+    14
+   ],
+   2
+  ],
+  [
+   "Palak paneer",
+   [
+    127
+   ],
+   22
+  ],
+  [
+   "Palak rice",
+   [
+    78
+   ],
+   14
+  ],
+  [
+   "Panchakajjai",
+   [
+    7
+   ],
+   1
+  ],
+  [
+   "Panchakajjai bengal gram",
+   [
+    7
+   ],
+   1
+  ],
+  [
+   "Panchakajjai, ganahoma",
+   [
+    7
+   ],
+   1
+  ],
+  [
+   "Panchavati",
+   [
+    15
+   ],
+   2
+  ],
+  [
+   "Paneer masala",
+   [
+    124
+   ],
+   22
+  ],
+  [
+   "Pani",
+   [
+    115
+   ],
+   22
+  ],
+  [
+   "Pani puri",
+   [
+    115
+   ],
+   22
+  ],
+  [
+   "Panpolo",
+   [
+    98
+   ],
+   19
+  ],
+  [
+   "Papad, potato",
+   [
+    159
+   ],
+   29
+  ],
+  [
+   "Papad, tapioca",
+   [
+    159
+   ],
+   29
+  ],
+  [
+   "Paratha",
+   [
+    110
+   ],
+   22
+  ],
+  [
+   "Paratha, cauliflower",
+   [
+    111
+   ],
+   22
+  ],
+  [
+   "Paratha, green peas",
+   [
+    111
+   ],
+   22
+  ],
+  [
+   "Paratha, paneer",
+   [
+    111
+   ],
+   22
+  ],
+  [
+   "Parpu podi",
+   [
+    156
+   ],
+   27
+  ],
+  [
+   "Pathravade",
+   [
+    44
+   ],
+   9
+  ],
+  [
+   "Pathravade, roasted",
+   [
+    45
+   ],
+   9
+  ],
+  [
+   "Pathravade, usli",
+   [
+    46
+   ],
+   9
+  ],
+  [
+   "Patties",
+   [
+    108
+   ],
+   21
+  ],
+  [
+   "Pav bhaji",
+   [
+    114
+   ],
+   22
+  ],
+  [
+   "Pea nut baje",
+   [
+    138
+   ],
+   24
+  ],
+  [
+   "Pea nut chikki",
+   [
+    147
+   ],
+   26
+  ],
+  [
+   "Pepper idli",
+   [
+    96
+   ],
+   18
+  ],
+  [
+   "Pepper rasam",
+   [
+    11
+   ],
+   2
+  ],
+  [
+   "Pesarat dosai",
+   [
+    102
+   ],
+   19
+  ],
+  [
+   "Phenori",
+   [
+    150
+   ],
+   26
+  ],
+  [
+   "Phodis",
+   [
+    68
+   ],
+   13
+  ],
+  [
+   "Phova (beaten rice) kheer",
+   [
+    83
+   ],
+   15
+  ],
+  [
+   "Pizza",
+   [
+    117
+   ],
+   22
+  ],
+  [
+   "Plantain pith hasi",
+   [
+    30
+   ],
+   6
+  ],
+  [
+   "Pongal, sakkarai",
+   [
+    71
+   ],
+   14
+  ],
+  [
+   "Potato bhaji",
+   [
+    113
+   ],
+   22
+  ],
+  [
+   "Potato bharth",
+   [
+    56
+   ],
+   10
+  ],
+  [
+   "Potato fried upkari",
+   [
+    35
+   ],
+   7
+  ],
+  [
+   "Potato gozzu",
+   [
+    23
+   ],
+   5
+  ],
+  [
+   "Potato humman",
+   [
+    58
+   ],
+   10
+  ],
+  [
+   "Potato masiyal",
+   [
+    50
+   ],
+   10
+  ],
+  [
+   "Potato song",
+   [
+    55
+   ],
+   10
+  ],
+  [
+   "Potato soup",
+   [
+    11,
+    12
+   ],
+   2
+  ],
+  [
+   "Potato sukke",
+   [
+    54
+   ],
+   10
+  ],
+  [
+   "Potato thoi",
+   [
+    13
+   ],
+   2
+  ],
+  [
+   "Powder, garam masala",
+   [
+    154
+   ],
+   27
+  ],
+  [
+   "Powder, huli",
+   [
+    155
+   ],
+   27
+  ],
+  [
+   "Powder, Madras rasam",
+   [
+    155
+   ],
+   27
+  ],
+  [
+   "Powder, Mysore rasam",
+   [
+    155
+   ],
+   27
+  ],
+  [
+   "Powder, sambar",
+   [
+    154
+   ],
+   27
+  ],
+  [
+   "Pulav",
+   [
+    76
+   ],
+   14
+  ],
+  [
+   "Pulav, carrot",
+   [
+    77
+   ],
+   14
+  ],
+  [
+   "Pulav, naivedya",
+   [
+    76
+   ],
+   14
+  ],
+  [
+   "Pulav, vegetable",
+   [
+    77
+   ],
+   14
+  ],
+  [
+   "Puli koddel",
+   [
+    53
+   ],
+   10
+  ],
+  [
+   "Puliyam sadam",
+   [
+    73
+   ],
+   14
+  ],
+  [
+   "Puliyogare mix",
+   [
+    74
+   ],
+   14
+  ],
+  [
+   "Pulka",
+   [
+    110
+   ],
+   22
+  ],
+  [
+   "Pulses upkari",
+   [
+    33
+   ],
+   7
+  ],
+  [
+   "Pumpkin core thambli",
+   [
+    18
+   ],
+   3
+  ],
+  [
+   "Pumpkin flower fries",
+   [
+    68
+   ],
+   13
+  ],
+  [
+   "Puri",
+   [
+    109
+   ],
+   22
+  ],
+  [
+   "Radish bonda",
+   [
+    69
+   ],
+   13
+  ],
+  [
+   "Radish leaf bonda",
+   [
+    69
+   ],
+   13
+  ],
+  [
+   "Radish thalasana",
+   [
+    41
+   ],
+   7
+  ],
+  [
+   "Ragda",
+   [
+    120
+   ],
+   22
+  ],
+  [
+   "Ragi duddali",
+   [
+    87
+   ],
+   16
+  ],
+  [
+   "Rajastani bhindi",
+   [
+    70
+   ],
+   13
+  ],
+  [
+   "Rava bhakri",
+   [
+    106
+   ],
+   21
+  ],
+  [
+   "Rava dosai",
+   [
+    98
+   ],
+   19
+  ],
+  [
+   "Rava idli",
+   [
+    94
+   ],
+   18
+  ],
+  [
+   "Rava kheer",
+   [
+    83
+   ],
+   15
+  ],
+  [
+   "Raw banana bonda",
+   [
+    70
+   ],
+   13
+  ],
+  [
+   "Raw mango pachadi",
+   [
+    29
+   ],
+   6
+  ],
+  [
+   "Rice payasam",
+   [
+    81
+   ],
+   15
+  ],
+  [
+   "Rice roti",
+   [
+    106
+   ],
+   21
+  ],
+  [
+   "Ridge gourd skin chutney",
+   [
+    28,
+    29
+   ],
+   6
+  ],
+  [
+   "Saar powder",
+   [
+    154
+   ],
+   27
+  ],
+  [
+   "Saar cum upkari",
+   [
+    33
+   ],
+   7
+  ],
+  [
+   "Saat",
+   [
+    152
+   ],
+   26
+  ],
+  [
+   "Sada (plain) dosai",
+   [
+    99
+   ],
+   19
+  ],
+  [
+   "Sago dood paak",
+   [
+    81
+   ],
+   15
+  ],
+  [
+   "Sagu",
+   [
+    122
+   ],
+   22
+  ],
+  [
+   "Sambar",
+   [
+    19
+   ],
+   4
+  ],
+  [
+   "Samosa",
+   [
+    137
+   ],
+   24
+  ],
+  [
+   "Sandwiches",
+   [
+    91
+   ],
+   17
+  ],
+  [
+   "Sanna khotto",
+   [
+    45
+   ],
+   9
+  ],
+  [
+   "Sanna polo",
+   [
+    46
+   ],
+   9
+  ],
+  [
+   "Sapada bhakshya",
+   [
+    6
+   ],
+   1
+  ],
+  [
+   "Semia kheer",
+   [
+    83,
+    84
+   ],
+   15
+  ],
+  [
+   "Semia usli",
+   [
+    97
+   ],
+   18
+  ],
+  [
+   "Semia",
+   [
+    160
+   ],
+   29
+  ],
+  [
+   "Sev (Ompudi)",
+   [
+    140
+   ],
+   25
+  ],
+  [
+   "Sev, khara",
+   [
+    140
+   ],
+   25
+  ],
+  [
+   "Sev Puri",
+   [
+    116
+   ],
+   22
+  ],
+  [
+   "Sheera",
+   [
+    149
+   ],
+   26
+  ],
+  [
+   "Snake gourd seed sanna polo",
+   [
+    46
+   ],
+   9
+  ],
+  [
+   "Snake gourd, stuffed",
+   [
+    67
+   ],
+   12
+  ],
+  [
+   "Soomali",
+   [
+    100
+   ],
+   19
+  ],
+  [
+   "Soomali, ash gourd",
+   [
+    100
+   ],
+   19
+  ],
+  [
+   "Soomali, coconut",
+   [
+    100
+   ],
+   19
+  ],
+  [
+   "Soomali, cucumber",
+   [
+    100
+   ],
+   19
+  ],
+  [
+   "Soomali, sweet",
+   [
+    100
+   ],
+   19
+  ],
+  [
+   "Spinach bendi",
+   [
+    55
+   ],
+   10
+  ],
+  [
+   "Spinach papaya ambat",
+   [
+    51
+   ],
+   10
+  ],
+  [
+   "Sprouted green gram kosumbari",
+   [
+    31
+   ],
+   6
+  ],
+  [
+   "Stew",
+   [
+    118
+   ],
+   22
+  ],
+  [
+   "Sukdi",
+   [
+    144
+   ],
+   26
+  ],
+  [
+   "Sukian",
+   [
+    89
+   ],
+   16
+  ],
+  [
+   "Sukrunda",
+   [
+    6
+   ],
+   1
+  ],
+  [
+   "Sundal",
+   [
+    40
+   ],
+   7
+  ],
+  [
+   "Suran koot",
+   [
+    65
+   ],
+   11
+  ],
+  [
+   "Sweet and savoury chutney",
+   [
+    115
+   ],
+   22
+  ],
+  [
+   "Sweet and sour gozzu",
+   [
+    23
+   ],
+   5
+  ],
+  [
+   "Tapioca vadai",
+   [
+    135
+   ],
+   23
+  ],
+  [
+   "Tamarind saar",
+   [
+    9
+   ],
+   2
+  ],
+  [
+   "Tender cashewnut upkari",
+   [
+    39
+   ],
+   7
+  ],
+  [
+   "Tender cucumber hulel",
+   [
+    30
+   ],
+   6
+  ],
+  [
+   "Tender cucumber saasam",
+   [
+    58
+   ],
+   10
+  ],
+  [
+   "Tender jack chakko",
+   [
+    56
+   ],
+   10
+  ],
+  [
+   "Tender shoots thambli",
+   [
+    17
+   ],
+   3
+  ],
+  [
+   "Tender thur upkari",
+   [
+    34
+   ],
+   7
+  ],
+  [
+   "Thakka ambat",
+   [
+    42
+   ],
+   8
+  ],
+  [
+   "Thambude",
+   [
+    62
+   ],
+   11
+  ],
+  [
+   "Thayir vadai",
+   [
+    136
+   ],
+   23
+  ],
+  [
+   "Thinglad",
+   [
+    142
+   ],
+   25
+  ],
+  [
+   "Thousali",
+   [
+    108
+   ],
+   21
+  ],
+  [
+   "Thukdi, biscuit",
+   [
+    141
+   ],
+   25
+  ],
+  [
+   "Thukdi, savoury",
+   [
+    141
+   ],
+   25
+  ],
+  [
+   "Tomato bhath",
+   [
+    73
+   ],
+   14
+  ],
+  [
+   "Tomato chutney",
+   [
+    26
+   ],
+   6
+  ],
+  [
+   "Tomato rasam",
+   [
+    10
+   ],
+   2
+  ],
+  [
+   "Tomato salad",
+   [
+    25
+   ],
+   5
+  ],
+  [
+   "Tomato soup",
+   [
+    12
+   ],
+   2
+  ],
+  [
+   "Tomato sauce - hot and sweet",
+   [
+    165
+   ],
+   30
+  ],
+  [
+   "Tomato squash",
+   [
+    165
+   ],
+   30
+  ],
+  [
+   "Twelve in one chutney",
+   [
+    138
+   ],
+   24
+  ],
+  [
+   "Upmav",
+   [
+    90
+   ],
+   17
+  ],
+  [
+   "Undi, rice",
+   [
+    96
+   ],
+   18
+  ],
+  [
+   "Ussal",
+   [
+    119
+   ],
+   22
+  ],
+  [
+   "Vaag",
+   [
+    62
+   ],
+   11
+  ],
+  [
+   "Vaangibhath",
+   [
+    90
+   ],
+   17
+  ],
+  [
+   "Vadi, ash gourd",
+   [
+    160
+   ],
+   29
+  ],
+  [
+   "Vadi, black gram",
+   [
+    160
+   ],
+   29
+  ],
+  [
+   "Vadi, garlic",
+   [
+    160
+   ],
+   29
+  ],
+  [
+   "Vadi, onion",
+   [
+    160
+   ],
+   29
+  ],
+  [
+   "Vegetable curd bath",
+   [
+    75
+   ],
+   14
+  ],
+  [
+   "Vegetable fried rice",
+   [
+    78
+   ],
+   14
+  ],
+  [
+   "Vegetable idli",
+   [
+    96
+   ],
+   18
+  ],
+  [
+   "Vegetable upkari",
+   [
+    34
+   ],
+   7
+  ],
+  [
+   "Venn pongal",
+   [
+    72
+   ],
+   14
+  ],
+  [
+   "Vern",
+   [
+    15
+   ],
+   2
+  ],
+  [
+   "Wheat payasam",
+   [
+    81
+   ],
+   15
+  ],
+  [
+   "Yogirathna",
+   [
+    42
+   ],
+   8
+  ]
+ ]
+}

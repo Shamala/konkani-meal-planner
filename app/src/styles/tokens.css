@@ -1,0 +1,64 @@
+/*
+ * Semantic layer only (Token Forge, two-layer model). Values are DESIGN.md 2.2 and 2.6.
+ * Screens and components reference these names and never a hex.
+ *
+ * NOT DEFINED by DESIGN.md, deliberately left unset rather than invented (see COMPONENTS.md 1, 7.6, 7.7):
+ *   --border-focus                       light and dark
+ *   --action-primary-hover               light and dark (the mocks hover to #134e4a; not a stated token)
+ *   --action-secondary                   this project's secondary button is an outline, not a fill
+ *   --fg-subtle, --border-default, --border-strong, --status-success   dark values
+ *   --status-warning, --status-danger, --status-info   nothing in this app is a warning, error or alert
+ */
+:root {
+  --bg-canvas: #e2e8f0;
+  --bg-surface: #ffffff;
+  --bg-sunken: #f1f5f9;
+  --fg-default: #0f172a;
+  --fg-muted: #334155;
+  --fg-subtle: #475569; /* surface only; never on the canvas */
+  --fg-on-accent: #ffffff;
+  --action-primary: #115e59;
+  --border-default: #cbd5e1;
+  --border-strong: #64748b;
+  --status-success: #15803d;
+
+  --radius-control: 12px;
+  --density-scale: 1.15;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'SF Pro Text', Inter, sans-serif;
+
+  --target-row: 56px;
+  --target-icon: 48px;
+  --text-floor: 15px; /* nothing renders below this */
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg-canvas: #020617;
+    --bg-surface: #0f172a;
+    --bg-sunken: #1e293b;
+    --fg-default: #f8fafc;
+    --fg-muted: #cbd5e1;
+    --action-primary: #5eead4;
+    --fg-on-accent: #020617;
+  }
+}
+
+:root[data-theme='dark'] {
+  --bg-canvas: #020617;
+  --bg-surface: #0f172a;
+  --bg-sunken: #1e293b;
+  --fg-default: #f8fafc;
+  --fg-muted: #cbd5e1;
+  --action-primary: #5eead4;
+  --fg-on-accent: #020617;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-canvas);
+  color: var(--fg-default);
+  font-family: var(--font-ui);
+  font-size: 17px;
+}

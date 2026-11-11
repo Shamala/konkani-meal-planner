@@ -1,0 +1,11 @@
+.DS_Store
+node_modules
+dist
+*.local
+.claude/
+# The cookbook and scans of its pages are copyrighted and large; never published.
+/jayavshenoy_gsb_cook_book.pdf
+/extraction/pages/
+/extraction/glossary/
+# Earlier design PDFs, not reviewed for publication
+/archive/*.pdf

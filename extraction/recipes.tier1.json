@@ -1,0 +1,3676 @@
+{
+  "_meta": {
+    "status": "DRAFT tier 1. Names, printed pages and sections are proof-read against the index. Roles, slots and ids are DERIVED by rule (see ROLE-MAP.md). 12 recipes carry a season tag, confirmed by the owner 2026-11-11.",
+    "schemaNotes": [
+      "alsoOnPages is not in the Recipe type: five dishes span two printed pages and the type has one page. See ROLE-MAP.md open items.",
+      "kannadaName absent everywhere: the glossary lists foodstuffs, not dish names. See ROLE-MAP.md."
+    ],
+    "idRule": "lowercase name, runs of non-alphanumerics become one hyphen, trimmed. Never reuse an id once shipped."
+  },
+  "recipes": [
+    {
+      "id": "adai",
+      "name": "Adai",
+      "role": "dosai-varieties",
+      "section": 19,
+      "page": 102,
+      "slots": []
+    },
+    {
+      "id": "adgai",
+      "name": "Adgai",
+      "role": "pickle-type-curries",
+      "section": 11,
+      "page": 64,
+      "slots": []
+    },
+    {
+      "id": "alambe-ambat",
+      "name": "Alambe ambat",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 51,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "alambe-buthi",
+      "name": "Alambe buthi",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 52,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "alambe-phanna-upkari",
+      "name": "Alambe Phanna upkari",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 38,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "alu-bonda",
+      "name": "Alu bonda",
+      "role": "bondas-vadais",
+      "section": 23,
+      "page": 133,
+      "slots": []
+    },
+    {
+      "id": "alu-dum",
+      "name": "Alu dum",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 123,
+      "slots": []
+    },
+    {
+      "id": "alu-fry",
+      "name": "Alu fry",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 35,
+      "slots": [
+        "main"
+      ],
+      "alsoOnPages": [
+        36
+      ]
+    },
+    {
+      "id": "alu-gobi",
+      "name": "Alu gobi",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 36,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "alu-jeera",
+      "name": "Alu jeera",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 37,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "alu-matar",
+      "name": "Alu matar",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 123,
+      "slots": []
+    },
+    {
+      "id": "alu-methi",
+      "name": "Alu methi",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 37,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "alu-palak",
+      "name": "Alu palak",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 36,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "alu-paratha",
+      "name": "Alu paratha",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 110,
+      "slots": []
+    },
+    {
+      "id": "alwathi",
+      "name": "Alwathi",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 50,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "appe",
+      "name": "Appe",
+      "role": "appe-mudde-patholi",
+      "section": 20,
+      "page": 103,
+      "slots": []
+    },
+    {
+      "id": "arrowroot-duddali",
+      "name": "Arrowroot duddali",
+      "role": "sweet-dishes",
+      "section": 16,
+      "page": 88,
+      "slots": []
+    },
+    {
+      "id": "arvi-roots-humman",
+      "name": "Arvi roots humman",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 58,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "ash-gourd-saasam",
+      "name": "Ash gourd saasam",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 57,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "avial",
+      "name": "Avial",
+      "role": "mixed-vegetable-curries",
+      "section": 8,
+      "page": 43,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "awakkai",
+      "name": "Awakkai",
+      "role": "pickles",
+      "section": 28,
+      "page": 158,
+      "slots": []
+    },
+    {
+      "id": "baby-corn-carrot-curry",
+      "name": "Baby corn carrot curry",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 129,
+      "slots": []
+    },
+    {
+      "id": "bakala-bhath",
+      "name": "Bakala bhath",
+      "role": "breakfast-dishes",
+      "section": 17,
+      "page": 92,
+      "slots": []
+    },
+    {
+      "id": "bajes",
+      "name": "Bajes",
+      "role": "bajes-pakora-samosa",
+      "section": 24,
+      "page": 137,
+      "slots": []
+    },
+    {
+      "id": "banana-gozzu",
+      "name": "Banana gozzu",
+      "role": "gozzus-salads",
+      "section": 5,
+      "page": 24,
+      "slots": []
+    },
+    {
+      "id": "banana-pudding",
+      "name": "Banana pudding",
+      "role": "sweet-dishes",
+      "section": 16,
+      "page": 87,
+      "slots": []
+    },
+    {
+      "id": "banana-relish-fried",
+      "name": "Banana relish, fried",
+      "role": "sweet-dishes",
+      "section": 16,
+      "page": 87,
+      "slots": []
+    },
+    {
+      "id": "banana-saasam",
+      "name": "Banana saasam",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 58,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "batani-bendi",
+      "name": "Batani bendi",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 60,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "batat-phov",
+      "name": "Batat phov",
+      "role": "breakfast-dishes",
+      "section": 17,
+      "page": 93,
+      "slots": []
+    },
+    {
+      "id": "bendikai-kolambu",
+      "name": "Bendikai kolambu",
+      "role": "sambars-kolambus-hulis",
+      "section": 4,
+      "page": 20,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "bengal-gram-ghushi",
+      "name": "Bengal gram ghushi",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 47,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "bengal-gram-sukke",
+      "name": "Bengal gram sukke",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 54,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "bengal-gram-suran",
+      "name": "Bengal gram suran",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 48,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "bengali-kichidi",
+      "name": "Bengali kichidi",
+      "role": "rice-dishes",
+      "section": 14,
+      "page": 80,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "beans-curry",
+      "name": "Beans curry",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 40,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "beans-menthekai",
+      "name": "Beans menthekai",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 59,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "beaten-rice-chutney",
+      "name": "Beaten rice chutney",
+      "role": "breakfast-dishes",
+      "section": 17,
+      "page": 93,
+      "slots": []
+    },
+    {
+      "id": "beaten-rice-pachadi",
+      "name": "Beaten rice pachadi",
+      "role": "breakfast-dishes",
+      "section": 17,
+      "page": 92,
+      "slots": []
+    },
+    {
+      "id": "beaten-rice-usli",
+      "name": "Beaten rice usli",
+      "role": "breakfast-dishes",
+      "section": 17,
+      "page": 93,
+      "slots": []
+    },
+    {
+      "id": "bhel-puri",
+      "name": "Bhel puri",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 116,
+      "slots": []
+    },
+    {
+      "id": "bhindi",
+      "name": "Bhindi",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 38,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "bhuri-saar",
+      "name": "Bhuri saar",
+      "role": "saars-rasams-soups",
+      "section": 2,
+      "page": 10,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "biscuit-puri",
+      "name": "Biscuit puri",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 109,
+      "slots": []
+    },
+    {
+      "id": "bisibele-bhath",
+      "name": "Bisibele bhath",
+      "role": "rice-dishes",
+      "section": 14,
+      "page": 72,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "bitter-gourd-bits",
+      "name": "Bitter gourd bits",
+      "role": "pickle-type-curries",
+      "section": 11,
+      "page": 64,
+      "slots": []
+    },
+    {
+      "id": "bitter-gourd-buthi",
+      "name": "Bitter gourd buthi",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 52,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "bitter-gourd-fries",
+      "name": "Bitter gourd fries",
+      "role": "fried-dishes",
+      "section": 13,
+      "page": 68,
+      "slots": []
+    },
+    {
+      "id": "bitter-gourd-gunu",
+      "name": "Bitter gourd gunu",
+      "role": "mixed-vegetable-curries",
+      "section": 8,
+      "page": 43,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "bitter-gourd-kosumbari",
+      "name": "Bitter gourd kosumbari",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 32,
+      "slots": []
+    },
+    {
+      "id": "bitter-gourd-pickle",
+      "name": "Bitter gourd pickle",
+      "role": "pickle-type-curries",
+      "section": 11,
+      "page": 63,
+      "slots": []
+    },
+    {
+      "id": "bitter-gourd-rings",
+      "name": "Bitter gourd rings",
+      "role": "fried-dishes",
+      "section": 13,
+      "page": 68,
+      "slots": []
+    },
+    {
+      "id": "black-gram-bonda",
+      "name": "Black gram bonda",
+      "role": "bondas-vadais",
+      "section": 23,
+      "page": 134,
+      "slots": []
+    },
+    {
+      "id": "bombay-toast",
+      "name": "Bombay toast",
+      "role": "breakfast-dishes",
+      "section": 17,
+      "page": 91,
+      "slots": []
+    },
+    {
+      "id": "brahmi-leaf-chutney",
+      "name": "Brahmi leaf chutney",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 27,
+      "slots": []
+    },
+    {
+      "id": "bread-bonda",
+      "name": "Bread bonda",
+      "role": "bondas-vadais",
+      "section": 23,
+      "page": 134,
+      "slots": []
+    },
+    {
+      "id": "bread-fruit-ghushi",
+      "name": "Bread fruit ghushi",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 47,
+      "slots": [
+        "main"
+      ],
+      "season": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "bread-rolls",
+      "name": "Bread rolls",
+      "role": "breakfast-dishes",
+      "section": 17,
+      "page": 92,
+      "slots": []
+    },
+    {
+      "id": "brinda-fruit-drink",
+      "name": "Brinda fruit drink",
+      "role": "fruit-salad-juices-jams-sauce",
+      "section": 30,
+      "page": 162,
+      "slots": []
+    },
+    {
+      "id": "brinjal-bajji",
+      "name": "Brinjal bajji",
+      "role": "gozzus-salads",
+      "section": 5,
+      "page": 23,
+      "slots": []
+    },
+    {
+      "id": "brinjal-bhurta",
+      "name": "Brinjal bhurta",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 127,
+      "slots": [],
+      "alsoOnPages": [
+        128
+      ]
+    },
+    {
+      "id": "brinjal-bharth",
+      "name": "Brinjal bharth",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 57,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "brinjal-sagle",
+      "name": "Brinjal sagle",
+      "role": "stuffed-curries",
+      "section": 12,
+      "page": 67,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "brinjal-upkari",
+      "name": "Brinjal upkari",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 37,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "buns",
+      "name": "Buns",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 112,
+      "slots": []
+    },
+    {
+      "id": "burgar",
+      "name": "Burgar",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 118,
+      "slots": []
+    },
+    {
+      "id": "burfi-ash-gourd",
+      "name": "Burfi, ash gourd",
+      "role": "sweets",
+      "section": 26,
+      "page": 148,
+      "slots": []
+    },
+    {
+      "id": "burfi-besan",
+      "name": "Burfi, besan",
+      "role": "sweets",
+      "section": 26,
+      "page": 146,
+      "slots": []
+    },
+    {
+      "id": "burfi-cashewnut",
+      "name": "Burfi, cashewnut",
+      "role": "sweets",
+      "section": 26,
+      "page": 148,
+      "slots": []
+    },
+    {
+      "id": "burfi-coconut",
+      "name": "Burfi, coconut",
+      "role": "sweets",
+      "section": 26,
+      "page": 145,
+      "slots": []
+    },
+    {
+      "id": "burfi-five-star",
+      "name": "Burfi, five star",
+      "role": "sweets",
+      "section": 26,
+      "page": 147,
+      "slots": []
+    },
+    {
+      "id": "burfi-rava",
+      "name": "Burfi, rava",
+      "role": "sweets",
+      "section": 26,
+      "page": 146,
+      "slots": []
+    },
+    {
+      "id": "burfi-seven-star",
+      "name": "Burfi, seven star",
+      "role": "sweets",
+      "section": 26,
+      "page": 146,
+      "slots": []
+    },
+    {
+      "id": "butter-milk-kadi",
+      "name": "Butter milk kadi",
+      "role": "kadis-thamblis",
+      "section": 3,
+      "page": 16,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "cabbage-bonda",
+      "name": "Cabbage bonda",
+      "role": "fried-dishes",
+      "section": 13,
+      "page": 69,
+      "slots": []
+    },
+    {
+      "id": "cabbage-hasi",
+      "name": "Cabbage hasi",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 30,
+      "slots": []
+    },
+    {
+      "id": "capsicum-pickle",
+      "name": "Capsicum pickle",
+      "role": "pickle-type-curries",
+      "section": 11,
+      "page": 64,
+      "slots": []
+    },
+    {
+      "id": "capsicum-stuffed",
+      "name": "Capsicum stuffed",
+      "role": "stuffed-curries",
+      "section": 12,
+      "page": 66,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "capsicum-sukke",
+      "name": "Capsicum sukke",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 54,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "carrot-kosumbari",
+      "name": "Carrot kosumbari",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 31,
+      "slots": []
+    },
+    {
+      "id": "carrot-pudding",
+      "name": "Carrot pudding",
+      "role": "sweet-dishes",
+      "section": 16,
+      "page": 86,
+      "slots": []
+    },
+    {
+      "id": "cashewnut-baje",
+      "name": "Cashewnut baje",
+      "role": "bajes-pakora-samosa",
+      "section": 24,
+      "page": 138,
+      "slots": []
+    },
+    {
+      "id": "cashewnut-thambude",
+      "name": "Cashewnut thambude",
+      "role": "pickle-type-curries",
+      "section": 11,
+      "page": 62,
+      "slots": []
+    },
+    {
+      "id": "cauliflower-pickle",
+      "name": "Cauliflower pickle",
+      "role": "pickle-type-curries",
+      "section": 11,
+      "page": 63,
+      "slots": []
+    },
+    {
+      "id": "cauliflower-special",
+      "name": "Cauliflower special",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 124,
+      "slots": []
+    },
+    {
+      "id": "chana-sukka",
+      "name": "Chana sukka",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 120,
+      "slots": []
+    },
+    {
+      "id": "chapathi",
+      "name": "Chapathi",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 110,
+      "slots": []
+    },
+    {
+      "id": "chewda",
+      "name": "Chewda",
+      "role": "savouries",
+      "section": 25,
+      "page": 143,
+      "slots": []
+    },
+    {
+      "id": "chips-banana",
+      "name": "Chips, banana",
+      "role": "savouries",
+      "section": 25,
+      "page": 139,
+      "slots": []
+    },
+    {
+      "id": "chips-potato",
+      "name": "Chips, potato",
+      "role": "savouries",
+      "section": 25,
+      "page": 139,
+      "slots": []
+    },
+    {
+      "id": "chitranna",
+      "name": "Chitranna",
+      "role": "rice-dishes",
+      "section": 14,
+      "page": 71,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "chocolate",
+      "name": "Chocolate",
+      "role": "sweets",
+      "section": 26,
+      "page": 147,
+      "slots": []
+    },
+    {
+      "id": "chole-batura",
+      "name": "Chole batura",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 113,
+      "slots": []
+    },
+    {
+      "id": "cochin-masala",
+      "name": "Cochin masala",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 48,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "coconut-chutney",
+      "name": "Coconut chutney",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 27,
+      "slots": []
+    },
+    {
+      "id": "coconut-sannan",
+      "name": "Coconut sannan",
+      "role": "pathravade-sannan-sanna-polo",
+      "section": 9,
+      "page": 45,
+      "slots": []
+    },
+    {
+      "id": "coconut-toffee",
+      "name": "Coconut toffee",
+      "role": "sweets",
+      "section": 26,
+      "page": 145,
+      "slots": []
+    },
+    {
+      "id": "colocasia-root-upkari",
+      "name": "Colocasia root upkari",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 39,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "coriander-leaves-chutney",
+      "name": "Coriander leaves chutney",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 26,
+      "slots": []
+    },
+    {
+      "id": "coriander-leaves-thambli",
+      "name": "Coriander leaves thambli",
+      "role": "kadis-thamblis",
+      "section": 3,
+      "page": 18,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "cucumber-cowpea-huli",
+      "name": "Cucumber-cowpea huli",
+      "role": "sambars-kolambus-hulis",
+      "section": 4,
+      "page": 22,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "cucumber-doddak",
+      "name": "Cucumber doddak",
+      "role": "bhakri-roti-cutlets",
+      "section": 21,
+      "page": 108,
+      "slots": []
+    },
+    {
+      "id": "cucumber-mudde",
+      "name": "Cucumber mudde",
+      "role": "appe-mudde-patholi",
+      "section": 20,
+      "page": 104,
+      "slots": []
+    },
+    {
+      "id": "cumin-pepper-kadi",
+      "name": "Cumin - pepper kadi",
+      "role": "kadis-thamblis",
+      "section": 3,
+      "page": 17,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "curds-rice",
+      "name": "Curds rice",
+      "role": "rice-dishes",
+      "section": 14,
+      "page": 75,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "curry-leaves-chutney",
+      "name": "Curry leaves chutney",
+      "role": "curry-powders-dry-chutneys",
+      "section": 27,
+      "page": 155,
+      "slots": []
+    },
+    {
+      "id": "curry-leaves-saar",
+      "name": "Curry leaves saar",
+      "role": "saars-rasams-soups",
+      "section": 2,
+      "page": 8,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "cutlets",
+      "name": "Cutlets",
+      "role": "bhakri-roti-cutlets",
+      "section": 21,
+      "page": 106,
+      "slots": []
+    },
+    {
+      "id": "cutlet-carrot",
+      "name": "Cutlet, carrot",
+      "role": "bhakri-roti-cutlets",
+      "section": 21,
+      "page": 107,
+      "slots": []
+    },
+    {
+      "id": "cutlet-vegetale",
+      "name": "Cutlet, vegetale",
+      "role": "bhakri-roti-cutlets",
+      "section": 21,
+      "page": 107,
+      "slots": []
+    },
+    {
+      "id": "daal",
+      "name": "Daal",
+      "role": "saars-rasams-soups",
+      "section": 2,
+      "page": 14,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "daali-ambat",
+      "name": "Daali ambat",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 49,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "daali-thoi",
+      "name": "Daali thoi",
+      "role": "saars-rasams-soups",
+      "section": 2,
+      "page": 13,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "dailath-sagle",
+      "name": "Dailath sagle",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 55,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "dangar",
+      "name": "Dangar",
+      "role": "fried-dishes",
+      "section": 13,
+      "page": 70,
+      "slots": []
+    },
+    {
+      "id": "date-halva",
+      "name": "Date halva",
+      "role": "sweets",
+      "section": 26,
+      "page": 150,
+      "slots": []
+    },
+    {
+      "id": "dhai-kadi",
+      "name": "Dhai kadi",
+      "role": "kadis-thamblis",
+      "section": 3,
+      "page": 16,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "dhal-palak",
+      "name": "Dhal palak",
+      "role": "saars-rasams-soups",
+      "section": 2,
+      "page": 14,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "dhal-rasam",
+      "name": "Dhal rasam",
+      "role": "saars-rasams-soups",
+      "section": 2,
+      "page": 10,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "dhal-vadai",
+      "name": "Dhal vadai",
+      "role": "bondas-vadais",
+      "section": 23,
+      "page": 135,
+      "slots": []
+    },
+    {
+      "id": "dood-paak",
+      "name": "Dood paak",
+      "role": "payasams-kheers",
+      "section": 15,
+      "page": 81,
+      "slots": []
+    },
+    {
+      "id": "dood-peda",
+      "name": "Dood peda",
+      "role": "sweets",
+      "section": 26,
+      "page": 152,
+      "slots": []
+    },
+    {
+      "id": "dosai-chutney",
+      "name": "Dosai chutney",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 26,
+      "slots": []
+    },
+    {
+      "id": "drumstick-fries",
+      "name": "Drumstick fries",
+      "role": "fried-dishes",
+      "section": 13,
+      "page": 68,
+      "slots": []
+    },
+    {
+      "id": "drumstick-leaves-curry",
+      "name": "Drumstick leaves curry",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 52,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "dudi-sannan",
+      "name": "Dudi sannan",
+      "role": "appe-mudde-patholi",
+      "section": 20,
+      "page": 104,
+      "slots": []
+    },
+    {
+      "id": "eriappe",
+      "name": "Eriappe",
+      "role": "appe-mudde-patholi",
+      "section": 20,
+      "page": 103,
+      "slots": []
+    },
+    {
+      "id": "erriserry",
+      "name": "Erriserry",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 49,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "fenugreek-leaves-bhaji",
+      "name": "Fenugreek leaves bhaji",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 35,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "fruit-juices",
+      "name": "Fruit juices",
+      "role": "fruit-salad-juices-jams-sauce",
+      "section": 30,
+      "page": 163,
+      "slots": []
+    },
+    {
+      "id": "fruit-salad",
+      "name": "Fruit salad",
+      "role": "fruit-salad-juices-jams-sauce",
+      "section": 30,
+      "page": 161,
+      "slots": []
+    },
+    {
+      "id": "gajbaj-ambat",
+      "name": "Gajbaj ambat",
+      "role": "mixed-vegetable-curries",
+      "section": 8,
+      "page": 42,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "garden-greens-pachadi",
+      "name": "Garden greens pachadi",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 29,
+      "slots": []
+    },
+    {
+      "id": "garden-greens-upkari",
+      "name": "Garden greens upkari",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 34,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "garlic-chutney",
+      "name": "Garlic chutney",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 28,
+      "slots": []
+    },
+    {
+      "id": "garlic-chutney-dry",
+      "name": "Garlic chutney (dry)",
+      "role": "curry-powders-dry-chutneys",
+      "section": 27,
+      "page": 156,
+      "slots": []
+    },
+    {
+      "id": "garlic-pickles",
+      "name": "Garlic pickles",
+      "role": "pickles",
+      "section": 28,
+      "page": 157,
+      "slots": []
+    },
+    {
+      "id": "garlic-potato",
+      "name": "Garlic potato",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 59,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "ghee-rice",
+      "name": "Ghee rice",
+      "role": "rice-dishes",
+      "section": 14,
+      "page": 74,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "gherkins-thalasan",
+      "name": "Gherkins thalasan",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 40,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "ghushi-pathravade",
+      "name": "Ghushi pathravade",
+      "role": "pathravade-sannan-sanna-polo",
+      "section": 9,
+      "page": 44,
+      "slots": []
+    },
+    {
+      "id": "ginger-chutney",
+      "name": "Ginger chutney",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 27,
+      "slots": []
+    },
+    {
+      "id": "ginger-jaggery-panak",
+      "name": "Ginger-jaggery panak",
+      "role": "fruit-salad-juices-jams-sauce",
+      "section": 30,
+      "page": 162,
+      "slots": []
+    },
+    {
+      "id": "ginger-pachadi",
+      "name": "Ginger pachadi",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 29,
+      "slots": []
+    },
+    {
+      "id": "golgappa",
+      "name": "Golgappa",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 114,
+      "slots": []
+    },
+    {
+      "id": "gobi-masala",
+      "name": "Gobi masala",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 126,
+      "slots": []
+    },
+    {
+      "id": "gobi-matar",
+      "name": "Gobi matar",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 125,
+      "slots": []
+    },
+    {
+      "id": "gooseberry-murabba",
+      "name": "Gooseberry murabba",
+      "role": "fruit-salad-juices-jams-sauce",
+      "section": 30,
+      "page": 164,
+      "slots": []
+    },
+    {
+      "id": "green-chilli-pickles",
+      "name": "Green chilli pickles",
+      "role": "pickles",
+      "section": 28,
+      "page": 157,
+      "slots": []
+    },
+    {
+      "id": "green-chutney",
+      "name": "Green chutney",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 27,
+      "slots": []
+    },
+    {
+      "id": "green-gram-dhal-usli",
+      "name": "Green gram dhal usli",
+      "role": "breakfast-dishes",
+      "section": 17,
+      "page": 91,
+      "slots": []
+    },
+    {
+      "id": "green-gram-dosai",
+      "name": "Green gram dosai",
+      "role": "dosai-varieties",
+      "section": 19,
+      "page": 101,
+      "slots": []
+    },
+    {
+      "id": "gulab-jamun",
+      "name": "Gulab jamun",
+      "role": "sweets",
+      "section": 26,
+      "page": 152,
+      "slots": []
+    },
+    {
+      "id": "guava-juice",
+      "name": "Guava juice",
+      "role": "fruit-salad-juices-jams-sauce",
+      "section": 30,
+      "page": 163,
+      "slots": []
+    },
+    {
+      "id": "halva-ash-gourd",
+      "name": "Halva, ash gourd",
+      "role": "sweets",
+      "section": 26,
+      "page": 148,
+      "slots": []
+    },
+    {
+      "id": "halva-banana",
+      "name": "Halva, banana",
+      "role": "sweets",
+      "section": 26,
+      "page": 150,
+      "slots": []
+    },
+    {
+      "id": "halva-bottle-gourd",
+      "name": "Halva, bottle gourd",
+      "role": "sweets",
+      "section": 26,
+      "page": 148,
+      "slots": []
+    },
+    {
+      "id": "halva-carrot",
+      "name": "Halva, carrot",
+      "role": "sweets",
+      "section": 26,
+      "page": 149,
+      "slots": []
+    },
+    {
+      "id": "halva-plantain",
+      "name": "Halva, plantain",
+      "role": "sweets",
+      "section": 26,
+      "page": 150,
+      "slots": []
+    },
+    {
+      "id": "halva-wheat",
+      "name": "Halva, wheat",
+      "role": "sweets",
+      "section": 26,
+      "page": 149,
+      "slots": []
+    },
+    {
+      "id": "hayagreeva",
+      "name": "Hayagreeva",
+      "role": "payasams-kheers",
+      "section": 15,
+      "page": 82,
+      "slots": []
+    },
+    {
+      "id": "horse-gram-doddak",
+      "name": "Horse gram doddak",
+      "role": "idlis-idiappam",
+      "section": 18,
+      "page": 95,
+      "slots": []
+    },
+    {
+      "id": "horse-gram-idli",
+      "name": "Horse gram idli",
+      "role": "idlis-idiappam",
+      "section": 18,
+      "page": 95,
+      "slots": []
+    },
+    {
+      "id": "horse-gram-kadi-saar",
+      "name": "Horse gram kadi/saar",
+      "role": "saars-rasams-soups",
+      "section": 2,
+      "page": 8,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "horse-gram-koddel",
+      "name": "Horse gram koddel",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 53,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "horse-gram-upkari",
+      "name": "Horse gram upkari",
+      "role": "saars-rasams-soups",
+      "section": 2,
+      "page": 8,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "ice-cream",
+      "name": "Ice cream",
+      "role": "fruit-salad-juices-jams-sauce",
+      "section": 30,
+      "page": 161,
+      "slots": []
+    },
+    {
+      "id": "idiappam",
+      "name": "Idiappam",
+      "role": "idlis-idiappam",
+      "section": 18,
+      "page": 97,
+      "slots": []
+    },
+    {
+      "id": "idli-plain",
+      "name": "Idli, plain",
+      "role": "idlis-idiappam",
+      "section": 18,
+      "page": 94,
+      "slots": []
+    },
+    {
+      "id": "idli-sweet",
+      "name": "Idli, sweet",
+      "role": "appe-mudde-patholi",
+      "section": 20,
+      "page": 104,
+      "slots": []
+    },
+    {
+      "id": "jack-fruit-payasam",
+      "name": "Jack fruit payasam",
+      "role": "payasams-kheers",
+      "section": 15,
+      "page": 82,
+      "slots": [],
+      "season": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "jam-gooseberry",
+      "name": "Jam, gooseberry",
+      "role": "fruit-salad-juices-jams-sauce",
+      "section": 30,
+      "page": 164,
+      "slots": []
+    },
+    {
+      "id": "jam-mango",
+      "name": "Jam, mango",
+      "role": "fruit-salad-juices-jams-sauce",
+      "section": 30,
+      "page": 163,
+      "slots": [],
+      "season": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "jam-tomato",
+      "name": "Jam, tomato",
+      "role": "fruit-salad-juices-jams-sauce",
+      "section": 30,
+      "page": 163,
+      "slots": []
+    },
+    {
+      "id": "jeera-rice",
+      "name": "Jeera rice",
+      "role": "rice-dishes",
+      "section": 14,
+      "page": 79,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "jilebi",
+      "name": "Jilebi",
+      "role": "sweets",
+      "section": 26,
+      "page": 153,
+      "slots": []
+    },
+    {
+      "id": "kadai-paneer",
+      "name": "Kadai paneer",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 126,
+      "slots": []
+    },
+    {
+      "id": "kalan",
+      "name": "Kalan",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 48,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "kanahindri",
+      "name": "Kanahindri",
+      "role": "sweet-dishes",
+      "section": 16,
+      "page": 86,
+      "slots": []
+    },
+    {
+      "id": "kanchipuram-idli",
+      "name": "Kanchipuram idli",
+      "role": "idlis-idiappam",
+      "section": 18,
+      "page": 95,
+      "slots": []
+    },
+    {
+      "id": "kela-masala",
+      "name": "Kela masala",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 59,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "kesar-bhath",
+      "name": "Kesar bhath",
+      "role": "sweet-dishes",
+      "section": 16,
+      "page": 86,
+      "slots": []
+    },
+    {
+      "id": "kharbuza-rasayan",
+      "name": "Kharbuza rasayan",
+      "role": "sweet-dishes",
+      "section": 16,
+      "page": 85,
+      "slots": [],
+      "season": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "kheer-white",
+      "name": "Kheer, white",
+      "role": "payasams-kheers",
+      "section": 15,
+      "page": 84,
+      "slots": []
+    },
+    {
+      "id": "khotte",
+      "name": "Khotte",
+      "role": "idlis-idiappam",
+      "section": 18,
+      "page": 94,
+      "slots": []
+    },
+    {
+      "id": "kichidi",
+      "name": "Kichidi",
+      "role": "sweet-dishes",
+      "section": 16,
+      "page": 88,
+      "slots": []
+    },
+    {
+      "id": "kodbale",
+      "name": "Kodbale",
+      "role": "savouries",
+      "section": 25,
+      "page": 141,
+      "slots": []
+    },
+    {
+      "id": "kokum-saar",
+      "name": "Kokum saar",
+      "role": "saars-rasams-soups",
+      "section": 2,
+      "page": 9,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "kolambu-arachi",
+      "name": "Kolambu, arachi",
+      "role": "sambars-kolambus-hulis",
+      "section": 4,
+      "page": 21,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "kolambu-goddu",
+      "name": "Kolambu, goddu",
+      "role": "sambars-kolambus-hulis",
+      "section": 4,
+      "page": 20,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "kolambu-vertal",
+      "name": "Kolambu, vertal",
+      "role": "sambars-kolambus-hulis",
+      "section": 4,
+      "page": 20,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "kootu",
+      "name": "Kootu",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 51,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "kurma",
+      "name": "Kurma",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 121,
+      "slots": []
+    },
+    {
+      "id": "kurma-navaratna",
+      "name": "Kurma, navaratna",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 122,
+      "slots": []
+    },
+    {
+      "id": "kurma-vegetable",
+      "name": "Kurma, vegetable",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 121,
+      "slots": []
+    },
+    {
+      "id": "laddu-besan",
+      "name": "Laddu, besan",
+      "role": "sweets",
+      "section": 26,
+      "page": 144,
+      "slots": []
+    },
+    {
+      "id": "laddu-churmi",
+      "name": "Laddu, churmi",
+      "role": "sweets",
+      "section": 26,
+      "page": 144,
+      "slots": []
+    },
+    {
+      "id": "laddu-sev",
+      "name": "Laddu, sev",
+      "role": "sweets",
+      "section": 26,
+      "page": 144,
+      "slots": []
+    },
+    {
+      "id": "laddu-thil",
+      "name": "Laddu, thil",
+      "role": "sweets",
+      "section": 26,
+      "page": 145,
+      "slots": []
+    },
+    {
+      "id": "lady-s-finger-okru-baje",
+      "name": "Lady's finger (okru) baje",
+      "role": "bajes-pakora-samosa",
+      "section": 24,
+      "page": 138,
+      "slots": []
+    },
+    {
+      "id": "lady-s-finger-gozzu",
+      "name": "Lady's finger gozzu",
+      "role": "gozzus-salads",
+      "section": 5,
+      "page": 24,
+      "slots": []
+    },
+    {
+      "id": "lady-s-finger-stuffed",
+      "name": "Lady's finger, stuffed",
+      "role": "stuffed-curries",
+      "section": 12,
+      "page": 66,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "lemon-gozzu",
+      "name": "Lemon gozzu",
+      "role": "gozzus-salads",
+      "section": 5,
+      "page": 23,
+      "slots": []
+    },
+    {
+      "id": "lemon-sherbet",
+      "name": "Lemon sherbet",
+      "role": "fruit-salad-juices-jams-sauce",
+      "section": 30,
+      "page": 162,
+      "slots": []
+    },
+    {
+      "id": "lime-and-ginger-syrup",
+      "name": "Lime and ginger syrup",
+      "role": "fruit-salad-juices-jams-sauce",
+      "section": 30,
+      "page": 162,
+      "slots": []
+    },
+    {
+      "id": "lime-pickles",
+      "name": "Lime pickles",
+      "role": "pickles",
+      "section": 28,
+      "page": 157,
+      "slots": []
+    },
+    {
+      "id": "lime-salted",
+      "name": "Lime salted",
+      "role": "pickles",
+      "section": 28,
+      "page": 157,
+      "slots": []
+    },
+    {
+      "id": "maddur-vadai",
+      "name": "Maddur vadai",
+      "role": "bondas-vadais",
+      "section": 23,
+      "page": 136,
+      "slots": []
+    },
+    {
+      "id": "madgane",
+      "name": "Madgane",
+      "role": "payasams-kheers",
+      "section": 15,
+      "page": 82,
+      "slots": []
+    },
+    {
+      "id": "maida-dosai",
+      "name": "Maida dosai",
+      "role": "dosai-varieties",
+      "section": 19,
+      "page": 98,
+      "slots": []
+    },
+    {
+      "id": "majjige-huli",
+      "name": "Majjige huli",
+      "role": "sambars-kolambus-hulis",
+      "section": 4,
+      "page": 22,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "malai-kofta",
+      "name": "Malai kofta",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 131,
+      "slots": []
+    },
+    {
+      "id": "malpuri",
+      "name": "Malpuri",
+      "role": "sweets",
+      "section": 26,
+      "page": 151,
+      "slots": []
+    },
+    {
+      "id": "manchuri-baby-corn",
+      "name": "Manchuri, baby corn",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 130,
+      "slots": []
+    },
+    {
+      "id": "manchuri-gobi",
+      "name": "Manchuri, gobi",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 131,
+      "slots": []
+    },
+    {
+      "id": "manchuri-palak",
+      "name": "Manchuri, palak",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 130,
+      "slots": []
+    },
+    {
+      "id": "mando",
+      "name": "Mando",
+      "role": "sweet-dishes",
+      "section": 16,
+      "page": 89,
+      "slots": []
+    },
+    {
+      "id": "mangalore-bonda",
+      "name": "Mangalore bonda",
+      "role": "bondas-vadais",
+      "section": 23,
+      "page": 134,
+      "slots": []
+    },
+    {
+      "id": "mango-murabba",
+      "name": "Mango murabba",
+      "role": "fruit-salad-juices-jams-sauce",
+      "section": 30,
+      "page": 164,
+      "slots": [],
+      "season": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "mango-pachadi",
+      "name": "Mango pachadi",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 29,
+      "slots": [],
+      "season": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "mango-pineapple-saasam",
+      "name": "Mango pineapple saasam",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 57,
+      "slots": [
+        "main"
+      ],
+      "season": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "mango-rasayan",
+      "name": "Mango rasayan",
+      "role": "sweet-dishes",
+      "section": 16,
+      "page": 85,
+      "slots": [],
+      "season": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "mango-upkari",
+      "name": "Mango upkari",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 39,
+      "slots": [
+        "main"
+      ],
+      "season": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "masala-butter-milk",
+      "name": "Masala butter milk",
+      "role": "kadis-thamblis",
+      "section": 3,
+      "page": 17,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "masal-dosai",
+      "name": "Masal dosai",
+      "role": "dosai-varieties",
+      "section": 19,
+      "page": 99,
+      "slots": []
+    },
+    {
+      "id": "masal-idli",
+      "name": "Masal idli",
+      "role": "idlis-idiappam",
+      "section": 18,
+      "page": 96,
+      "slots": []
+    },
+    {
+      "id": "masal-puri",
+      "name": "Masal puri",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 116,
+      "slots": []
+    },
+    {
+      "id": "masal-vadai",
+      "name": "Masal vadai",
+      "role": "bondas-vadais",
+      "section": 23,
+      "page": 135,
+      "slots": []
+    },
+    {
+      "id": "matar-misli",
+      "name": "Matar misli",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 60,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "matar-paneer",
+      "name": "Matar paneer",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 124,
+      "slots": []
+    },
+    {
+      "id": "matar-paneer-masala",
+      "name": "Matar paneer masala",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 125,
+      "slots": []
+    },
+    {
+      "id": "matar-mushroom",
+      "name": "Matar mushroom",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 129,
+      "slots": []
+    },
+    {
+      "id": "menskai",
+      "name": "Menskai",
+      "role": "pickle-type-curries",
+      "section": 11,
+      "page": 65,
+      "slots": []
+    },
+    {
+      "id": "methi-alu-matar",
+      "name": "Methi alu matar",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 61,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "methi-dosai",
+      "name": "Methi dosai",
+      "role": "dosai-varieties",
+      "section": 19,
+      "page": 101,
+      "slots": []
+    },
+    {
+      "id": "mixed-veg-soup",
+      "name": "Mixed veg. soup",
+      "role": "soup",
+      "section": 2,
+      "page": 12,
+      "slots": [
+        "snack2"
+      ]
+    },
+    {
+      "id": "modak",
+      "name": "Modak",
+      "role": "pooja-sweets",
+      "section": 1,
+      "page": 6,
+      "slots": []
+    },
+    {
+      "id": "molaga-podi",
+      "name": "Molaga podi",
+      "role": "curry-powders-dry-chutneys",
+      "section": 27,
+      "page": 156,
+      "slots": []
+    },
+    {
+      "id": "moru-kolambu",
+      "name": "Moru kolambu",
+      "role": "sambars-kolambus-hulis",
+      "section": 4,
+      "page": 21,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "murku-4-flour",
+      "name": "Murku, 4 flour",
+      "role": "savouries",
+      "section": 25,
+      "page": 143,
+      "slots": []
+    },
+    {
+      "id": "murku-maida",
+      "name": "Murku, maida",
+      "role": "savouries",
+      "section": 25,
+      "page": 142,
+      "slots": []
+    },
+    {
+      "id": "murku-potato",
+      "name": "Murku, potato",
+      "role": "savouries",
+      "section": 25,
+      "page": 143,
+      "slots": []
+    },
+    {
+      "id": "murku-rice",
+      "name": "Murku, rice",
+      "role": "savouries",
+      "section": 25,
+      "page": 142,
+      "slots": []
+    },
+    {
+      "id": "mushroom-chutput",
+      "name": "Mushroom chutput",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 128,
+      "slots": []
+    },
+    {
+      "id": "mushroom-soup",
+      "name": "Mushroom soup",
+      "role": "soup",
+      "section": 2,
+      "page": 13,
+      "slots": [
+        "snack2"
+      ]
+    },
+    {
+      "id": "musti-dosai",
+      "name": "Musti dosai",
+      "role": "dosai-varieties",
+      "section": 19,
+      "page": 99,
+      "slots": []
+    },
+    {
+      "id": "mysore-paak",
+      "name": "Mysore paak",
+      "role": "sweets",
+      "section": 26,
+      "page": 151,
+      "slots": []
+    },
+    {
+      "id": "naan",
+      "name": "Naan",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 112,
+      "slots": []
+    },
+    {
+      "id": "nevri",
+      "name": "Nevri",
+      "role": "pooja-sweets",
+      "section": 1,
+      "page": 6,
+      "slots": []
+    },
+    {
+      "id": "nippat",
+      "name": "Nippat",
+      "role": "savouries",
+      "section": 25,
+      "page": 139,
+      "slots": []
+    },
+    {
+      "id": "obbattu",
+      "name": "Obbattu",
+      "role": "sweet-dishes",
+      "section": 16,
+      "page": 88,
+      "slots": []
+    },
+    {
+      "id": "olan",
+      "name": "Olan",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 49,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "onion-chutney",
+      "name": "Onion Chutney",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 28,
+      "slots": []
+    },
+    {
+      "id": "onion-gozzu",
+      "name": "Onion gozzu",
+      "role": "gozzus-salads",
+      "section": 5,
+      "page": 24,
+      "slots": []
+    },
+    {
+      "id": "onion-kolambu",
+      "name": "Onion Kolambu",
+      "role": "sambars-kolambus-hulis",
+      "section": 4,
+      "page": 19,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "onion-thambli",
+      "name": "Onion thambli",
+      "role": "kadis-thamblis",
+      "section": 3,
+      "page": 18,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "oothappa",
+      "name": "Oothappa",
+      "role": "dosai-varieties",
+      "section": 19,
+      "page": 100,
+      "slots": []
+    },
+    {
+      "id": "orange-cola",
+      "name": "Orange/Cola",
+      "role": "fruit-salad-juices-jams-sauce",
+      "section": 30,
+      "page": 161,
+      "slots": []
+    },
+    {
+      "id": "paal-poli",
+      "name": "Paal poli",
+      "role": "sweet-dishes",
+      "section": 16,
+      "page": 85,
+      "slots": []
+    },
+    {
+      "id": "paan-patholi",
+      "name": "Paan patholi",
+      "role": "appe-mudde-patholi",
+      "section": 20,
+      "page": 105,
+      "slots": []
+    },
+    {
+      "id": "pakodi-pachadi",
+      "name": "Pakodi pachadi",
+      "role": "gozzus-salads",
+      "section": 5,
+      "page": 24,
+      "slots": []
+    },
+    {
+      "id": "pakora",
+      "name": "Pakora",
+      "role": "bajes-pakora-samosa",
+      "section": 24,
+      "page": 137,
+      "slots": []
+    },
+    {
+      "id": "palappam",
+      "name": "Palappam",
+      "role": "dosai-varieties",
+      "section": 19,
+      "page": 101,
+      "slots": []
+    },
+    {
+      "id": "palak-daal",
+      "name": "Palak Daal",
+      "role": "saars-rasams-soups",
+      "section": 2,
+      "page": 14,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "palak-paneer",
+      "name": "Palak paneer",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 127,
+      "slots": []
+    },
+    {
+      "id": "palak-rice",
+      "name": "Palak rice",
+      "role": "rice-dishes",
+      "section": 14,
+      "page": 78,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "panchakajjai",
+      "name": "Panchakajjai",
+      "role": "pooja-sweets",
+      "section": 1,
+      "page": 7,
+      "slots": []
+    },
+    {
+      "id": "panchakajjai-bengal-gram",
+      "name": "Panchakajjai bengal gram",
+      "role": "pooja-sweets",
+      "section": 1,
+      "page": 7,
+      "slots": []
+    },
+    {
+      "id": "panchakajjai-ganahoma",
+      "name": "Panchakajjai, ganahoma",
+      "role": "pooja-sweets",
+      "section": 1,
+      "page": 7,
+      "slots": []
+    },
+    {
+      "id": "panchavati",
+      "name": "Panchavati",
+      "role": "saars-rasams-soups",
+      "section": 2,
+      "page": 15,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "paneer-masala",
+      "name": "Paneer masala",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 124,
+      "slots": []
+    },
+    {
+      "id": "pani",
+      "name": "Pani",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 115,
+      "slots": []
+    },
+    {
+      "id": "pani-puri",
+      "name": "Pani puri",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 115,
+      "slots": []
+    },
+    {
+      "id": "panpolo",
+      "name": "Panpolo",
+      "role": "dosai-varieties",
+      "section": 19,
+      "page": 98,
+      "slots": []
+    },
+    {
+      "id": "papad-potato",
+      "name": "Papad, potato",
+      "role": "papads-vadis",
+      "section": 29,
+      "page": 159,
+      "slots": []
+    },
+    {
+      "id": "papad-tapioca",
+      "name": "Papad, tapioca",
+      "role": "papads-vadis",
+      "section": 29,
+      "page": 159,
+      "slots": []
+    },
+    {
+      "id": "paratha",
+      "name": "Paratha",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 110,
+      "slots": []
+    },
+    {
+      "id": "paratha-cauliflower",
+      "name": "Paratha, cauliflower",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 111,
+      "slots": []
+    },
+    {
+      "id": "paratha-green-peas",
+      "name": "Paratha, green peas",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 111,
+      "slots": []
+    },
+    {
+      "id": "paratha-paneer",
+      "name": "Paratha, paneer",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 111,
+      "slots": []
+    },
+    {
+      "id": "parpu-podi",
+      "name": "Parpu podi",
+      "role": "curry-powders-dry-chutneys",
+      "section": 27,
+      "page": 156,
+      "slots": []
+    },
+    {
+      "id": "pathravade",
+      "name": "Pathravade",
+      "role": "pathravade-sannan-sanna-polo",
+      "section": 9,
+      "page": 44,
+      "slots": []
+    },
+    {
+      "id": "pathravade-roasted",
+      "name": "Pathravade, roasted",
+      "role": "pathravade-sannan-sanna-polo",
+      "section": 9,
+      "page": 45,
+      "slots": []
+    },
+    {
+      "id": "pathravade-usli",
+      "name": "Pathravade, usli",
+      "role": "pathravade-sannan-sanna-polo",
+      "section": 9,
+      "page": 46,
+      "slots": []
+    },
+    {
+      "id": "patties",
+      "name": "Patties",
+      "role": "bhakri-roti-cutlets",
+      "section": 21,
+      "page": 108,
+      "slots": []
+    },
+    {
+      "id": "pav-bhaji",
+      "name": "Pav bhaji",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 114,
+      "slots": []
+    },
+    {
+      "id": "pea-nut-baje",
+      "name": "Pea nut baje",
+      "role": "bajes-pakora-samosa",
+      "section": 24,
+      "page": 138,
+      "slots": []
+    },
+    {
+      "id": "pea-nut-chikki",
+      "name": "Pea nut chikki",
+      "role": "sweets",
+      "section": 26,
+      "page": 147,
+      "slots": []
+    },
+    {
+      "id": "pepper-idli",
+      "name": "Pepper idli",
+      "role": "idlis-idiappam",
+      "section": 18,
+      "page": 96,
+      "slots": []
+    },
+    {
+      "id": "pepper-rasam",
+      "name": "Pepper rasam",
+      "role": "saars-rasams-soups",
+      "section": 2,
+      "page": 11,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "pesarat-dosai",
+      "name": "Pesarat dosai",
+      "role": "dosai-varieties",
+      "section": 19,
+      "page": 102,
+      "slots": []
+    },
+    {
+      "id": "phenori",
+      "name": "Phenori",
+      "role": "sweets",
+      "section": 26,
+      "page": 150,
+      "slots": []
+    },
+    {
+      "id": "phodis",
+      "name": "Phodis",
+      "role": "fried-dishes",
+      "section": 13,
+      "page": 68,
+      "slots": []
+    },
+    {
+      "id": "phova-beaten-rice-kheer",
+      "name": "Phova (beaten rice) kheer",
+      "role": "payasams-kheers",
+      "section": 15,
+      "page": 83,
+      "slots": []
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 117,
+      "slots": []
+    },
+    {
+      "id": "plantain-pith-hasi",
+      "name": "Plantain pith hasi",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 30,
+      "slots": []
+    },
+    {
+      "id": "pongal-sakkarai",
+      "name": "Pongal, sakkarai",
+      "role": "rice-dishes",
+      "section": 14,
+      "page": 71,
+      "slots": []
+    },
+    {
+      "id": "potato-bhaji",
+      "name": "Potato bhaji",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 113,
+      "slots": []
+    },
+    {
+      "id": "potato-bharth",
+      "name": "Potato bharth",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 56,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "potato-fried-upkari",
+      "name": "Potato fried upkari",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 35,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "potato-gozzu",
+      "name": "Potato gozzu",
+      "role": "gozzus-salads",
+      "section": 5,
+      "page": 23,
+      "slots": []
+    },
+    {
+      "id": "potato-humman",
+      "name": "Potato humman",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 58,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "potato-masiyal",
+      "name": "Potato masiyal",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 50,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "potato-song",
+      "name": "Potato song",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 55,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "potato-soup",
+      "name": "Potato soup",
+      "role": "soup",
+      "section": 2,
+      "page": 11,
+      "slots": [
+        "snack2"
+      ],
+      "alsoOnPages": [
+        12
+      ]
+    },
+    {
+      "id": "potato-sukke",
+      "name": "Potato sukke",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 54,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "potato-thoi",
+      "name": "Potato thoi",
+      "role": "saars-rasams-soups",
+      "section": 2,
+      "page": 13,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "powder-garam-masala",
+      "name": "Powder, garam masala",
+      "role": "curry-powders-dry-chutneys",
+      "section": 27,
+      "page": 154,
+      "slots": []
+    },
+    {
+      "id": "powder-huli",
+      "name": "Powder, huli",
+      "role": "curry-powders-dry-chutneys",
+      "section": 27,
+      "page": 155,
+      "slots": []
+    },
+    {
+      "id": "powder-madras-rasam",
+      "name": "Powder, Madras rasam",
+      "role": "curry-powders-dry-chutneys",
+      "section": 27,
+      "page": 155,
+      "slots": []
+    },
+    {
+      "id": "powder-mysore-rasam",
+      "name": "Powder, Mysore rasam",
+      "role": "curry-powders-dry-chutneys",
+      "section": 27,
+      "page": 155,
+      "slots": []
+    },
+    {
+      "id": "powder-sambar",
+      "name": "Powder, sambar",
+      "role": "curry-powders-dry-chutneys",
+      "section": 27,
+      "page": 154,
+      "slots": []
+    },
+    {
+      "id": "pulav",
+      "name": "Pulav",
+      "role": "rice-dishes",
+      "section": 14,
+      "page": 76,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "pulav-carrot",
+      "name": "Pulav, carrot",
+      "role": "rice-dishes",
+      "section": 14,
+      "page": 77,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "pulav-naivedya",
+      "name": "Pulav, naivedya",
+      "role": "rice-dishes",
+      "section": 14,
+      "page": 76,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "pulav-vegetable",
+      "name": "Pulav, vegetable",
+      "role": "rice-dishes",
+      "section": 14,
+      "page": 77,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "puli-koddel",
+      "name": "Puli koddel",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 53,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "puliyam-sadam",
+      "name": "Puliyam sadam",
+      "role": "rice-dishes",
+      "section": 14,
+      "page": 73,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "puliyogare-mix",
+      "name": "Puliyogare mix",
+      "role": "rice-dishes",
+      "section": 14,
+      "page": 74,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "pulka",
+      "name": "Pulka",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 110,
+      "slots": []
+    },
+    {
+      "id": "pulses-upkari",
+      "name": "Pulses upkari",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 33,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "pumpkin-core-thambli",
+      "name": "Pumpkin core thambli",
+      "role": "kadis-thamblis",
+      "section": 3,
+      "page": 18,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "pumpkin-flower-fries",
+      "name": "Pumpkin flower fries",
+      "role": "fried-dishes",
+      "section": 13,
+      "page": 68,
+      "slots": []
+    },
+    {
+      "id": "puri",
+      "name": "Puri",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 109,
+      "slots": []
+    },
+    {
+      "id": "radish-bonda",
+      "name": "Radish bonda",
+      "role": "fried-dishes",
+      "section": 13,
+      "page": 69,
+      "slots": []
+    },
+    {
+      "id": "radish-leaf-bonda",
+      "name": "Radish leaf bonda",
+      "role": "fried-dishes",
+      "section": 13,
+      "page": 69,
+      "slots": []
+    },
+    {
+      "id": "radish-thalasana",
+      "name": "Radish thalasana",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 41,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "ragda",
+      "name": "Ragda",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 120,
+      "slots": []
+    },
+    {
+      "id": "ragi-duddali",
+      "name": "Ragi duddali",
+      "role": "sweet-dishes",
+      "section": 16,
+      "page": 87,
+      "slots": []
+    },
+    {
+      "id": "rajastani-bhindi",
+      "name": "Rajastani bhindi",
+      "role": "fried-dishes",
+      "section": 13,
+      "page": 70,
+      "slots": []
+    },
+    {
+      "id": "rava-bhakri",
+      "name": "Rava bhakri",
+      "role": "bhakri-roti-cutlets",
+      "section": 21,
+      "page": 106,
+      "slots": []
+    },
+    {
+      "id": "rava-dosai",
+      "name": "Rava dosai",
+      "role": "dosai-varieties",
+      "section": 19,
+      "page": 98,
+      "slots": []
+    },
+    {
+      "id": "rava-idli",
+      "name": "Rava idli",
+      "role": "idlis-idiappam",
+      "section": 18,
+      "page": 94,
+      "slots": []
+    },
+    {
+      "id": "rava-kheer",
+      "name": "Rava kheer",
+      "role": "payasams-kheers",
+      "section": 15,
+      "page": 83,
+      "slots": []
+    },
+    {
+      "id": "raw-banana-bonda",
+      "name": "Raw banana bonda",
+      "role": "fried-dishes",
+      "section": 13,
+      "page": 70,
+      "slots": []
+    },
+    {
+      "id": "raw-mango-pachadi",
+      "name": "Raw mango pachadi",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 29,
+      "slots": [],
+      "season": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "rice-payasam",
+      "name": "Rice payasam",
+      "role": "payasams-kheers",
+      "section": 15,
+      "page": 81,
+      "slots": []
+    },
+    {
+      "id": "rice-roti",
+      "name": "Rice roti",
+      "role": "bhakri-roti-cutlets",
+      "section": 21,
+      "page": 106,
+      "slots": []
+    },
+    {
+      "id": "ridge-gourd-skin-chutney",
+      "name": "Ridge gourd skin chutney",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 28,
+      "slots": [],
+      "alsoOnPages": [
+        29
+      ]
+    },
+    {
+      "id": "saar-powder",
+      "name": "Saar powder",
+      "role": "curry-powders-dry-chutneys",
+      "section": 27,
+      "page": 154,
+      "slots": []
+    },
+    {
+      "id": "saar-cum-upkari",
+      "name": "Saar cum upkari",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 33,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "saat",
+      "name": "Saat",
+      "role": "sweets",
+      "section": 26,
+      "page": 152,
+      "slots": []
+    },
+    {
+      "id": "sada-plain-dosai",
+      "name": "Sada (plain) dosai",
+      "role": "dosai-varieties",
+      "section": 19,
+      "page": 99,
+      "slots": []
+    },
+    {
+      "id": "sago-dood-paak",
+      "name": "Sago dood paak",
+      "role": "payasams-kheers",
+      "section": 15,
+      "page": 81,
+      "slots": []
+    },
+    {
+      "id": "sagu",
+      "name": "Sagu",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 122,
+      "slots": []
+    },
+    {
+      "id": "sambar",
+      "name": "Sambar",
+      "role": "sambars-kolambus-hulis",
+      "section": 4,
+      "page": 19,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "samosa",
+      "name": "Samosa",
+      "role": "bajes-pakora-samosa",
+      "section": 24,
+      "page": 137,
+      "slots": []
+    },
+    {
+      "id": "sandwiches",
+      "name": "Sandwiches",
+      "role": "breakfast-dishes",
+      "section": 17,
+      "page": 91,
+      "slots": []
+    },
+    {
+      "id": "sanna-khotto",
+      "name": "Sanna khotto",
+      "role": "pathravade-sannan-sanna-polo",
+      "section": 9,
+      "page": 45,
+      "slots": []
+    },
+    {
+      "id": "sanna-polo",
+      "name": "Sanna polo",
+      "role": "pathravade-sannan-sanna-polo",
+      "section": 9,
+      "page": 46,
+      "slots": []
+    },
+    {
+      "id": "sapada-bhakshya",
+      "name": "Sapada bhakshya",
+      "role": "pooja-sweets",
+      "section": 1,
+      "page": 6,
+      "slots": []
+    },
+    {
+      "id": "semia-kheer",
+      "name": "Semia kheer",
+      "role": "payasams-kheers",
+      "section": 15,
+      "page": 83,
+      "slots": [],
+      "alsoOnPages": [
+        84
+      ]
+    },
+    {
+      "id": "semia-usli",
+      "name": "Semia usli",
+      "role": "idlis-idiappam",
+      "section": 18,
+      "page": 97,
+      "slots": []
+    },
+    {
+      "id": "semia",
+      "name": "Semia",
+      "role": "papads-vadis",
+      "section": 29,
+      "page": 160,
+      "slots": []
+    },
+    {
+      "id": "sev-ompudi",
+      "name": "Sev (Ompudi)",
+      "role": "savouries",
+      "section": 25,
+      "page": 140,
+      "slots": []
+    },
+    {
+      "id": "sev-khara",
+      "name": "Sev, khara",
+      "role": "savouries",
+      "section": 25,
+      "page": 140,
+      "slots": []
+    },
+    {
+      "id": "sev-puri",
+      "name": "Sev Puri",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 116,
+      "slots": []
+    },
+    {
+      "id": "sheera",
+      "name": "Sheera",
+      "role": "sweets",
+      "section": 26,
+      "page": 149,
+      "slots": []
+    },
+    {
+      "id": "snake-gourd-seed-sanna-polo",
+      "name": "Snake gourd seed sanna polo",
+      "role": "pathravade-sannan-sanna-polo",
+      "section": 9,
+      "page": 46,
+      "slots": []
+    },
+    {
+      "id": "snake-gourd-stuffed",
+      "name": "Snake gourd, stuffed",
+      "role": "stuffed-curries",
+      "section": 12,
+      "page": 67,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "soomali",
+      "name": "Soomali",
+      "role": "dosai-varieties",
+      "section": 19,
+      "page": 100,
+      "slots": []
+    },
+    {
+      "id": "soomali-ash-gourd",
+      "name": "Soomali, ash gourd",
+      "role": "dosai-varieties",
+      "section": 19,
+      "page": 100,
+      "slots": []
+    },
+    {
+      "id": "soomali-coconut",
+      "name": "Soomali, coconut",
+      "role": "dosai-varieties",
+      "section": 19,
+      "page": 100,
+      "slots": []
+    },
+    {
+      "id": "soomali-cucumber",
+      "name": "Soomali, cucumber",
+      "role": "dosai-varieties",
+      "section": 19,
+      "page": 100,
+      "slots": []
+    },
+    {
+      "id": "soomali-sweet",
+      "name": "Soomali, sweet",
+      "role": "dosai-varieties",
+      "section": 19,
+      "page": 100,
+      "slots": []
+    },
+    {
+      "id": "spinach-bendi",
+      "name": "Spinach bendi",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 55,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "spinach-papaya-ambat",
+      "name": "Spinach papaya ambat",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 51,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "sprouted-green-gram-kosumbari",
+      "name": "Sprouted green gram kosumbari",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 31,
+      "slots": []
+    },
+    {
+      "id": "stew",
+      "name": "Stew",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 118,
+      "slots": []
+    },
+    {
+      "id": "sukdi",
+      "name": "Sukdi",
+      "role": "sweets",
+      "section": 26,
+      "page": 144,
+      "slots": []
+    },
+    {
+      "id": "sukian",
+      "name": "Sukian",
+      "role": "sweet-dishes",
+      "section": 16,
+      "page": 89,
+      "slots": []
+    },
+    {
+      "id": "sukrunda",
+      "name": "Sukrunda",
+      "role": "pooja-sweets",
+      "section": 1,
+      "page": 6,
+      "slots": []
+    },
+    {
+      "id": "sundal",
+      "name": "Sundal",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 40,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "suran-koot",
+      "name": "Suran koot",
+      "role": "pickle-type-curries",
+      "section": 11,
+      "page": 65,
+      "slots": []
+    },
+    {
+      "id": "sweet-and-savoury-chutney",
+      "name": "Sweet and savoury chutney",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 115,
+      "slots": []
+    },
+    {
+      "id": "sweet-and-sour-gozzu",
+      "name": "Sweet and sour gozzu",
+      "role": "gozzus-salads",
+      "section": 5,
+      "page": 23,
+      "slots": []
+    },
+    {
+      "id": "tapioca-vadai",
+      "name": "Tapioca vadai",
+      "role": "bondas-vadais",
+      "section": 23,
+      "page": 135,
+      "slots": []
+    },
+    {
+      "id": "tamarind-saar",
+      "name": "Tamarind saar",
+      "role": "saars-rasams-soups",
+      "section": 2,
+      "page": 9,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "tender-cashewnut-upkari",
+      "name": "Tender cashewnut upkari",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 39,
+      "slots": [
+        "main"
+      ],
+      "season": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "tender-cucumber-hulel",
+      "name": "Tender cucumber hulel",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 30,
+      "slots": []
+    },
+    {
+      "id": "tender-cucumber-saasam",
+      "name": "Tender cucumber saasam",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 58,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "tender-jack-chakko",
+      "name": "Tender jack chakko",
+      "role": "masala-curries",
+      "section": 10,
+      "page": 56,
+      "slots": [
+        "main"
+      ],
+      "season": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "tender-shoots-thambli",
+      "name": "Tender shoots thambli",
+      "role": "kadis-thamblis",
+      "section": 3,
+      "page": 17,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "tender-thur-upkari",
+      "name": "Tender thur upkari",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 34,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "thakka-ambat",
+      "name": "Thakka ambat",
+      "role": "mixed-vegetable-curries",
+      "section": 8,
+      "page": 42,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "thambude",
+      "name": "Thambude",
+      "role": "pickle-type-curries",
+      "section": 11,
+      "page": 62,
+      "slots": []
+    },
+    {
+      "id": "thayir-vadai",
+      "name": "Thayir vadai",
+      "role": "bondas-vadais",
+      "section": 23,
+      "page": 136,
+      "slots": []
+    },
+    {
+      "id": "thinglad",
+      "name": "Thinglad",
+      "role": "savouries",
+      "section": 25,
+      "page": 142,
+      "slots": []
+    },
+    {
+      "id": "thousali",
+      "name": "Thousali",
+      "role": "bhakri-roti-cutlets",
+      "section": 21,
+      "page": 108,
+      "slots": []
+    },
+    {
+      "id": "thukdi-biscuit",
+      "name": "Thukdi, biscuit",
+      "role": "savouries",
+      "section": 25,
+      "page": 141,
+      "slots": []
+    },
+    {
+      "id": "thukdi-savoury",
+      "name": "Thukdi, savoury",
+      "role": "savouries",
+      "section": 25,
+      "page": 141,
+      "slots": []
+    },
+    {
+      "id": "tomato-bhath",
+      "name": "Tomato bhath",
+      "role": "rice-dishes",
+      "section": 14,
+      "page": 73,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "tomato-chutney",
+      "name": "Tomato chutney",
+      "role": "chutneys-pachadis-kosumbaris",
+      "section": 6,
+      "page": 26,
+      "slots": []
+    },
+    {
+      "id": "tomato-rasam",
+      "name": "Tomato rasam",
+      "role": "saars-rasams-soups",
+      "section": 2,
+      "page": 10,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "tomato-salad",
+      "name": "Tomato salad",
+      "role": "gozzus-salads",
+      "section": 5,
+      "page": 25,
+      "slots": []
+    },
+    {
+      "id": "tomato-soup",
+      "name": "Tomato soup",
+      "role": "soup",
+      "section": 2,
+      "page": 12,
+      "slots": [
+        "snack2"
+      ]
+    },
+    {
+      "id": "tomato-sauce-hot-and-sweet",
+      "name": "Tomato sauce - hot and sweet",
+      "role": "fruit-salad-juices-jams-sauce",
+      "section": 30,
+      "page": 165,
+      "slots": []
+    },
+    {
+      "id": "tomato-squash",
+      "name": "Tomato squash",
+      "role": "fruit-salad-juices-jams-sauce",
+      "section": 30,
+      "page": 165,
+      "slots": []
+    },
+    {
+      "id": "twelve-in-one-chutney",
+      "name": "Twelve in one chutney",
+      "role": "bajes-pakora-samosa",
+      "section": 24,
+      "page": 138,
+      "slots": []
+    },
+    {
+      "id": "upmav",
+      "name": "Upmav",
+      "role": "breakfast-dishes",
+      "section": 17,
+      "page": 90,
+      "slots": []
+    },
+    {
+      "id": "undi-rice",
+      "name": "Undi, rice",
+      "role": "idlis-idiappam",
+      "section": 18,
+      "page": 96,
+      "slots": []
+    },
+    {
+      "id": "ussal",
+      "name": "Ussal",
+      "role": "puri-chapathi-side-dishes",
+      "section": 22,
+      "page": 119,
+      "slots": []
+    },
+    {
+      "id": "vaag",
+      "name": "Vaag",
+      "role": "pickle-type-curries",
+      "section": 11,
+      "page": 62,
+      "slots": []
+    },
+    {
+      "id": "vaangibhath",
+      "name": "Vaangibhath",
+      "role": "breakfast-dishes",
+      "section": 17,
+      "page": 90,
+      "slots": []
+    },
+    {
+      "id": "vadi-ash-gourd",
+      "name": "Vadi, ash gourd",
+      "role": "papads-vadis",
+      "section": 29,
+      "page": 160,
+      "slots": []
+    },
+    {
+      "id": "vadi-black-gram",
+      "name": "Vadi, black gram",
+      "role": "papads-vadis",
+      "section": 29,
+      "page": 160,
+      "slots": []
+    },
+    {
+      "id": "vadi-garlic",
+      "name": "Vadi, garlic",
+      "role": "papads-vadis",
+      "section": 29,
+      "page": 160,
+      "slots": []
+    },
+    {
+      "id": "vadi-onion",
+      "name": "Vadi, onion",
+      "role": "papads-vadis",
+      "section": 29,
+      "page": 160,
+      "slots": []
+    },
+    {
+      "id": "vegetable-curd-bath",
+      "name": "Vegetable curd bath",
+      "role": "rice-dishes",
+      "section": 14,
+      "page": 75,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "vegetable-fried-rice",
+      "name": "Vegetable fried rice",
+      "role": "rice-dishes",
+      "section": 14,
+      "page": 78,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "vegetable-idli",
+      "name": "Vegetable idli",
+      "role": "idlis-idiappam",
+      "section": 18,
+      "page": 96,
+      "slots": []
+    },
+    {
+      "id": "vegetable-upkari",
+      "name": "Vegetable upkari",
+      "role": "plain-curries",
+      "section": 7,
+      "page": 34,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "venn-pongal",
+      "name": "Venn pongal",
+      "role": "rice-dishes",
+      "section": 14,
+      "page": 72,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "vern",
+      "name": "Vern",
+      "role": "saars-rasams-soups",
+      "section": 2,
+      "page": 15,
+      "slots": [
+        "main"
+      ]
+    },
+    {
+      "id": "wheat-payasam",
+      "name": "Wheat payasam",
+      "role": "payasams-kheers",
+      "section": 15,
+      "page": 81,
+      "slots": []
+    },
+    {
+      "id": "yogirathna",
+      "name": "Yogirathna",
+      "role": "mixed-vegetable-curries",
+      "section": 8,
+      "page": 42,
+      "slots": [
+        "main"
+      ]
+    }
+  ]
+}

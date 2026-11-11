@@ -1,0 +1,1573 @@
+{
+ "_meta": {
+  "file": "recipes.book.SYNTHETIC.fully-extracted.json",
+  "provenance": "SYNTHETIC, derived from recipes.book.SYNTHETIC.json by giving every tier-1 record a copy of syn-dalithoy's ingredient list. The copied ingredients are meaningless for the dishes they sit on.",
+  "purpose": "SRC-10: coverage line and the unextracted group must disappear once extraction is complete. Also SRC-09 at 24/24.",
+  "caveat": "syn-brinjal-masala-curry keeps its own list including its unresolved ingredient, so DSH-06 still has a fixture here. Every other record carries the dalithoy list."
+ },
+ "recipes": [
+  {
+   "id": "kokum-saar",
+   "name": "Kokum saar",
+   "kannadaName": "Birinda saaru",
+   "role": "saar",
+   "section": 2,
+   "page": 9,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": "partial",
+   "_pageProvenance": "REAL - printed page 9, confirmed on the recipe page (an earlier draft of the docs said 8, which was wrong)",
+   "_sectionProvenance": "REAL - section 2 'Saars, Rasams and Soups', SNACK-LIBRARY.md §2.1",
+   "_fieldNote": "name and page are REAL. kannadaName ('Birinda saaru') and the role slug are SYNTHETIC and unverified - no glossary extract exists (ARCHITECTURE.md §6 pass 1). Treat the Kannada name as a placeholder.",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-tomato-saar",
+   "name": "Tomāto saar",
+   "role": "saar",
+   "section": 2,
+   "page": 11,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "REAL - section 2",
+   "_fixtureRole": "DSH-02 (no kannadaName field at all) and SRC-07 (macron in name)",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-dalithoy",
+   "name": "Dalithoy",
+   "kannadaName": "Dali toyi",
+   "role": "saar",
+   "section": 2,
+   "page": 14,
+   "slots": [
+    "main"
+   ],
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "REAL - section 2",
+   "_fixtureRole": "DSH-04 - tier 2. Of 8 ingredients, 5 (asafoetida, mustard, curry-leaves, oil, salt) are on the REQUIREMENTS.md §5.1 stoplist, so 'major ones by default' must show exactly 3: toor dal, green chilli, coriander."
+  },
+  {
+   "id": "syn-ridge-gourd-sambar",
+   "name": "Ridge gourd sambar",
+   "kannadaName": "Heerekai sambar",
+   "role": "sambar",
+   "section": 4,
+   "page": 31,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "REAL - section 4 'Sambars, Kolambus and Hulis', SNACK-LIBRARY.md §2.1",
+   "_fixtureRole": "DSH-03 - the designated tier-1-only record. Carries nothing but name, kannadaName, role, section, page, slots.",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-ash-gourd-kolambu",
+   "name": "Ash gourd kolambu",
+   "kannadaName": "Boodkumbala kolambu",
+   "role": "sambar",
+   "section": 4,
+   "page": 35,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "REAL - section 4",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-brinjal-masala-curry",
+   "name": "Brinjal masala curry",
+   "kannadaName": "Badane kai upkari",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 62,
+   "slots": [
+    "main"
+   ],
+   "ingredients": [
+    {
+     "qtyText": "4 small brinjals",
+     "amount": 4,
+     "unit": "piece",
+     "item": "brinjal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1/2 cup toor dal",
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1/2 coconut, grated",
+     "item": "coconut",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A lemon-sized ball of tamarind",
+     "item": "A lemon-sized ball of tamarind",
+     "unresolved": true
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    }
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "REAL - section 10 'Masala Curries', SNACK-LIBRARY.md §2.1 'Out' list",
+   "_fixtureRole": "DSH-06 - ingredient 4 has unresolved: true and its 'item' holds the VERBATIM qtyText because no glossary id matched. The UI must render the text and guess no category. Also GEN-06 negative: section 10 must never reach Snack 2. Also DSH-05: amount/unit absent on unparseable quantities, per ARCHITECTURE.md §2.2."
+  },
+  {
+   "id": "syn-cabbage-masala-curry",
+   "name": "Cabbage masala curry",
+   "kannadaName": "Yele kosu ambat",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 66,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "REAL - section 10",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-coconut-rice",
+   "name": "Coconut rice",
+   "kannadaName": "Tengina anna",
+   "role": "rice",
+   "section": 14,
+   "page": 84,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "SYNTHETIC - the documents never name a rice section or its number. 14 is invented.",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-lemon-rice",
+   "name": "Lemon rice",
+   "kannadaName": "Chitranna",
+   "role": "rice",
+   "section": 14,
+   "page": 87,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "SYNTHETIC - section 14 is invented",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-jowar-bhakri",
+   "name": "Jowar bhakri",
+   "kannadaName": "Jolada rotti",
+   "role": "roti",
+   "section": 21,
+   "page": 118,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "REAL - section 21 'Bhakri, Roti and Cutlets', SNACK-LIBRARY.md §2.1",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-wheat-phulka",
+   "name": "Wheat phulka",
+   "kannadaName": "Godhi rotti",
+   "role": "roti",
+   "section": 21,
+   "page": 121,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "REAL - section 21",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-cucumber-tambuli",
+   "name": "Cucumber tambuli",
+   "kannadaName": "Southekai tambuli",
+   "role": "side",
+   "section": 16,
+   "page": 95,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "SYNTHETIC - section 16 is invented",
+   "_fixtureRole": "GEN-16 - the ONLY recipe in role 'side'. Swap on this dish must be unavailable and must say why. Do not add a second 'side' record without updating CRITERIA-MAP.md.",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-mango-sasam",
+   "name": "Mango sasam",
+   "kannadaName": "Ambe sasam",
+   "role": "sasam",
+   "section": 16,
+   "page": 98,
+   "slots": [
+    "main"
+   ],
+   "season": [
+    4,
+    5,
+    6,
+    7
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "SYNTHETIC - section 16 is invented",
+   "_nameProvenance": "REAL as a dish name - REQUIREMENTS.md §4.7 uses 'mango sasam in November' as the canonical wrong suggestion. The season months here are this fixture's reading of that sentence, not a documented tag.",
+   "_fixtureRole": "GEN-18 (never generated in November), GEN-19 (fallback must not reach for it), ASN-06 (user may still assign it in November)",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-pineapple-sasam",
+   "name": "Pineapple sasam",
+   "kannadaName": "Ananas sasam",
+   "role": "sasam",
+   "section": 16,
+   "page": 101,
+   "slots": [
+    "main"
+   ],
+   "season": [
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "SYNTHETIC - section 16 is invented",
+   "_fixtureRole": "With syn-mango-sasam this makes role 'sasam' 100% seasonal. In any month outside Mar-Jul the role has ZERO in-season candidates, which GEN-08 says must still produce a dish and GEN-19 says must not. Deliberate. See CRITERIA-MAP.md gap G-02.",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-lime-pickle",
+   "name": "Lime pickle",
+   "kannadaName": "Nimbe uppinakai",
+   "role": "pickle",
+   "section": 28,
+   "page": 152,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "REAL - section 28 'Pickles', SNACK-LIBRARY.md §2.1 'Out' list",
+   "_fixtureRole": "GEN-06 negative - section 28 must never reach Snack 2",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-upma",
+   "name": "Rava upma",
+   "kannadaName": "Uppittu",
+   "role": "breakfast",
+   "section": 17,
+   "page": 104,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "REAL - section 17 'Breakfast Dishes', SNACK-LIBRARY.md §2.1 'In' list",
+   "_fixtureRole": "GEN-04, GEN-07 (eligible for both slots on one day, so the collision rule has something to prevent)",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-avalakki-phova",
+   "name": "Avalakki phova",
+   "kannadaName": "Avalakki",
+   "role": "breakfast",
+   "section": 17,
+   "page": 107,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "REAL - section 17",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-rice-idli",
+   "name": "Rice idli",
+   "kannadaName": "Idli",
+   "role": "idli",
+   "section": 18,
+   "page": 109,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "REAL - section 18 'Idlis and Idiappam', SNACK-LIBRARY.md §2.1",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-idiappam",
+   "name": "Idiappam",
+   "kannadaName": "Shavige",
+   "role": "idli",
+   "section": 18,
+   "page": 112,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "REAL - section 18",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-neer-dosai",
+   "name": "Neer dosai",
+   "kannadaName": "Nīr dōse",
+   "role": "dosai",
+   "section": 19,
+   "page": 114,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "REAL - section 19 'Dosai Varieties', SNACK-LIBRARY.md §2.1",
+   "_fixtureRole": "SRC-03 and SRC-07 - kannadaName carries macrons, so 'nir dose' and 'NIR DOSE' must both match",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-set-dosai",
+   "name": "Set dosai",
+   "kannadaName": "Set dose",
+   "role": "dosai",
+   "section": 19,
+   "page": 116,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "REAL - section 19",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-colocasia-patholi",
+   "name": "Colocasia patholi",
+   "kannadaName": "Pathrode",
+   "role": "patholi",
+   "section": 20,
+   "page": 117,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "season": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "needsReview": true,
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "REAL - section 20 'Appe, Mudde and Patholi', SNACK-LIBRARY.md §2.1",
+   "_fixtureRole": "needsReview true (no criterion covers it - gap G-14) and a seasonal breakfast-slot dish, so GEN-18 is exercised outside the main meal too. REQUIREMENTS.md §4.7 names colocasia leaf as seasonal on its face.",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-appe-sweet",
+   "name": "Rava appe",
+   "kannadaName": "Appé",
+   "role": "sweet",
+   "section": 26,
+   "page": 140,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "REAL - section 26 'Sweets', SNACK-LIBRARY.md §2.1 'In' list",
+   "_fixtureRole": "GEN-14 / ASN-05 - the sweet that must never be produced by a swap in the saar position, and must be assignable there by hand without comment",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  },
+  {
+   "id": "syn-chakli",
+   "name": "Chakli",
+   "kannadaName": "Chakkuli",
+   "role": "savoury",
+   "section": 25,
+   "page": 136,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true,
+   "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+   "_sectionProvenance": "REAL - section 25 'Savouries', SNACK-LIBRARY.md §2.1 'In' list",
+   "ingredients": [
+    {
+     "qtyText": "1 cup toor dal",
+     "amount": 1,
+     "unit": "cup",
+     "item": "toor-dal",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 green chillies, slit",
+     "amount": 2,
+     "unit": "piece",
+     "item": "green-chilli",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A pinch of asafoetida",
+     "item": "asafoetida",
+     "unresolved": false
+    },
+    {
+     "qtyText": "1 tsp mustard seeds",
+     "amount": 1,
+     "unit": "tsp",
+     "item": "mustard",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A sprig of curry leaves",
+     "item": "curry-leaves",
+     "unresolved": false
+    },
+    {
+     "qtyText": "2 tsp coconut oil",
+     "amount": 2,
+     "unit": "tsp",
+     "item": "oil",
+     "unresolved": false
+    },
+    {
+     "qtyText": "Salt to taste",
+     "item": "salt",
+     "unresolved": false
+    },
+    {
+     "qtyText": "A small bunch of coriander",
+     "item": "coriander-leaves",
+     "unresolved": false
+    }
+   ]
+  }
+ ]
+}

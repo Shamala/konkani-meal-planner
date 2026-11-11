@@ -1,0 +1,375 @@
+{
+  "_meta": {
+    "file": "recipes.book.SYNTHETIC.json",
+    "provenance": "MIXED, OVERWHELMINGLY SYNTHETIC. Read _synthetic and _pageProvenance on every record before trusting any field.",
+    "whySynthetic": [
+      "Pass 2 extraction has not run (ARCHITECTURE.md §6: it is the ship gate). No machine-readable list of the book's ~400 recipes, their roles or their printed page numbers exists yet.",
+      "The project documents name exactly ONE book dish together with its page: 'Kokum saar - page 9' (README.md, DESIGN.md §3.3, corrected 2026-11-11). That is the only record here with a real page number.",
+      "Every other record is invented to fill a role the fixture corpus needs. Its page number is a PLACEHOLDER and must never be quoted to a user, printed in a UI screenshot that leaves the test suite, or copied into recipes.json."
+    ],
+    "whatIsReal": {
+      "sectionNumbersAndNames": "Real. Taken from SNACK-LIBRARY.md §2.1, which lists book sections 2, 4, 10, 11, 17, 18, 19, 20, 21, 23, 24, 25, 26 and 28 by number and name. Records whose section is marked _sectionProvenance: SYNTHETIC use a section number the documents never state.",
+      "pageRange": "Real. REQUIREMENTS.md §2 gives printed pages 6-165 for recipes, glossary 168-170, index 171 on. All placeholder pages sit inside 6-165 so range validation is exercised, which is also exactly why they look real and are not.",
+      "dishNames": "'Kokum saar' is real (README.md). 'Mango sasam' is real as a dish name (REQUIREMENTS.md §4.7 uses it as the canonical out-of-season example) but its page here is a placeholder. All other names are plausible GSB dishes invented for this fixture.",
+      "roleTaxonomy": "SYNTHETIC. REQUIREMENTS.md §3.3 says role comes from the book's 30 section headings but never enumerates them. The 14 role slugs here are this fixture's own encoding. See CRITERIA-MAP.md gap G-03."
+    },
+    "shape": "ARCHITECTURE.md §2.1. Tier is implicit in field presence - no 'tier' field. A record with no 'ingredients' is tier 1; with 'ingredients' and no 'method' it is tier 2.",
+    "coverage": {
+      "recipes": 24,
+      "roles": 14,
+      "slotsCovered": ["breakfast", "main", "snack2"],
+      "slotNotCovered": "snack1 - by design. REQUIREMENTS.md §3.2: Snack 1 never draws from the book. See snack1.library.json.",
+      "designatedSpecialCases": {
+        "tier1Only": "syn-ridge-gourd-sambar - name, role, section, page, slots and nothing else. DSH-03.",
+        "noKannadaName": "syn-tomato-saar - kannadaName field absent, not null, not empty. DSH-02.",
+        "unresolvedIngredient": "syn-brinjal-masala-curry - ingredient 4 has unresolved: true. DSH-06.",
+        "roleWithExactlyOneRecipe": "role 'side' holds only syn-cucumber-tambuli. GEN-16.",
+        "roleWhereEveryRecipeIsSeasonal": "role 'sasam' - both records carry season, and neither covers November. Deliberate collision fixture for GEN-08 vs GEN-19. See CRITERIA-MAP.md gap G-02.",
+        "sameDishInBreakfastAndSnack2": "the six breakfast/idli/dosai records all carry slots ['breakfast','snack2']. GEN-07.",
+        "excludedFromSnack2": "syn-brinjal-masala-curry (section 10) and syn-lime-pickle (section 28) are in the SNACK-LIBRARY.md §2.1 'Out' list. GEN-06 negative fixture.",
+        "needsReview": "syn-colocasia-patholi - needsReview true. No criterion covers it; see gap G-14.",
+        "diacritics": "syn-tomato-saar name, syn-neer-dosai and syn-appe-sweet kannadaName carry macrons. SRC-07.",
+        "stoplistHeavy": "syn-dalithoy - 5 of its 8 ingredients are on the seasoning stoplist. DSH-04."
+      }
+    },
+    "mainMealComposition": {
+      "_note": "GEN-03 requires the main meal be composed by role. REQUIREMENTS.md §3 says 3-5 dishes; §3.3 and GEN-03 name four positions. The count is not pinned anywhere - see CRITERIA-MAP.md gap G-04. This fixture supplies a four-position reading so GEN-03 has something to assert against.",
+      "positions": [
+        { "position": 1, "label": "saar or rasam", "roles": ["saar"] },
+        { "position": 2, "label": "curry", "roles": ["masala-curry", "sambar"] },
+        { "position": 3, "label": "rice or roti", "roles": ["rice", "roti"] },
+        { "position": 4, "label": "side", "roles": ["side", "sasam", "pickle"] }
+      ]
+    },
+    "retiredIds": {
+      "_note": "HST-06. These ids were never in a shipped corpus; they exist so a build-time lint has something to reject.",
+      "ids": ["syn-retired-kokum-saar-v1", "syn-retired-neer-dosai-old"]
+    }
+  },
+
+  "recipes": [
+    {
+      "id": "kokum-saar",
+      "name": "Kokum saar",
+      "kannadaName": "Birinda saaru",
+      "role": "saar",
+      "section": 2,
+      "page": 9,
+      "slots": ["main"],
+      "_synthetic": "partial",
+      "_pageProvenance": "REAL - printed page 9, confirmed on the recipe page (an earlier draft of the docs said 8, which was wrong)",
+      "_sectionProvenance": "REAL - section 2 'Saars, Rasams and Soups', SNACK-LIBRARY.md §2.1",
+      "_fieldNote": "name and page are REAL. kannadaName ('Birinda saaru') and the role slug are SYNTHETIC and unverified - no glossary extract exists (ARCHITECTURE.md §6 pass 1). Treat the Kannada name as a placeholder."
+    },
+    {
+      "id": "syn-tomato-saar",
+      "name": "Tomāto saar",
+      "role": "saar",
+      "section": 2,
+      "page": 11,
+      "slots": ["main"],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "REAL - section 2",
+      "_fixtureRole": "DSH-02 (no kannadaName field at all) and SRC-07 (macron in name)"
+    },
+    {
+      "id": "syn-dalithoy",
+      "name": "Dalithoy",
+      "kannadaName": "Dali toyi",
+      "role": "saar",
+      "section": 2,
+      "page": 14,
+      "slots": ["main"],
+      "ingredients": [
+        { "qtyText": "1 cup toor dal", "amount": 1, "unit": "cup", "item": "toor-dal", "unresolved": false },
+        { "qtyText": "2 green chillies, slit", "amount": 2, "unit": "piece", "item": "green-chilli", "unresolved": false },
+        { "qtyText": "A pinch of asafoetida", "item": "asafoetida", "unresolved": false },
+        { "qtyText": "1 tsp mustard seeds", "amount": 1, "unit": "tsp", "item": "mustard", "unresolved": false },
+        { "qtyText": "A sprig of curry leaves", "item": "curry-leaves", "unresolved": false },
+        { "qtyText": "2 tsp coconut oil", "amount": 2, "unit": "tsp", "item": "oil", "unresolved": false },
+        { "qtyText": "Salt to taste", "item": "salt", "unresolved": false },
+        { "qtyText": "A small bunch of coriander", "item": "coriander-leaves", "unresolved": false }
+      ],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "REAL - section 2",
+      "_fixtureRole": "DSH-04 - tier 2. Of 8 ingredients, 5 (asafoetida, mustard, curry-leaves, oil, salt) are on the REQUIREMENTS.md §5.1 stoplist, so 'major ones by default' must show exactly 3: toor dal, green chilli, coriander."
+    },
+    {
+      "id": "syn-ridge-gourd-sambar",
+      "name": "Ridge gourd sambar",
+      "kannadaName": "Heerekai sambar",
+      "role": "sambar",
+      "section": 4,
+      "page": 31,
+      "slots": ["main"],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "REAL - section 4 'Sambars, Kolambus and Hulis', SNACK-LIBRARY.md §2.1",
+      "_fixtureRole": "DSH-03 - the designated tier-1-only record. Carries nothing but name, kannadaName, role, section, page, slots."
+    },
+    {
+      "id": "syn-ash-gourd-kolambu",
+      "name": "Ash gourd kolambu",
+      "kannadaName": "Boodkumbala kolambu",
+      "role": "sambar",
+      "section": 4,
+      "page": 35,
+      "slots": ["main"],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "REAL - section 4"
+    },
+    {
+      "id": "syn-brinjal-masala-curry",
+      "name": "Brinjal masala curry",
+      "kannadaName": "Badane kai upkari",
+      "role": "masala-curry",
+      "section": 10,
+      "page": 62,
+      "slots": ["main"],
+      "ingredients": [
+        { "qtyText": "4 small brinjals", "amount": 4, "unit": "piece", "item": "brinjal", "unresolved": false },
+        { "qtyText": "1/2 cup toor dal", "unit": "cup", "item": "toor-dal", "unresolved": false },
+        { "qtyText": "1/2 coconut, grated", "item": "coconut", "unresolved": false },
+        { "qtyText": "A lemon-sized ball of tamarind", "item": "A lemon-sized ball of tamarind", "unresolved": true },
+        { "qtyText": "1 tsp mustard seeds", "amount": 1, "unit": "tsp", "item": "mustard", "unresolved": false },
+        { "qtyText": "Salt to taste", "item": "salt", "unresolved": false }
+      ],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "REAL - section 10 'Masala Curries', SNACK-LIBRARY.md §2.1 'Out' list",
+      "_fixtureRole": "DSH-06 - ingredient 4 has unresolved: true and its 'item' holds the VERBATIM qtyText because no glossary id matched. The UI must render the text and guess no category. Also GEN-06 negative: section 10 must never reach Snack 2. Also DSH-05: amount/unit absent on unparseable quantities, per ARCHITECTURE.md §2.2."
+    },
+    {
+      "id": "syn-cabbage-masala-curry",
+      "name": "Cabbage masala curry",
+      "kannadaName": "Yele kosu ambat",
+      "role": "masala-curry",
+      "section": 10,
+      "page": 66,
+      "slots": ["main"],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "REAL - section 10"
+    },
+    {
+      "id": "syn-coconut-rice",
+      "name": "Coconut rice",
+      "kannadaName": "Tengina anna",
+      "role": "rice",
+      "section": 14,
+      "page": 84,
+      "slots": ["main"],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "SYNTHETIC - the documents never name a rice section or its number. 14 is invented."
+    },
+    {
+      "id": "syn-lemon-rice",
+      "name": "Lemon rice",
+      "kannadaName": "Chitranna",
+      "role": "rice",
+      "section": 14,
+      "page": 87,
+      "slots": ["main"],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "SYNTHETIC - section 14 is invented"
+    },
+    {
+      "id": "syn-jowar-bhakri",
+      "name": "Jowar bhakri",
+      "kannadaName": "Jolada rotti",
+      "role": "roti",
+      "section": 21,
+      "page": 118,
+      "slots": ["main"],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "REAL - section 21 'Bhakri, Roti and Cutlets', SNACK-LIBRARY.md §2.1"
+    },
+    {
+      "id": "syn-wheat-phulka",
+      "name": "Wheat phulka",
+      "kannadaName": "Godhi rotti",
+      "role": "roti",
+      "section": 21,
+      "page": 121,
+      "slots": ["main"],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "REAL - section 21"
+    },
+    {
+      "id": "syn-cucumber-tambuli",
+      "name": "Cucumber tambuli",
+      "kannadaName": "Southekai tambuli",
+      "role": "side",
+      "section": 16,
+      "page": 95,
+      "slots": ["main"],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "SYNTHETIC - section 16 is invented",
+      "_fixtureRole": "GEN-16 - the ONLY recipe in role 'side'. Swap on this dish must be unavailable and must say why. Do not add a second 'side' record without updating CRITERIA-MAP.md."
+    },
+    {
+      "id": "syn-mango-sasam",
+      "name": "Mango sasam",
+      "kannadaName": "Ambe sasam",
+      "role": "sasam",
+      "section": 16,
+      "page": 98,
+      "slots": ["main"],
+      "season": [4, 5, 6, 7],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "SYNTHETIC - section 16 is invented",
+      "_nameProvenance": "REAL as a dish name - REQUIREMENTS.md §4.7 uses 'mango sasam in November' as the canonical wrong suggestion. The season months here are this fixture's reading of that sentence, not a documented tag.",
+      "_fixtureRole": "GEN-18 (never generated in November), GEN-19 (fallback must not reach for it), ASN-06 (user may still assign it in November)"
+    },
+    {
+      "id": "syn-pineapple-sasam",
+      "name": "Pineapple sasam",
+      "kannadaName": "Ananas sasam",
+      "role": "sasam",
+      "section": 16,
+      "page": 101,
+      "slots": ["main"],
+      "season": [3, 4, 5, 6, 7],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "SYNTHETIC - section 16 is invented",
+      "_fixtureRole": "With syn-mango-sasam this makes role 'sasam' 100% seasonal. In any month outside Mar-Jul the role has ZERO in-season candidates, which GEN-08 says must still produce a dish and GEN-19 says must not. Deliberate. See CRITERIA-MAP.md gap G-02."
+    },
+    {
+      "id": "syn-lime-pickle",
+      "name": "Lime pickle",
+      "kannadaName": "Nimbe uppinakai",
+      "role": "pickle",
+      "section": 28,
+      "page": 152,
+      "slots": ["main"],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "REAL - section 28 'Pickles', SNACK-LIBRARY.md §2.1 'Out' list",
+      "_fixtureRole": "GEN-06 negative - section 28 must never reach Snack 2"
+    },
+    {
+      "id": "syn-upma",
+      "name": "Rava upma",
+      "kannadaName": "Uppittu",
+      "role": "breakfast",
+      "section": 17,
+      "page": 104,
+      "slots": ["breakfast", "snack2"],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "REAL - section 17 'Breakfast Dishes', SNACK-LIBRARY.md §2.1 'In' list",
+      "_fixtureRole": "GEN-04, GEN-07 (eligible for both slots on one day, so the collision rule has something to prevent)"
+    },
+    {
+      "id": "syn-avalakki-phova",
+      "name": "Avalakki phova",
+      "kannadaName": "Avalakki",
+      "role": "breakfast",
+      "section": 17,
+      "page": 107,
+      "slots": ["breakfast", "snack2"],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "REAL - section 17"
+    },
+    {
+      "id": "syn-rice-idli",
+      "name": "Rice idli",
+      "kannadaName": "Idli",
+      "role": "idli",
+      "section": 18,
+      "page": 109,
+      "slots": ["breakfast", "snack2"],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "REAL - section 18 'Idlis and Idiappam', SNACK-LIBRARY.md §2.1"
+    },
+    {
+      "id": "syn-idiappam",
+      "name": "Idiappam",
+      "kannadaName": "Shavige",
+      "role": "idli",
+      "section": 18,
+      "page": 112,
+      "slots": ["breakfast", "snack2"],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "REAL - section 18"
+    },
+    {
+      "id": "syn-neer-dosai",
+      "name": "Neer dosai",
+      "kannadaName": "Nīr dōse",
+      "role": "dosai",
+      "section": 19,
+      "page": 114,
+      "slots": ["breakfast", "snack2"],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "REAL - section 19 'Dosai Varieties', SNACK-LIBRARY.md §2.1",
+      "_fixtureRole": "SRC-03 and SRC-07 - kannadaName carries macrons, so 'nir dose' and 'NIR DOSE' must both match"
+    },
+    {
+      "id": "syn-set-dosai",
+      "name": "Set dosai",
+      "kannadaName": "Set dose",
+      "role": "dosai",
+      "section": 19,
+      "page": 116,
+      "slots": ["breakfast", "snack2"],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "REAL - section 19"
+    },
+    {
+      "id": "syn-colocasia-patholi",
+      "name": "Colocasia patholi",
+      "kannadaName": "Pathrode",
+      "role": "patholi",
+      "section": 20,
+      "page": 117,
+      "slots": ["breakfast", "snack2"],
+      "season": [6, 7, 8, 9],
+      "needsReview": true,
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "REAL - section 20 'Appe, Mudde and Patholi', SNACK-LIBRARY.md §2.1",
+      "_fixtureRole": "needsReview true (no criterion covers it - gap G-14) and a seasonal breakfast-slot dish, so GEN-18 is exercised outside the main meal too. REQUIREMENTS.md §4.7 names colocasia leaf as seasonal on its face."
+    },
+    {
+      "id": "syn-appe-sweet",
+      "name": "Rava appe",
+      "kannadaName": "Appé",
+      "role": "sweet",
+      "section": 26,
+      "page": 140,
+      "slots": ["snack2"],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "REAL - section 26 'Sweets', SNACK-LIBRARY.md §2.1 'In' list",
+      "_fixtureRole": "GEN-14 / ASN-05 - the sweet that must never be produced by a swap in the saar position, and must be assignable there by hand without comment"
+    },
+    {
+      "id": "syn-chakli",
+      "name": "Chakli",
+      "kannadaName": "Chakkuli",
+      "role": "savoury",
+      "section": 25,
+      "page": 136,
+      "slots": ["snack2"],
+      "_synthetic": true,
+      "_pageProvenance": "SYNTHETIC PLACEHOLDER",
+      "_sectionProvenance": "REAL - section 25 'Savouries', SNACK-LIBRARY.md §2.1 'In' list"
+    }
+  ]
+}

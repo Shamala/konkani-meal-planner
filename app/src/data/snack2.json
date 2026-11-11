@@ -1,0 +1,62 @@
+[
+  {
+    "id": "s2-moong-dal-chilla",
+    "name": "Moong dal chilla",
+    "components": "Savoury lentil pancake; rolls up well"
+  },
+  {
+    "id": "s2-dahi-poha",
+    "name": "Dahi poha",
+    "components": "Curd with flattened rice; no cooking"
+  },
+  {
+    "id": "s2-corn-chaat",
+    "name": "Corn chaat",
+    "components": "Boiled sweet corn, chaat masala"
+  },
+  {
+    "id": "s2-roasted-chickpeas",
+    "name": "Roasted chickpeas",
+    "components": "Chaat masala, salt, lime"
+  },
+  {
+    "id": "s2-roasted-makhana",
+    "name": "Roasted makhana",
+    "components": "Fox nuts, salt and pepper"
+  },
+  {
+    "id": "s2-paneer-nuggets",
+    "name": "Paneer nuggets",
+    "components": "Shallow-fried, simple masala"
+  },
+  {
+    "id": "s2-thalipeeth",
+    "name": "Thalipeeth",
+    "components": "Multigrain flatbread"
+  },
+  {
+    "id": "s2-chutney-roll",
+    "name": "Chutney roll",
+    "components": "Phulka, ghee, chutney. The no-cook fallback"
+  },
+  {
+    "id": "s2-date-and-nut-balls",
+    "name": "Date and nut balls",
+    "components": "No added sugar"
+  },
+  {
+    "id": "s2-bajra-ladoo",
+    "name": "Bajra ladoo",
+    "components": "Pearl millet; slow-release energy"
+  },
+  {
+    "id": "s2-vegetable-upma",
+    "name": "Vegetable upma",
+    "components": "Semolina with vegetables"
+  },
+  {
+    "id": "s2-banana-and-nut-milkshake",
+    "name": "Banana and nut milkshake",
+    "components": "Blended, no added sugar"
+  }
+]

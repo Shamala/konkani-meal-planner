@@ -1,0 +1,1720 @@
+{
+ "_meta": {
+  "file": "recipes.sim-rich.SYNTHETIC.json",
+  "provenance": "100% SYNTHETIC. Names are 'SIM ...' and every page is 0, which is outside the book's 6-165 range ON PURPOSE so it can never be mistaken for or lint-pass as real data.",
+  "purpose": "Pools large enough that the repeat windows can hold without fallback, for VAR-01, VAR-02, VAR-05 and VAR-06 (see SIMULATIONS.md). recipes.book.SYNTHETIC.json is deliberately too small for that: its role pools are 1-3 recipes.",
+  "pools": {
+   "saar": 30,
+   "masala-curry": 30,
+   "rice": 30,
+   "side": 30,
+   "breakfast (also snack2-eligible)": 12,
+   "snack2 sweets": 20
+  },
+  "mainMealPositions": [
+   [
+    "saar"
+   ],
+   [
+    "masala-curry"
+   ],
+   [
+    "rice"
+   ],
+   [
+    "side"
+   ]
+  ],
+  "notes": [
+   "No season tags: seasonality is not this file's job. Combine with snack1.library.json for the Snack 1 slot.",
+   "Why 30: the window arithmetic needs >=22 per main-meal position (inclusive edge) or >=21 (exclusive edge). 30 leaves headroom. See SIMULATIONS.md S-B.",
+   "Role 'side' holds 30 here and exactly 1 in recipes.book.SYNTHETIC.json. The two files are never loaded together."
+  ]
+ },
+ "recipes": [
+  {
+   "id": "sim-saar-01",
+   "name": "SIM saar 01",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-02",
+   "name": "SIM saar 02",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-03",
+   "name": "SIM saar 03",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-04",
+   "name": "SIM saar 04",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-05",
+   "name": "SIM saar 05",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-06",
+   "name": "SIM saar 06",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-07",
+   "name": "SIM saar 07",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-08",
+   "name": "SIM saar 08",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-09",
+   "name": "SIM saar 09",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-10",
+   "name": "SIM saar 10",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-11",
+   "name": "SIM saar 11",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-12",
+   "name": "SIM saar 12",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-13",
+   "name": "SIM saar 13",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-14",
+   "name": "SIM saar 14",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-15",
+   "name": "SIM saar 15",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-16",
+   "name": "SIM saar 16",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-17",
+   "name": "SIM saar 17",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-18",
+   "name": "SIM saar 18",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-19",
+   "name": "SIM saar 19",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-20",
+   "name": "SIM saar 20",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-21",
+   "name": "SIM saar 21",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-22",
+   "name": "SIM saar 22",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-23",
+   "name": "SIM saar 23",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-24",
+   "name": "SIM saar 24",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-25",
+   "name": "SIM saar 25",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-26",
+   "name": "SIM saar 26",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-27",
+   "name": "SIM saar 27",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-28",
+   "name": "SIM saar 28",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-29",
+   "name": "SIM saar 29",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-saar-30",
+   "name": "SIM saar 30",
+   "role": "saar",
+   "section": 2,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-01",
+   "name": "SIM curry 01",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-02",
+   "name": "SIM curry 02",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-03",
+   "name": "SIM curry 03",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-04",
+   "name": "SIM curry 04",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-05",
+   "name": "SIM curry 05",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-06",
+   "name": "SIM curry 06",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-07",
+   "name": "SIM curry 07",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-08",
+   "name": "SIM curry 08",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-09",
+   "name": "SIM curry 09",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-10",
+   "name": "SIM curry 10",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-11",
+   "name": "SIM curry 11",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-12",
+   "name": "SIM curry 12",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-13",
+   "name": "SIM curry 13",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-14",
+   "name": "SIM curry 14",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-15",
+   "name": "SIM curry 15",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-16",
+   "name": "SIM curry 16",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-17",
+   "name": "SIM curry 17",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-18",
+   "name": "SIM curry 18",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-19",
+   "name": "SIM curry 19",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-20",
+   "name": "SIM curry 20",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-21",
+   "name": "SIM curry 21",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-22",
+   "name": "SIM curry 22",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-23",
+   "name": "SIM curry 23",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-24",
+   "name": "SIM curry 24",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-25",
+   "name": "SIM curry 25",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-26",
+   "name": "SIM curry 26",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-27",
+   "name": "SIM curry 27",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-28",
+   "name": "SIM curry 28",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-29",
+   "name": "SIM curry 29",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-curry-30",
+   "name": "SIM curry 30",
+   "role": "masala-curry",
+   "section": 10,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-01",
+   "name": "SIM rice 01",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-02",
+   "name": "SIM rice 02",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-03",
+   "name": "SIM rice 03",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-04",
+   "name": "SIM rice 04",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-05",
+   "name": "SIM rice 05",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-06",
+   "name": "SIM rice 06",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-07",
+   "name": "SIM rice 07",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-08",
+   "name": "SIM rice 08",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-09",
+   "name": "SIM rice 09",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-10",
+   "name": "SIM rice 10",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-11",
+   "name": "SIM rice 11",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-12",
+   "name": "SIM rice 12",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-13",
+   "name": "SIM rice 13",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-14",
+   "name": "SIM rice 14",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-15",
+   "name": "SIM rice 15",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-16",
+   "name": "SIM rice 16",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-17",
+   "name": "SIM rice 17",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-18",
+   "name": "SIM rice 18",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-19",
+   "name": "SIM rice 19",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-20",
+   "name": "SIM rice 20",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-21",
+   "name": "SIM rice 21",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-22",
+   "name": "SIM rice 22",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-23",
+   "name": "SIM rice 23",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-24",
+   "name": "SIM rice 24",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-25",
+   "name": "SIM rice 25",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-26",
+   "name": "SIM rice 26",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-27",
+   "name": "SIM rice 27",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-28",
+   "name": "SIM rice 28",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-29",
+   "name": "SIM rice 29",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-rice-30",
+   "name": "SIM rice 30",
+   "role": "rice",
+   "section": 14,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-01",
+   "name": "SIM side 01",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-02",
+   "name": "SIM side 02",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-03",
+   "name": "SIM side 03",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-04",
+   "name": "SIM side 04",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-05",
+   "name": "SIM side 05",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-06",
+   "name": "SIM side 06",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-07",
+   "name": "SIM side 07",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-08",
+   "name": "SIM side 08",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-09",
+   "name": "SIM side 09",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-10",
+   "name": "SIM side 10",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-11",
+   "name": "SIM side 11",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-12",
+   "name": "SIM side 12",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-13",
+   "name": "SIM side 13",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-14",
+   "name": "SIM side 14",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-15",
+   "name": "SIM side 15",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-16",
+   "name": "SIM side 16",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-17",
+   "name": "SIM side 17",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-18",
+   "name": "SIM side 18",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-19",
+   "name": "SIM side 19",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-20",
+   "name": "SIM side 20",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-21",
+   "name": "SIM side 21",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-22",
+   "name": "SIM side 22",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-23",
+   "name": "SIM side 23",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-24",
+   "name": "SIM side 24",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-25",
+   "name": "SIM side 25",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-26",
+   "name": "SIM side 26",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-27",
+   "name": "SIM side 27",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-28",
+   "name": "SIM side 28",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-29",
+   "name": "SIM side 29",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-side-30",
+   "name": "SIM side 30",
+   "role": "side",
+   "section": 16,
+   "page": 0,
+   "slots": [
+    "main"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-bf-01",
+   "name": "SIM breakfast 01",
+   "role": "breakfast",
+   "section": 17,
+   "page": 0,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-bf-02",
+   "name": "SIM breakfast 02",
+   "role": "breakfast",
+   "section": 17,
+   "page": 0,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-bf-03",
+   "name": "SIM breakfast 03",
+   "role": "breakfast",
+   "section": 17,
+   "page": 0,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-bf-04",
+   "name": "SIM breakfast 04",
+   "role": "breakfast",
+   "section": 17,
+   "page": 0,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-bf-05",
+   "name": "SIM breakfast 05",
+   "role": "breakfast",
+   "section": 17,
+   "page": 0,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-bf-06",
+   "name": "SIM breakfast 06",
+   "role": "breakfast",
+   "section": 17,
+   "page": 0,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-bf-07",
+   "name": "SIM breakfast 07",
+   "role": "breakfast",
+   "section": 17,
+   "page": 0,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-bf-08",
+   "name": "SIM breakfast 08",
+   "role": "breakfast",
+   "section": 17,
+   "page": 0,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-bf-09",
+   "name": "SIM breakfast 09",
+   "role": "breakfast",
+   "section": 17,
+   "page": 0,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-bf-10",
+   "name": "SIM breakfast 10",
+   "role": "breakfast",
+   "section": 17,
+   "page": 0,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-bf-11",
+   "name": "SIM breakfast 11",
+   "role": "breakfast",
+   "section": 17,
+   "page": 0,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-bf-12",
+   "name": "SIM breakfast 12",
+   "role": "breakfast",
+   "section": 17,
+   "page": 0,
+   "slots": [
+    "breakfast",
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-01",
+   "name": "SIM sweet 01",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-02",
+   "name": "SIM sweet 02",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-03",
+   "name": "SIM sweet 03",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-04",
+   "name": "SIM sweet 04",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-05",
+   "name": "SIM sweet 05",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-06",
+   "name": "SIM sweet 06",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-07",
+   "name": "SIM sweet 07",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-08",
+   "name": "SIM sweet 08",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-09",
+   "name": "SIM sweet 09",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-10",
+   "name": "SIM sweet 10",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-11",
+   "name": "SIM sweet 11",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-12",
+   "name": "SIM sweet 12",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-13",
+   "name": "SIM sweet 13",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-14",
+   "name": "SIM sweet 14",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-15",
+   "name": "SIM sweet 15",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-16",
+   "name": "SIM sweet 16",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-17",
+   "name": "SIM sweet 17",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-18",
+   "name": "SIM sweet 18",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-19",
+   "name": "SIM sweet 19",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  },
+  {
+   "id": "sim-sweet-20",
+   "name": "SIM sweet 20",
+   "role": "sweet",
+   "section": 26,
+   "page": 0,
+   "slots": [
+    "snack2"
+   ],
+   "_synthetic": true
+  }
+ ]
+}

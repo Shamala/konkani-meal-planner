@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "file": "glossary.SYNTHETIC.json",
+    "provenance": "SYNTHETIC. The real glossary is printed pages 168-170 of the cookbook and has not been extracted (ARCHITECTURE.md §6, pass 1). Nothing here was read off the book.",
+    "whatItIsFor": "Ingredient ids in recipes.book.SYNTHETIC.json resolve against this file. It exists so DSH-06 (unresolved ingredient), DSH-04 (stoplist filtering) and SRC-02 (ingredient search) have a resolution target.",
+    "shape": "REQUIREMENTS.md §6 says the glossary gives the ingredient master list with Kannada names in transliterated Latin script.",
+    "deliberateOmission": "There is no entry for tamarind. That is what makes syn-brinjal-masala-curry's fourth ingredient unresolved. Adding a tamarind entry breaks DSH-06."
+  },
+  "entries": [
+    { "id": "toor-dal", "name": "Toor dal", "kannadaName": "Togari bele", "stoplist": false },
+    { "id": "green-chilli", "name": "Green chilli", "kannadaName": "Hasi menasu", "stoplist": false },
+    { "id": "brinjal", "name": "Brinjal", "kannadaName": "Badane kai", "stoplist": false },
+    { "id": "coconut", "name": "Coconut", "kannadaName": "Tengina kai", "stoplist": false },
+    { "id": "coriander-leaves", "name": "Coriander leaves", "kannadaName": "Kottambari soppu", "stoplist": false },
+    { "id": "mustard", "name": "Mustard seeds", "kannadaName": "Sasive", "stoplist": true },
+    { "id": "curry-leaves", "name": "Curry leaves", "kannadaName": "Karibevu", "stoplist": true },
+    { "id": "asafoetida", "name": "Asafoetida", "kannadaName": "Ingu", "stoplist": true },
+    { "id": "oil", "name": "Oil", "kannadaName": "Enne", "stoplist": true },
+    { "id": "salt", "name": "Salt", "kannadaName": "Uppu", "stoplist": true }
+  ]
+}
