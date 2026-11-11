@@ -3,10 +3,11 @@
 Single-user offline PWA. Vite + React + TypeScript, Dexie over IndexedDB, static JSON corpus,
 PWA via `vite-plugin-pwa`. No backend, no network at runtime, no model call anywhere.
 
-**Status (2026-11-03):** scaffold, types, storage, generator, slot writes and week lifecycle are
-built and tested. **No screens exist.** `src/App.tsx` is a placeholder; the screens are mocked
-but not signed off. The real recipe corpus does not exist (Pass 2 extraction, `ARCHITECTURE.md`
-section 6, is unstarted), so all checks run against a small synthetic corpus.
+**Status (2026-11-11):** Phase 1 is built: Today, Week (current week), Dish and Search screens in
+`src/ui/`, over the engine and storage. It runs on the real tier-1 corpus in `../extraction/`
+(416 dishes, names and printed pages; no ingredients or methods yet). Swap, regenerate, next week
+and Settings are Phase 2 and 3 (`../RELEASE-PLAN.md`). Engine checks still use a small synthetic
+fixture; `src/engine/corpus.test.ts` and `src/ui/ui.test.ts` use the real corpus.
 
 Product rules live in `../REQUIREMENTS.md` and win any disagreement. This folder implements
 `../ARCHITECTURE.md` sections 2 to 3.
