@@ -4,14 +4,21 @@ import { describe } from '../corpus';
 import { useSession } from '../session';
 import type { OpenDish } from '../nav';
 
-export function Today({ open }: { open: OpenDish }) {
+export function Today({ open, openSettings }: { open: OpenDish; openSettings: () => void }) {
   const { today, currentWeek } = useSession();
   const day = currentWeek?.days.find((d) => d.date === today);
   if (!currentWeek || !day) return null;
 
   return (
     <>
-      <h1>Today</h1>
+      <div className="row">
+        <h1 style={{ flex: 1 }}>Today</h1>
+        <button className="icon" aria-label="Settings" onClick={openSettings}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 17h16" /><circle cx="9" cy="7" r="2.5" fill="var(--bg-page, #fff)" /><circle cx="15" cy="17" r="2.5" fill="var(--bg-page, #fff)" />
+          </svg>
+        </button>
+      </div>
       <p className="meta">{formatDate(today)}</p>
       {SLOTS.map((slot: Slot) => {
         const dishes = day.slots[slot].dishes;

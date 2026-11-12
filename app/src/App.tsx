@@ -1,5 +1,6 @@
 import { Suspense, useState } from 'react';
 import { Dish } from './ui/screens/Dish';
+import { Settings } from './ui/screens/Settings';
 import { Search } from './ui/screens/Search';
 import { Today } from './ui/screens/Today';
 import { Week } from './ui/screens/Week';
@@ -13,15 +14,17 @@ const TABS: Array<[Tab, string]> = [['today', 'Today'], ['week', 'Week'], ['sear
 function Shell() {
   const [tab, setTab] = useState<Tab>('today');
   const [dish, setDish] = useState<{ id: string; origin: Origin; plan: PlanRef | undefined } | null>(null);
+  const [settings, setSettings] = useState(false);
   const open = (id: string, origin: Origin, plan?: PlanRef) => setDish({ id, origin, plan });
 
   // Every tab stays mounted, hidden when not shown, so Search keeps its query and chip while a
   // Dish is open and when the user comes back (NAV-03, NAV-04). Dish carries nothing between visits.
+  if (settings) return <main className="app"><Settings onBack={() => setSettings(false)} /></main>;
   return (
     <>
       <main className="app">
         {dish && <Dish key={`${dish.id}|${dish.origin}|${dish.plan?.date}|${dish.plan?.slot}|${dish.plan?.index}`} {...dish} onBack={() => setDish(null)} />}
-        <div className="panel" hidden={dish !== null || tab !== 'today'}><Today open={open} /></div>
+        <div className="panel" hidden={dish !== null || tab !== 'today'}><Today open={open} openSettings={() => setSettings(true)} /></div>
         <div className="panel" hidden={dish !== null || tab !== 'week'}><Week open={open} /></div>
         <div className="panel" hidden={dish !== null || tab !== 'search'}><Search open={open} /></div>
       </main>
