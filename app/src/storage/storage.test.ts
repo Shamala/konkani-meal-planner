@@ -59,4 +59,13 @@ describe('storage and open-time lifecycle', () => {
     const b = await openApp(db, cfg, { date: '2026-11-04', time: '09:00' });
     expect(b.weeks).toEqual(a.weeks);
   });
+
+  it('a saved schedule moves the next-week deadline on the next open (CAD-06)', async () => {
+    const db = new PlannerDB(name);
+    await saveSettings(db, { ...DEFAULT_SETTINGS, generationDay: 7 });
+    const early = await openApp(db, cfg, { date: '2026-11-06', time: '19:00' });
+    expect(early.weeks.map((w) => w.weekStart)).toEqual(['2026-11-02']);
+    const sunday = await openApp(db, cfg, { date: '2026-11-08', time: '18:00' });
+    expect(sunday.weeks.map((w) => w.weekStart)).toEqual(['2026-11-02', '2026-11-09']);
+  });
 });
