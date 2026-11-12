@@ -1,6 +1,6 @@
 # Phase 1 Design — Read and record
 
-Status: proposed 2026-11-11. Product rules: `REQUIREMENTS.md`. Visuals: `DESIGN.md`. This
+Status: built 2026-11-11 on branch `phase-1`. Deviations: no Dish action slot (DSH-09 to DSH-11 are Phase 2); no tab-bar scroll restore beyond keeping every tab mounted; no browser-back support. Product rules: `REQUIREMENTS.md`. Visuals: `DESIGN.md`. This
 document only says how Phase 1 is built on top of what already exists.
 
 ## 1. Business objective
@@ -29,7 +29,7 @@ is omitted in Phase 1 rather than shown inert. Schedule defaults (Friday 18:00) 
 | Today | C2, C7, C9 Slot card, C10 Dish row, C11 Cooked tick | Main meal dominant; later slots lighter by weight and size, never opacity |
 | Week | C2, C13 Day row, C14 Frozen-week block, C11 | Current week only. Frozen block explains why it is fixed (LIF-12). Tick is the control on a day row |
 | Dish | C3, C4, C5, C16 Page-number block, C20 | Tier 1: page shown large and calm (DSH-03). Snack 1 shows components, no page (DSH-08). Origin-aware back link (NAV-03) |
-| Search | C22 Search field, C23 Filter chip, C7, C8, C30 Zero results | Name and Kannada only. Coverage line states ingredients searched in 0 recipes. No Add to a meal yet; Dish from Search shows the inert reason block (C31) in the action slot, so it is never empty (DSH-11) |
+| Search | C22 Search field, C23 Filter chip, C7, C8, C30 Zero results | Name and Kannada only. Coverage line states ingredients searched in 0 recipes. No Add to a meal yet. Because neither swap nor Add to a meal exists in Phase 1, the Dish screen has no action slot to leave empty; DSH-09 to DSH-11 move to Phase 2 |
 
 Build order: tokens and C1 to C11 first, then screens in the order Today, Dish, Week, Search.
 

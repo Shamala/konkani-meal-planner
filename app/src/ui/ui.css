@@ -1,0 +1,49 @@
+/* Layout and components over the semantic tokens in styles/tokens.css. Nothing renders below 15px. */
+* { box-sizing: border-box; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--action-primary); outline-offset: 2px; }
+
+.app { max-width: 640px; margin: 0 auto; padding: 16px 16px calc(var(--target-row) + 32px + env(safe-area-inset-bottom)); }
+.app[hidden], .panel[hidden] { display: none; }
+h1 { font-size: 32px; font-weight: 600; margin: 8px 0 4px; }
+h2 { font-size: 22px; font-weight: 600; margin: 0 0 8px; }
+.meta { font-size: 15px; color: var(--fg-muted); margin: 0; }
+.label { font-size: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--fg-muted); margin: 0 0 8px; }
+
+.card { background: var(--bg-surface); border-radius: var(--radius-control); padding: 16px 20px; margin: 16px 0; }
+.card.main { padding: 20px; }
+.card.main h2 { font-size: 24px; }
+.sunken { background: var(--bg-sunken); border-radius: var(--radius-control); padding: 16px 20px; margin: 16px 0; font-size: 17px; }
+
+.row { display: flex; align-items: center; gap: 8px; min-height: var(--target-row); }
+.row + .row { border-top: 0; }
+.dish { flex: 1; text-align: left; background: none; border: 0; padding: 8px 0; min-height: var(--target-row); font-size: 19px; font-weight: 500; cursor: pointer; }
+.dish small { display: block; font-size: 15px; font-weight: 400; color: var(--fg-muted); }
+.static { flex: 1; padding: 8px 0; font-size: 19px; font-weight: 500; }
+
+.tick { width: var(--target-icon); height: var(--target-icon); border-radius: 24px; border: 2px solid var(--border-strong); background: var(--bg-surface); cursor: pointer; font-size: 22px; line-height: 1; }
+.tick[aria-pressed='true'] { background: var(--action-primary); border-color: var(--action-primary); color: var(--fg-on-accent); }
+.tick-note { font-size: 15px; color: var(--fg-muted); }
+
+.tabs { position: fixed; left: 0; right: 0; bottom: 0; display: flex; background: var(--bg-surface); padding-bottom: env(safe-area-inset-bottom); border-top: 1px solid var(--border-default); }
+.tabs button { flex: 1; min-height: var(--target-row); background: none; border: 0; font-size: 17px; font-weight: 500; cursor: pointer; }
+.tabs button[aria-current='page'] { font-weight: 700; color: var(--action-primary); box-shadow: inset 0 3px 0 var(--action-primary); }
+
+.back { background: none; border: 0; color: var(--action-primary); font-size: 17px; font-weight: 600; min-height: var(--target-icon); padding: 0; cursor: pointer; }
+.page-block { text-align: center; padding: 24px 16px; }
+.page-block .num { font-size: 60px; font-weight: 700; line-height: 1; color: var(--action-primary); }
+.page-block .cap { font-size: 15px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--fg-muted); margin-top: 8px; }
+.page-block .src { font-size: 15px; color: var(--fg-muted); margin-top: 4px; }
+
+.day { padding: 12px 20px; margin: 8px 0; border-radius: var(--radius-control); background: var(--bg-surface); }
+.day.past { background: var(--bg-sunken); }
+.day.today { box-shadow: inset 0 0 0 3px var(--action-primary); }
+.day .when { font-size: 15px; font-weight: 600; color: var(--fg-muted); }
+.day .compact { font-size: 15px; color: var(--fg-muted); margin: 0; }
+.zone { font-size: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--fg-muted); margin: 20px 0 4px; }
+
+.search { width: 100%; min-height: var(--target-row); padding: 0 16px; border-radius: var(--radius-control); border: 2px solid var(--border-strong); background: var(--bg-surface); color: var(--fg-default); font: inherit; }
+.chips { display: flex; gap: 8px; overflow-x: auto; padding: 12px 0; }
+.chip { flex: none; min-height: var(--target-row); padding: 0 20px; border-radius: 28px; border: 2px solid var(--border-strong); background: var(--bg-surface); cursor: pointer; font-size: 17px; }
+.chip[aria-pressed='true'] { background: var(--action-primary); border-color: var(--action-primary); color: var(--fg-on-accent); font-weight: 600; }
+.day .dish { display: block; width: 100%; min-height: 48px; }
