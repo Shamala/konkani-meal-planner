@@ -80,6 +80,6 @@ Source: the owner, in conversation. Supersedes the single four-position reading 
 
 **Pool check after D5 to D7** (from `extraction/index.tier1.json`): liquid dish 33 (sections 2, 3, 4 minus four soups), curry 44, vegetable side 22, standalone rice 17 (section 14 minus Pongal, sakkarai). All cover their expected uses in a 22-day window with room to spare, except the vegetable side, which is optional.
 
-**D5c (open): is the sauteed-vegetable side optional in v1?** The engine fills every position in the shape. The real-corpus test always includes it (22 candidates, enough). Making it optional needs seeded omission in the engine. See `extraction/ROLE-MAP.md` open item 4.
+**D5c (owner, 2026-11-13): the sauteed-vegetable side is always included in v1.** The engine already fills every position, so no engine change. Optional omission (seeded) is a possible later refinement. REQUIREMENTS.md §3.3 must say the side is always present in v1.
 
 **D8 (confirmed by the owner, 2026-11-11): season tags.** 12 recipes carry a season in `extraction/recipes.tier1.json`, from their names only; the months are confirmed. Still open: the untagged candidates listed in `extraction/ROLE-MAP.md` open item 1. A test (`app/src/engine/corpus.test.ts`) checks that tagged dishes are never generated out of season.
