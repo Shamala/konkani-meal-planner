@@ -47,16 +47,16 @@ Success: the user can see next week, replace any dish on a day after today in tw
 
 | # | Item | Effect | Action |
 |---|---|---|---|
-| 1 | **Glossary unproofread, Kannada only** (`fix.md` #2) | Ingredient search quality and ingredient ids | Proofread before SRC-02 can pass |
-| 2 | **Conflict in the release plan:** Phase 2 shows tier 3 method, but Phase 3 holds "content rewrite of method prose before tier 3 is shown" | Cannot show method prose in Phase 2 and rewrite it in Phase 3 | **Owner decision:** show tier 2 only in Phase 2, tier 3 after the rewrite (recommended), or ship prose as extracted |
+| 1 | **Glossary unproofread, Kannada only** (`fix.md` #2) | Ingredient search quality and ingredient ids | Proofread before SRC-02 can pass. Still open |
+| 2 | Release plan conflict on tier 3 method text | Resolved | **Decided 2026-11-15 (P1):** Phase 2 shows tier 2 only; method text after the Phase 3 rewrite |
 | 3 | Tier 2/3 content does not exist for most recipes (Pass 3 is never blocking) | Most dishes show tier 1 only; extracted/unextracted groups must work | SRC-08 to SRC-10 and DSH-03 cover it |
-| 4 | **G-22** "a role holding a single recipe" is undefined | Needed for the swap inert reason | Define before building C31 |
-| 5 | **G-23** regenerate may not change the week; confirm coverage | Regenerate could look like a no-op | Decide expected behaviour |
-| 6 | `DECISIONS.md` lists four code behaviours still to change (swap allowed on today, season uses Monday's month, off-plan mark suppresses implicit record, swap drops a cooked mark) | Violates LIF-20, LIF-23 | **Verify against the current engine before building**; I have not checked |
+| 4 | **G-22** "a role holding a single recipe" | Needed for the swap inert reason | Proposed rule in `DECISIONS.md` P7; owner to confirm |
+| 5 | **G-23** regenerate may not change the week | Resolved | **Decided (P8):** always confirms; seed changes; main meal differs where pools have 10 or more |
+| 6 | Four code behaviours still to change, **all confirmed present 2026-11-15** (`fix.md` #9 to #12): swap allowed on today, season uses Monday's month, off-plan mark suppresses implicit record, swap drops a cooked mark | Violates LIF-20, LIF-23, D3, HST-08 | Fix first when code resumes; needs an explicit order |
 | 7 | Add-to-a-meal mocks are stale (`COMPONENTS.md` §6) | Picker needs fresh visuals | Design pass before build |
-| 8 | Pending REQUIREMENTS §3.3 rewrite (D5 meal types, D5c vegetable always present) | Requirements and engine disagree | Owner or explicit instruction |
-| 9 | IndexedDB eviction can erase serving history (PHASE-1-DESIGN §10) | Public users lose history | Decide whether export is Phase 2 |
-| 10 | Back button and lighter later slots were deferred from Phase 1 | Unassigned | Assign to a phase |
+| 8 | REQUIREMENTS §3.3 rewrite | Done 2026-11-15 | None |
+| 9 | IndexedDB eviction can erase serving history | Public users lose history | **Decided (P3):** no export in Phase 2; request persistent storage and document the risk |
+| 10 | Back button and lighter later slots | Now in scope | **Decided (P2):** Phase 2. Needs criteria added to section 6 |
 
 Build order: C31 and Dish action slot, swap, week switcher and next week, Regenerate and C26, Today notice, Add to a meal picker, then Search upgrade and tier 2.
 
