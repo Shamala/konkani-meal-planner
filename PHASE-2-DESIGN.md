@@ -52,7 +52,7 @@ Success: the user can see next week, replace any dish on a day after today in tw
 | 3 | Tier 2/3 content does not exist for most recipes (Pass 3 is never blocking) | Most dishes show tier 1 only; extracted/unextracted groups must work | SRC-08 to SRC-10 and DSH-03 cover it |
 | 4 | **G-22** "a role holding a single recipe" | Needed for the swap inert reason | **Accepted 2026-11-15 (P7):** no other dish after role, slot and season filters |
 | 5 | **G-23** regenerate may not change the week | Resolved | **Decided (P8):** always confirms; seed changes; main meal differs where pools have 10 or more |
-| 6 | Four code behaviours still to change, **all confirmed present 2026-11-15** (`fix.md` #9 to #12): swap allowed on today, season uses Monday's month, off-plan mark suppresses implicit record, swap drops a cooked mark | Violates LIF-20, LIF-23, D3, HST-08 | Fix first when code resumes; needs an explicit order |
+| 6 | Four code behaviours, **fixed 2026-11-15** (`fix.md` #9 to #12): swap allowed on today, season uses Monday's month, off-plan mark suppresses implicit record, swap drops a cooked mark | Violates LIF-20, LIF-23, D3, HST-08 | Fix first when code resumes; needs an explicit order |
 | 7 | Add-to-a-meal mocks are stale (`COMPONENTS.md` §6) | Picker needs fresh visuals | Design pass before build |
 | 8 | REQUIREMENTS §3.3 rewrite | Done 2026-11-15 | None |
 | 9 | IndexedDB eviction can erase serving history | Public users lose history | **Decided (P3):** no export in Phase 2; request persistent storage and document the risk |

@@ -107,7 +107,7 @@ function swapPlan(ctx: WriteContext, week: Week, date: ISODate, slot: Slot, inde
     slot,
     roles,
     date,
-    month: monthOf(week.weekStart),
+    month: monthOf(date),
     recency,
     avoid,
     exclude: new Set([currentId]),

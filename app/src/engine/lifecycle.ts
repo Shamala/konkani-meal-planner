@@ -34,9 +34,9 @@ export function canRegenerate(week: Week, today: ISODate): boolean {
   return weekState(week.weekStart, today) === 'next';
 }
 
-/** Swap and assign: today and every day ahead, in the current week or the next. A past day accepts none. */
+/** Swap and assign: every day after today, in the current week or the next. Today and past days accept none. */
 export function canEditSlot(date: ISODate, today: ISODate): boolean {
-  return date >= today;
+  return date > today;
 }
 
 /** Cooked marks: the current week only, for today and days already passed. Not future days, not next week. */

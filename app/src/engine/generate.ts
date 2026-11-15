@@ -83,7 +83,6 @@ export function counterKey(date: ISODate, slot: Slot, index: number): string {
 export function makeGenerator(env: GeneratorEnv): Generator {
   return function generateWeek(history, seed, weekStart) {
     if (isoWeekday(weekStart) !== 1) throw new RangeError(`weekStart must be a Monday: ${weekStart}`);
-    const month = monthOf(weekStart);
     const recency = historyToRecency(history);
     const days: DayPlan[] = [];
     const standaloneDay = env.shape.mainStandalone ? standaloneDayOffset(seed, weekStart) : -1;
@@ -91,6 +90,7 @@ export function makeGenerator(env: GeneratorEnv): Generator {
     for (let d = 0; d < 7; d++) {
       const date = addDays(weekStart, d);
       const dn = dayNumber(date);
+      const month = monthOf(date); // each day's own month, so a week spanning two months is right
       const standalone = d === standaloneDay;
       const plan: DayPlan = {
         date,

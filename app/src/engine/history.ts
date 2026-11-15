@@ -2,9 +2,8 @@
  * Serving history has two sources (ARCHITECTURE.md 2.4):
  *  - implicit: a current week's planned dishes count as served on their planned day
  *  - explicit: the user marked a dish cooked, including a dish never in any plan
- * An off-plan mark for a slot suppresses the implicit record for that slot's planned dishes
- * (REQUIREMENTS.md 4.1.1). Marking a planned dish does not suppress its siblings: HST-04
- * says an unmarked slot falls back to the plan, and a main meal has several dishes.
+ * An off-plan mark cancels no planned dish's implicit record (DECISIONS.md D3, HST-08): the
+ * generator errs toward repeating less.
  */
 import type { ISODate, ServingHistory, Week } from '../model/types';
 import { SLOTS } from '../model/types';
@@ -21,10 +20,7 @@ export function weekServings(week: Week): Array<{ id: string; date: ISODate }> {
   for (const day of week.days) {
     for (const slot of SLOTS) {
       const sp = day.slots[slot];
-      const suppressed = sp.offPlan.length > 0;
-      for (const d of sp.dishes) {
-        if (d.cooked || !suppressed) out.push({ id: d.id, date: day.date });
-      }
+      for (const d of sp.dishes) out.push({ id: d.id, date: day.date });
       for (const id of sp.offPlan) out.push({ id, date: day.date });
     }
   }
