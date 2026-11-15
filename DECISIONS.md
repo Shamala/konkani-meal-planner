@@ -94,7 +94,7 @@ Source: the owner, in conversation. Supersedes the single four-position reading 
 | P4 | Untagged season candidates (alambe, tender thur, tender cucumber, tender shoots, gooseberry) | **Not seasonal.** They stay untagged and are available all year |
 | P5 | "Horse gram upkari" (p.8) | **It is a recipe.** It may point to another upkari, so it keeps its page number and, where the book points elsewhere, the other page is shown like `alsoOnPages` |
 | P6 | REQUIREMENTS §3.3 | **Updated** to two meal types and an always-present vegetable |
-| P7 | "A role holding a single recipe" (G-22) | **Proposed, awaiting owner confirmation:** swap is unavailable when no *other* dish survives the role, slot and season filters. The repeat window is ignored because the fallback covers it. The reason text says which |
+| P7 | "A role holding a single recipe" (G-22) | **Accepted by the owner, 2026-11-15:** swap is unavailable when no *other* dish survives the role, slot and season filters. The repeat window is ignored because the fallback covers it. The reason text says which |
 | P8 | Regenerate may produce the same week (G-23) | **Accept the G-23 proposal.** Regenerate always confirms. The criterion promises that the stored seed changes and, where pools have 10 or more dishes, at least one main-meal slot differs |
 | P9 | Dish Kannada names | **No source needed.** Show the English name or whatever the book prints |
 

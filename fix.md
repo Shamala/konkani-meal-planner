@@ -17,7 +17,7 @@ Open items found while building Phase 1. Add new ones at the bottom.
 | 11 | An off-plan mark suppresses the planned dishes' implicit record. D3 and HST-08 say it must cancel none | `app/src/engine/history.ts:24` | Open, checked 2026-11-15 |
 | 12 | Swap writes `cooked: false`, so it would drop a cooked mark. Moot once #9 is fixed, because swap then never reaches a day with marks | `slotWrites.ts:135` | Open, falls away with #9 |
 | 13 | Phase 2 build items decided 2026-11-15: back button and lighter later slots move to Phase 2; no history export in Phase 2; tier 3 method text deferred to Phase 3 | `DECISIONS.md` P1 to P3 | Decided |
-| 14 | G-22 rule for "single recipe" awaits owner confirmation | `DECISIONS.md` P7 | Awaiting owner |
+| 14 | G-22 rule for "single recipe" awaits owner confirmation | `DECISIONS.md` P7 | ✅ Accepted (2026-11-15) |
 
 ## Deferred from Phase 1 design
 
