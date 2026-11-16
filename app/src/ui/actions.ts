@@ -1,7 +1,7 @@
 /** Pure state changes the UI asks for. Persistence is the session's job, not theirs. */
-import { dayState } from '../engine/lifecycle';
+import { canEditSlot, dayState } from '../engine/lifecycle';
 import { setCooked, swapAvailability, type WriteContext, type WriteResult } from '../engine/slotWrites';
-import type { ISODate, Week } from '../model/types';
+import type { DayPlan, ISODate, Week } from '../model/types';
 import { describe } from './corpus';
 import type { PlanRef } from './nav';
 
@@ -44,4 +44,9 @@ export function dishAction(ctx: WriteContext, week: Week, plan: PlanRef, dishId:
       ? `${role} has only one recipe, so there is nothing to swap it for.`
       : 'There is no other dish that fits here right now, so there is nothing to swap it for.',
   };
+}
+
+/** Days the Add to a meal picker offers: after today only. Today and passed days are omitted (ASN-04, LIF-23). */
+export function pickerDays(week: Week, today: ISODate): DayPlan[] {
+  return week.days.filter((d) => canEditSlot(d.date, today));
 }

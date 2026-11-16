@@ -1,10 +1,11 @@
-import { useActionState } from 'react';
+import { useActionState, useState } from 'react';
 import { swapDish } from '../../engine/slotWrites';
 import { OffPlanTick, SlotTick } from '../components';
 import { dishAction } from '../actions';
 import { describe } from '../corpus';
 import type { Origin, PlanRef } from '../nav';
 import { useSession } from '../session';
+import { AddToMeal } from './AddToMeal';
 
 const ORIGIN_LABEL: Record<Origin, string> = { today: 'Today', week: 'Week', search: 'Search' };
 
@@ -30,10 +31,16 @@ function SwapButton({ plan, onDone }: { plan: PlanRef; onDone: () => void }) {
 
 export function Dish({ id, origin, plan, onBack }: { id: string; origin: Origin; plan: PlanRef | undefined; onBack: () => void }) {
   const { currentWeek, weeks, writeContext } = useSession();
+  const [picking, setPicking] = useState(false);
+  const [placed, setPlaced] = useState<string | null>(null);
   const planWeek = plan ? weeks.find((w) => w.days.some((d) => d.date === plan.date)) : undefined;
   const action = plan && planWeek ? dishAction(writeContext(planWeek), planWeek, plan, id) : null;
   const dish = describe(id);
   const pages = dish.page === undefined ? '' : [dish.page, ...(dish.alsoOnPages ?? [])].join(', ');
+
+  if (picking) {
+    return <AddToMeal dishId={id} onCancel={() => setPicking(false)} onDone={(where) => { setPlaced(where); setPicking(false); }} />;
+  }
 
   return (
     <>
@@ -46,6 +53,12 @@ export function Dish({ id, origin, plan, onBack }: { id: string; origin: Origin;
         {plan && currentWeek ? <SlotTick week={currentWeek} date={plan.date} slot={plan.slot} index={plan.index} /> : <OffPlanTick dishId={id} />}
       </div>
 
+      {!plan && (
+        <>
+          <button type="button" className="btn-primary" onClick={() => setPicking(true)}>Add to a meal</button>
+          {placed && <p role="status" className="meta">Added to {placed}.</p>}
+        </>
+      )}
       {plan && action?.kind === 'swap' && <SwapButton plan={plan} onDone={onBack} />}
       {action?.kind === 'inert' && (
         <section className="inert">

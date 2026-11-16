@@ -27,6 +27,10 @@ interface Session {
   today: ISODate;
   weeks: Week[];
   currentWeek: Week | undefined;
+  /** Next week, if it exists. */
+  nextWeek: Week | undefined;
+  /** Makes next week now if it does not exist yet (LIF-13). Same week the deadline would make (LIF-15). */
+  planNextWeek: () => Promise<void>;
   /** Persists first, then shows it: a reload never loses a tick. */
   save: (week: Week) => Promise<void>;
   settings: Settings;
@@ -50,6 +54,9 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     await saveSettings(db, next);
     setSettings(next);
   }, []);
+  const planNextWeek = useCallback(async () => {
+    setWeeks((await openApp(db, { index, shape }, now, { needNextWeek: true })).weeks);
+  }, []);
   const writeContext = useCallback(
     (week: Week): WriteContext => ({
       env: { index, settings, shape },
@@ -59,8 +66,8 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     [initial.history, weeks, settings],
   );
   const value = useMemo<Session>(
-    () => ({ today: now.date, weeks, currentWeek: weeks.find((w) => weekState(w.weekStart, now.date) === 'current'), save, settings, writeContext, saveSettings: saveAll }),
-    [weeks, save, settings, writeContext, saveAll],
+    () => ({ today: now.date, weeks, currentWeek: weeks.find((w) => weekState(w.weekStart, now.date) === 'current'), nextWeek: weeks.find((w) => weekState(w.weekStart, now.date) === 'next'), planNextWeek, save, settings, writeContext, saveSettings: saveAll }),
+    [weeks, save, planNextWeek, settings, writeContext, saveAll],
   );
   return <Ctx value={value}>{children}</Ctx>;
 }
