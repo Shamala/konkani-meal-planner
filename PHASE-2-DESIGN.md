@@ -1,6 +1,6 @@
 # Phase 2 Design — Control the plan
 
-Status: draft 2026-11-13, branch `phase-2`. Product rules: `REQUIREMENTS.md` (wins on conflict). Visuals: `DESIGN.md`. Component specs: `app/COMPONENTS.md`. Scope source: `RELEASE-PLAN.md`. This document says what Phase 2 adds on top of Phase 1 and lists every acceptance criterion in one place (section 6).
+Status: built 2026-11-16 on branch `phase-2-complete` (all features in section 2). Ingredient search and display are built but have no data yet. Draft written 2026-11-13. Product rules: `REQUIREMENTS.md` (wins on conflict). Visuals: `DESIGN.md`. Component specs: `app/COMPONENTS.md`. Scope source: `RELEASE-PLAN.md`. This document says what Phase 2 adds on top of Phase 1 and lists every acceptance criterion in one place (section 6).
 
 ## 1. Business objective & impact
 

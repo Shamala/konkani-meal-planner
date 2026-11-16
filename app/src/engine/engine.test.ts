@@ -347,6 +347,8 @@ describe('lifecycle (LIF)', () => {
     expect(fridayNoticeVisible([...cur, ...wk], '2026-11-03')).toBe(false);
     const unviewed = reconcile({ ...base, weeks: cur, now: { date: '2026-11-06', time: '18:00' } }).created;
     expect(fridayNoticeVisible([...cur, ...unviewed], '2026-11-06')).toBe(true);
+    // Dismiss hides it for that week (CAD-10)
+    expect(fridayNoticeVisible([...cur, ...unviewed.map((w) => ({ ...w, noticeDismissed: true }))], '2026-11-06')).toBe(false);
   });
   it('a week that becomes past is folded into history exactly once; next week avoids the current one (CAD-07)', () => {
     const cur = reconcile({ ...base, now: { date: '2026-11-02', time: '08:00' } }).created;

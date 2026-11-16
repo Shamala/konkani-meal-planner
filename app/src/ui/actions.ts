@@ -3,6 +3,8 @@ import { canEditSlot, dayState } from '../engine/lifecycle';
 import { setCooked, swapAvailability, type WriteContext, type WriteResult } from '../engine/slotWrites';
 import type { DayPlan, ISODate, Week } from '../model/types';
 import { describe } from './corpus';
+import { ingredientNames } from './ingredients';
+import type { Ingredient } from '../model/types';
 import type { PlanRef } from './nav';
 
 /** The day-row tick: every main-meal dish on the day, set together (DECISIONS.md Q4). */
@@ -49,4 +51,32 @@ export function dishAction(ctx: WriteContext, week: Week, plan: PlanRef, dishId:
 /** Days the Add to a meal picker offers: after today only. Today and passed days are omitted (ASN-04, LIF-23). */
 export function pickerDays(week: Week, today: ISODate): DayPlan[] {
   return week.days.filter((d) => canEditSlot(d.date, today));
+}
+
+/** Dishes in `week` that differ from the seeded plan `fresh`: swaps and hand-picked dishes (ASN-10, DESIGN 3.6). */
+export function chosenCount(week: Week, fresh: Week): number {
+  let n = 0;
+  week.days.forEach((day, d) => {
+    for (const slot of ['breakfast', 'snack1', 'main', 'snack2'] as const) {
+      day.slots[slot].dishes.forEach((dish, i) => {
+        if (fresh.days[d]?.slots[slot].dishes[i]?.id !== dish.id) n++;
+      });
+    }
+  });
+  return n;
+}
+
+/** "23 to 29 November" for a week starting on `weekStart` (DESIGN 3.7). */
+export function weekRange(weekStart: ISODate): string {
+  const end = new Date(`${weekStart}T00:00:00Z`);
+  end.setUTCDate(end.getUTCDate() + 6);
+  const start = new Date(`${weekStart}T00:00:00Z`);
+  const month = (d: Date) => new Intl.DateTimeFormat('en-IN', { month: 'long', timeZone: 'UTC' }).format(d);
+  const sameMonth = start.getUTCMonth() === end.getUTCMonth();
+  return `${start.getUTCDate()}${sameMonth ? '' : ' ' + month(start)} to ${end.getUTCDate()} ${month(end)}`;
+}
+
+/** Ingredient search: every word of the query must appear among the recipe's ingredient names (SRC-02). */
+export function matchesIngredients(ingredients: Ingredient[], query: string): boolean {
+  return query.trim() !== '' && matchesQuery(ingredients.flatMap(ingredientNames).join(' '), query);
 }

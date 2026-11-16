@@ -58,10 +58,10 @@ export function markViewed(week: Week): Week {
   return week.viewed ? week : { ...week, viewed: true };
 }
 
-/** Friday notice: next week exists and has not been looked at. Suppressed once viewed. */
+/** Friday notice: next week exists, has not been looked at and was not dismissed. */
 export function fridayNoticeVisible(weeks: Week[], today: ISODate): boolean {
   const next = weeks.find((w) => weekState(w.weekStart, today) === 'next');
-  return next !== undefined && !next.viewed;
+  return next !== undefined && !next.viewed && !next.noticeDismissed;
 }
 
 /**

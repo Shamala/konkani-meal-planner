@@ -3,6 +3,7 @@ import { swapDish } from '../../engine/slotWrites';
 import { OffPlanTick, SlotTick } from '../components';
 import { dishAction } from '../actions';
 import { describe } from '../corpus';
+import { splitIngredients } from '../ingredients';
 import type { Origin, PlanRef } from '../nav';
 import { useSession } from '../session';
 import { AddToMeal } from './AddToMeal';
@@ -48,10 +49,12 @@ export function Dish({ id, origin, plan, onBack }: { id: string; origin: Origin;
       <h1 style={{ fontSize: 28 }}>{dish.name}</h1>
       {dish.sectionName && <p className="meta">{dish.sectionName}</p>}
 
-      <div className="row" style={{ margin: '16px 0' }}>
-        <span className="meta" style={{ flex: 1 }}>Cooked</span>
-        {plan && currentWeek ? <SlotTick week={currentWeek} date={plan.date} slot={plan.slot} index={plan.index} /> : <OffPlanTick dishId={id} />}
-      </div>
+      {(!plan || (planWeek && planWeek === currentWeek)) && (
+        <div className="row" style={{ margin: '16px 0' }}>
+          <span className="meta" style={{ flex: 1 }}>Cooked</span>
+          {plan && currentWeek ? <SlotTick week={currentWeek} date={plan.date} slot={plan.slot} index={plan.index} /> : <OffPlanTick dishId={id} />}
+        </div>
+      )}
 
       {!plan && (
         <>
@@ -79,6 +82,25 @@ export function Dish({ id, origin, plan, onBack }: { id: string; origin: Origin;
           <p style={{ margin: 0 }}>{dish.components}</p>
         </section>
       )}
+      {dish.ingredients && <Ingredients list={dish.ingredients} />}
     </>
+  );
+}
+
+/** Tier 2: main ingredients first, the seasoning stoplist behind a disclosure (DSH-04). Verbatim text only (DSH-05). */
+function Ingredients({ list }: { list: NonNullable<ReturnType<typeof describe>['ingredients']> }) {
+  const { major, seasonings } = splitIngredients(list);
+  const [all, setAll] = useState(false);
+  return (
+    <section className="card">
+      <p className="label">Ingredients</p>
+      <ul className="plain">{major.map((i, n) => <li key={n}>{i.qtyText}</li>)}</ul>
+      {seasonings.length > 0 && (
+        <>
+          <button type="button" className="linkish" aria-expanded={all} onClick={() => setAll(!all)}>{all ? 'Hide seasonings' : 'Show all'}</button>
+          {all && <ul className="plain">{seasonings.map((i, n) => <li key={n}>{i.qtyText}</li>)}</ul>}
+        </>
+      )}
+    </section>
   );
 }

@@ -3,7 +3,7 @@
 Single-user offline PWA. Vite + React + TypeScript, Dexie over IndexedDB, static JSON corpus,
 PWA via `vite-plugin-pwa`. No backend, no network at runtime, no model call anywhere.
 
-**Status (2026-11-11):** Phase 1 is built: Today, Week (current week), Dish and Search screens in
+**Status (2026-11-16):** Phases 1 and 2 are built (Swap, Add to a meal, next week, Regenerate, the next-week notice, ingredient search and display, back button). Ingredient search and display are ready but have no data: no recipe has ingredients extracted yet. **Data-loss note:** history lives in the browser's IndexedDB, which the browser may evict under storage pressure; the app asks for persistent storage at first launch but cannot guarantee it. Earlier status (2026-11-11): Phase 1 is built: Today, Week (current week), Dish and Search screens in
 `src/ui/`, over the engine and storage. It runs on the real tier-1 corpus in `../extraction/`
 (416 dishes, names and printed pages; no ingredients or methods yet). Swap, regenerate, next week
 and Settings are Phase 2 and 3 (`../RELEASE-PLAN.md`). Engine checks still use a small synthetic

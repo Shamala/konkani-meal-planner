@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { makeGenerator } from '../engine/generate';
 import { DEFAULT_SETTINGS } from '../model/types';
-import { dishAction, matchesQuery, pickerDays, setDayMainCooked } from './actions';
+import { chosenCount, dishAction, matchesIngredients, matchesQuery, pickerDays, setDayMainCooked, weekRange } from './actions';
+import { splitIngredients } from './ingredients';
 import { allDishes, describe as dishInfo, index, shape } from './corpus';
 
 const week = makeGenerator({ index, settings: DEFAULT_SETTINGS, shape })({}, 1, '2026-11-02');
@@ -63,5 +64,39 @@ describe('pickerDays (ASN-04, ASN-08)', () => {
   });
   it('offers all seven days of a week that has not begun', () => {
     expect(pickerDays(week, '2026-11-01')).toHaveLength(7);
+  });
+});
+
+describe('chosenCount and weekRange (ASN-10, DESIGN 3.6, 3.7)', () => {
+  it('counts dishes that differ from the seeded plan', () => {
+    const edited = structuredClone(week);
+    expect(chosenCount(edited, week)).toBe(0);
+    edited.days[2]!.slots.breakfast.dishes[0]!.id = 'some-other-dish';
+    edited.days[3]!.slots.main.dishes[0]!.id = 'another-dish';
+    expect(chosenCount(edited, week)).toBe(2);
+  });
+  it('writes the week range with the month once or twice', () => {
+    expect(weekRange('2026-11-23')).toBe('23 to 29 November');
+    expect(weekRange('2026-11-30')).toBe('30 November to 6 December');
+  });
+});
+
+describe('ingredients (DSH-04, DSH-06, SRC-02)', () => {
+  const list = [
+    { qtyText: '2 cups brinjal', item: 'brinjal' },
+    { qtyText: '1 tsp mustard seeds', item: 'mustard-seeds' },
+    { qtyText: 'salt to taste', item: 'salt', unresolved: true },
+    { qtyText: '1 handful bimbli', item: 'bimbli', unresolved: true },
+  ];
+  it('hides seasonings behind show-all and keeps an unknown ingredient with its own words', () => {
+    const { major, seasonings } = splitIngredients(list);
+    expect(major.map((i) => i.qtyText)).toEqual(['2 cups brinjal', '1 handful bimbli']);
+    expect(seasonings.map((i) => i.qtyText)).toEqual(['1 tsp mustard seeds', 'salt to taste']);
+  });
+  it('matches a query on the book words and the glossary name', () => {
+    expect(matchesIngredients(list, 'brinjal')).toBe(true);
+    expect(matchesIngredients(list, 'BIMBLI')).toBe(true);
+    expect(matchesIngredients(list, 'jackfruit')).toBe(false);
+    expect(matchesIngredients(list, '')).toBe(false);
   });
 });
