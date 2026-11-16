@@ -1,11 +1,13 @@
+import { fridayNoticeVisible } from '../../engine/lifecycle';
 import { SLOTS, type Slot } from '../../model/types';
+import { weekRange } from '../actions';
 import { SLOT_LABEL, SlotTick, formatDate } from '../components';
 import { describe } from '../corpus';
 import { useSession } from '../session';
 import type { OpenDish } from '../nav';
 
-export function Today({ open, openSettings }: { open: OpenDish; openSettings: () => void }) {
-  const { today, currentWeek } = useSession();
+export function Today({ open, openSettings, seeNext }: { open: OpenDish; openSettings: () => void; seeNext: () => void }) {
+  const { today, currentWeek, nextWeek, weeks, dismissNotice } = useSession();
   const day = currentWeek?.days.find((d) => d.date === today);
   if (!currentWeek || !day) return null;
 
@@ -20,11 +22,21 @@ export function Today({ open, openSettings }: { open: OpenDish; openSettings: ()
         </button>
       </div>
       <p className="meta">{formatDate(today)}</p>
+      {nextWeek && fridayNoticeVisible(weeks, today) && (
+        <section className="notice" aria-label="Next week">
+          <p className="notice-title">Next week is planned.</p>
+          <p className="meta">{weekRange(nextWeek.weekStart)}</p>
+          <div className="notice-actions">
+            <button type="button" className="see" onClick={seeNext}>See next week →</button>
+            <button type="button" className="dismiss" onClick={() => void dismissNotice()}>Dismiss</button>
+          </div>
+        </section>
+      )}
       {SLOTS.map((slot: Slot) => {
         const dishes = day.slots[slot].dishes;
         const isMain = slot === 'main';
         return (
-          <section key={slot} className={`card${isMain ? ' main' : ''}`}>
+          <section key={slot} className={`card${isMain ? ' main' : slot === 'breakfast' ? '' : ' later'}`}>
             <p className="label">{SLOT_LABEL[slot]}</p>
             {isMain && <p className="meta">Serves lunch and dinner.</p>}
             {isMain && day.mealType !== 'standalone' && (

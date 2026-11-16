@@ -148,6 +148,8 @@ export interface Week {
   swapCounters: Record<string, number>;
   /** Whether the user has looked at this week. Suppresses the Friday notice. */
   viewed: boolean;
+  /** The user dismissed the next-week notice for this week (DESIGN 3.7, CAD-10). Absent on weeks stored earlier. */
+  noticeDismissed?: boolean;
   /**
    * Bookkeeping: this week has been folded into the stored serving history. Set once,
    * when the week becomes past. Not a user-visible edit. OPEN QUESTION Q9.

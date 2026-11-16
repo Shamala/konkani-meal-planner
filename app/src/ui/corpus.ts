@@ -7,7 +7,7 @@ import recipesFile from '../../../extraction/recipes.tier1.json';
 import { SNACK1, SNACK2_AUTHORED } from '../data/snacks';
 import { buildIndex, withDerivedSlots } from '../engine/catalog';
 import { defaultShape } from '../engine/generate';
-import type { Recipe } from '../model/types';
+import type { Ingredient, Recipe } from '../model/types';
 
 const raw = recipesFile.recipes as unknown as Array<Recipe & { alsoOnPages?: number[] }>;
 export const index = buildIndex({ recipes: withDerivedSlots(raw), snack1: SNACK1, snack2Authored: SNACK2_AUTHORED });
@@ -37,6 +37,8 @@ export interface DishInfo {
   sectionName?: string;
   /** Snacks only: the plain-string components. */
   components?: string;
+  /** Recipes with tier 2 extracted. Absent when none (REQUIREMENTS 5.2): never invented. */
+  ingredients?: Ingredient[];
 }
 
 export function describe(id: string): DishInfo {
@@ -46,6 +48,7 @@ export function describe(id: string): DishInfo {
     return {
       id, name: r.name, kind, page: r.page, section: r.section, sectionName: sectionName.get(r.section),
       ...(alsoOn.has(id) && { alsoOnPages: alsoOn.get(id)! }),
+      ...(r.ingredients?.length && { ingredients: r.ingredients }),
     };
   }
   const e = kind === 'snack1' ? index.snack1ById.get(id)! : index.catalog.snack2Authored.find((s) => s.id === id)!;
@@ -58,3 +61,7 @@ export const allDishes: DishInfo[] = [
   ...index.catalog.snack1.map((s) => describe(s.id)),
   ...index.catalog.snack2Authored.map((s) => describe(s.id)),
 ];
+
+/** Coverage for the Search line (SRC-09, SRC-10): how many recipes have ingredients to search. */
+export const recipeCount = index.catalog.recipes.length;
+export const extractedCount = allDishes.filter((d) => d.ingredients).length;
