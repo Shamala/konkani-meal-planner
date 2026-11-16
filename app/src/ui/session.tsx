@@ -3,7 +3,8 @@
  * and passed in: the engine never reads it (ARCHITECTURE.md 3.5).
  */
 import { createContext, use, useCallback, useContext, useMemo, useState, type ReactNode } from 'react';
-import { weekState, type Moment } from '../engine/lifecycle';
+import { historyFor, weekState, type Moment } from '../engine/lifecycle';
+import type { WriteContext } from '../engine/slotWrites';
 import type { ISODate, Settings, Week } from '../model/types';
 import { openApp } from '../storage/session';
 import { PlannerDB, putWeeks, saveSettings } from '../storage/db';
@@ -29,6 +30,8 @@ interface Session {
   /** Persists first, then shows it: a reload never loses a tick. */
   save: (week: Week) => Promise<void>;
   settings: Settings;
+  /** What the engine's slot writes need for `week`: the other weeks' history, never its own. */
+  writeContext: (week: Week) => WriteContext;
   /** Persists, then shows it. Applies to weeks planned from now on; existing weeks are untouched (GEN-22). */
   saveSettings: (settings: Settings) => Promise<void>;
 }
@@ -47,9 +50,17 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     await saveSettings(db, next);
     setSettings(next);
   }, []);
+  const writeContext = useCallback(
+    (week: Week): WriteContext => ({
+      env: { index, settings, shape },
+      history: historyFor(week, initial.history, weeks, now.date),
+      today: now.date,
+    }),
+    [initial.history, weeks, settings],
+  );
   const value = useMemo<Session>(
-    () => ({ today: now.date, weeks, currentWeek: weeks.find((w) => weekState(w.weekStart, now.date) === 'current'), save, settings, saveSettings: saveAll }),
-    [weeks, save, settings, saveAll],
+    () => ({ today: now.date, weeks, currentWeek: weeks.find((w) => weekState(w.weekStart, now.date) === 'current'), save, settings, writeContext, saveSettings: saveAll }),
+    [weeks, save, settings, writeContext, saveAll],
   );
   return <Ctx value={value}>{children}</Ctx>;
 }

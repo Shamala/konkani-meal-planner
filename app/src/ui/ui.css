@@ -52,3 +52,8 @@ h2 { font-size: 22px; font-weight: 600; margin: 0 0 8px; }
 .field { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: var(--target-row); }
 .field select { min-height: var(--target-icon); font: inherit; padding: 0 8px; background: var(--bg-surface); color: var(--fg-default); border: 2px solid var(--border-strong); border-radius: var(--radius-control); }
 .field input[type='checkbox'] { width: 24px; height: 24px; accent-color: var(--action-primary); }
+
+.btn-secondary { display: block; width: 100%; min-height: var(--target-row); border-radius: var(--radius-control); border: 2.5px solid var(--action-primary); background: var(--bg-surface); color: var(--action-primary); font-size: 17px; font-weight: 600; cursor: pointer; margin: 16px 0; }
+.inert { background: var(--bg-sunken); border: 2px solid var(--border-default); border-radius: var(--radius-control); padding: 16px; margin: 16px 0; min-height: var(--target-row); }
+.inert-title { font-size: 17px; font-weight: 600; margin: 0 0 4px; color: var(--fg-default); }
+.inert .meta { font-size: 17px; }
