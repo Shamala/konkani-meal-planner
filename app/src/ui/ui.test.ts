@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { makeGenerator } from '../engine/generate';
 import { DEFAULT_SETTINGS } from '../model/types';
-import { matchesQuery, setDayMainCooked } from './actions';
+import { dishAction, matchesQuery, pickerDays, setDayMainCooked } from './actions';
 import { allDishes, describe as dishInfo, index, shape } from './corpus';
 
 const week = makeGenerator({ index, settings: DEFAULT_SETTINGS, shape })({}, 1, '2026-11-02');
@@ -39,5 +39,29 @@ describe('describe', () => {
   });
   it('a two-page dish carries both pages', () => {
     expect(dishInfo('alu-fry').alsoOnPages).toEqual([36]);
+  });
+});
+
+describe('dishAction (DSH-09 to DSH-11, LIF-20, LIF-23)', () => {
+  const ctx = { env: { index, settings: DEFAULT_SETTINGS, shape }, history: {}, today: WED };
+  const at = (date: string) => {
+    const day = week.days.find((d) => d.date === date)!;
+    return dishAction(ctx, week, { date, slot: 'main', index: 0 }, day.slots.main.dishes[0]!.id);
+  };
+  it('offers swap on a day after today', () => {
+    expect(at('2026-11-06')).toEqual({ kind: 'swap' });
+  });
+  it("explains why not on today and on a passed day, in place of the control", () => {
+    expect(at(WED)).toEqual({ kind: 'inert', reason: "Today's plan is fixed. Swap works from tomorrow." });
+    expect(at('2026-11-02')).toEqual({ kind: 'inert', reason: 'This day is done. Swapping works on days still to come.' });
+  });
+});
+
+describe('pickerDays (ASN-04, ASN-08)', () => {
+  it('offers only days after today in the current week', () => {
+    expect(pickerDays(week, WED).map((d) => d.date)).toEqual(['2026-11-05', '2026-11-06', '2026-11-07', '2026-11-08']);
+  });
+  it('offers all seven days of a week that has not begun', () => {
+    expect(pickerDays(week, '2026-11-01')).toHaveLength(7);
   });
 });

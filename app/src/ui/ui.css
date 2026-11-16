@@ -52,3 +52,17 @@ h2 { font-size: 22px; font-weight: 600; margin: 0 0 8px; }
 .field { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: var(--target-row); }
 .field select { min-height: var(--target-icon); font: inherit; padding: 0 8px; background: var(--bg-surface); color: var(--fg-default); border: 2px solid var(--border-strong); border-radius: var(--radius-control); }
 .field input[type='checkbox'] { width: 24px; height: 24px; accent-color: var(--action-primary); }
+
+.btn-secondary { display: block; width: 100%; min-height: var(--target-row); border-radius: var(--radius-control); border: 2.5px solid var(--action-primary); background: var(--bg-surface); color: var(--action-primary); font-size: 17px; font-weight: 600; cursor: pointer; margin: 16px 0; }
+.inert { background: var(--bg-sunken); border: 2px solid var(--border-default); border-radius: var(--radius-control); padding: 16px; margin: 16px 0; min-height: var(--target-row); }
+.inert-title { font-size: 17px; font-weight: 600; margin: 0 0 4px; color: var(--fg-default); }
+.inert .meta { font-size: 17px; }
+
+.btn-primary { display: block; width: 100%; min-height: var(--target-row); border-radius: var(--radius-control); border: 2.5px solid var(--action-primary); background: var(--action-primary); color: var(--fg-on-accent); font-size: 17px; font-weight: 600; cursor: pointer; margin: 16px 0; }
+.seg { display: flex; border: 2px solid var(--border-strong); border-radius: var(--radius-control); overflow: hidden; margin: 16px 0; }
+.seg button { flex: 1; min-height: var(--target-row); background: var(--bg-surface); border: 0; font-size: 17px; font-weight: 500; color: var(--action-primary); cursor: pointer; }
+.seg button[aria-pressed='true'] { background: var(--action-primary); color: var(--fg-on-accent); font-weight: 600; }
+.acc { background: var(--bg-surface); border-radius: var(--radius-control); margin: 8px 0; overflow: hidden; }
+.acc-head { display: flex; justify-content: space-between; align-items: center; width: 100%; min-height: var(--target-row); padding: 0 20px; background: none; border: 0; font-size: 19px; font-weight: 500; cursor: pointer; }
+.slot-row { display: block; width: 100%; text-align: left; min-height: var(--target-row); padding: 8px 20px; background: none; border: 0; border-top: 1px solid var(--border-default); cursor: pointer; }
+.slot-dish { display: block; font-size: 19px; font-weight: 500; }
