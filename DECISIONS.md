@@ -83,3 +83,18 @@ Source: the owner, in conversation. Supersedes the single four-position reading 
 **D5c (owner, 2026-11-13): the sauteed-vegetable side is always included in v1.** The engine already fills every position, so no engine change. Optional omission (seeded) is a possible later refinement. REQUIREMENTS.md §3.3 must say the side is always present in v1.
 
 **D8 (confirmed by the owner, 2026-11-11): season tags.** 12 recipes carry a season in `extraction/recipes.tier1.json`, from their names only; the months are confirmed. Still open: the untagged candidates listed in `extraction/ROLE-MAP.md` open item 1. A test (`app/src/engine/corpus.test.ts`) checks that tagged dishes are never generated out of season.
+
+## Phase 2 open questions answered (owner, 2026-11-15)
+
+| # | Question | Decision |
+|---|---|---|
+| P1 | Tier 3 method text in Phase 2? | **No.** Phase 2 shows ingredients (tier 2) only. Method text waits for the Phase 3 prose rewrite |
+| P2 | Back button and lighter later slots | **Phase 2** |
+| P3 | History loss on browser storage eviction | **No export in Phase 2** (product choice). Ask the browser for persistent storage at first launch and state the risk in the README. Revisit export if users report loss |
+| P4 | Untagged season candidates (alambe, tender thur, tender cucumber, tender shoots, gooseberry) | **Not seasonal.** They stay untagged and are available all year |
+| P5 | "Horse gram upkari" (p.8) | **It is a recipe.** It may point to another upkari, so it keeps its page number and, where the book points elsewhere, the other page is shown like `alsoOnPages` |
+| P6 | REQUIREMENTS §3.3 | **Updated** to two meal types and an always-present vegetable |
+| P7 | "A role holding a single recipe" (G-22) | **Accepted by the owner, 2026-11-15:** swap is unavailable when no *other* dish survives the role, slot and season filters. The repeat window is ignored because the fallback covers it. The reason text says which |
+| P8 | Regenerate may produce the same week (G-23) | **Accept the G-23 proposal.** Regenerate always confirms. The criterion promises that the stored seed changes and, where pools have 10 or more dishes, at least one main-meal slot differs |
+| P9 | Dish Kannada names | **No source needed.** Show the English name or whatever the book prints |
+

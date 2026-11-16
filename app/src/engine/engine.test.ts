@@ -201,16 +201,17 @@ describe('slot writes (ASN, GEN-14..17)', () => {
     const r = assignDish({ env: g.env, history, today: MON }, week, wed, 'main', 0, 'mango-sasam'); // sweet into the saar position, November, yesterday
     expect(r.ok && r.week.days[2]!.slots.main.dishes[0]).toEqual({ id: 'mango-sasam', cooked: false });
   });
-  it('assignDish: leaves the seed and every other slot untouched; allowed today and next week; refused on a past day', () => {
-    const r = assignDish(ctx(wed), week, wed, 'breakfast', 0, 'rice-01');
+  it('assignDish: leaves the seed and every other slot untouched; allowed after today and next week; refused today and on a past day', () => {
+    const r = assignDish(ctx(wed), week, addDays(wed, 1), 'breakfast', 0, 'rice-01');
     expect(r.ok).toBe(true);
     if (!r.ok) return;
     expect(r.week.seed).toBe(week.seed);
     expect(r.week.swapCounters).toEqual(week.swapCounters);
-    const before = structuredClone(week); before.days[2]!.slots.breakfast.dishes[0] = { id: 'rice-01', cooked: false };
+    const before = structuredClone(week); before.days[3]!.slots.breakfast.dishes[0] = { id: 'rice-01', cooked: false };
     expect(r.week).toEqual(before);
     expect(assignDish(ctx(wed), week, MON, 'main', 0, 'saar-01')).toEqual({ ok: false, reason: 'past-day' });
-    expect(assignDish(ctx(wed), week, wed, 'main', 0, 'nope')).toEqual({ ok: false, reason: 'unknown-dish' });
+    expect(assignDish(ctx(wed), week, wed, 'main', 0, 'saar-01')).toEqual({ ok: false, reason: 'past-day' }); // today is fixed (LIF-20)
+    expect(assignDish(ctx(wed), week, addDays(wed, 1), 'main', 0, 'nope')).toEqual({ ok: false, reason: 'unknown-dish' });
   });
   it('swapDish: same role, exactly one dish changes, seed untouched, counter advances', () => {
     const r = swapDish(ctx(MON), week, wed, 'main', 0);
@@ -248,9 +249,9 @@ describe('slot writes (ASN, GEN-14..17)', () => {
       expect(new Set(ids).size).toBe(7);
     }
   });
-  it('swapDish: refused on a past day, available today and ahead (LIF-19, LIF-20)', () => {
+  it('swapDish: refused today and on a past day, available after today (LIF-19, LIF-20)', () => {
     expect(swapDish(ctx(wed), week, MON, 'main', 0)).toEqual({ ok: false, reason: 'past-day' });
-    expect(swapDish(ctx(wed), week, wed, 'main', 0).ok).toBe(true);
+    expect(swapDish(ctx(wed), week, wed, 'main', 0)).toEqual({ ok: false, reason: 'past-day' });
     expect(swapDish(ctx(wed), week, addDays(wed, 3), 'main', 0).ok).toBe(true);
   });
   it('swapDish: unavailable, with a reason, where a role holds a single recipe (GEN-16)', () => {
@@ -302,7 +303,7 @@ describe('lifecycle (LIF)', () => {
   it('who may do what', () => {
     expect(canRegenerate(w, '2026-10-30')).toBe(true);
     expect(canRegenerate(w, MON)).toBe(false); // current: no regenerate
-    expect(canEditSlot(MON, MON)).toBe(true); // ... but its slots stay editable
+    expect(canEditSlot(MON, MON)).toBe(false); // today's plan is fixed (LIF-20)
     expect(canEditSlot(addDays(MON, 1), MON)).toBe(true);
     expect(canEditSlot(addDays(MON, -1), MON)).toBe(false);
     expect(canMarkCooked(w, '2026-11-04', '2026-11-04')).toBe(true);
@@ -368,7 +369,7 @@ describe('serving history (HST-04, HST-08)', () => {
     expect(overlayWeek({}, w)['saar-01' in overlayWeek({}, w) ? 'saar-01' : dishIds(w, 'main')[0]!]).toBeDefined();
     expect(Object.keys(overlayWeek({}, w))).toEqual(expect.arrayContaining(dishIds(w, 'breakfast')));
   });
-  it('an off-plan mark cancels the implicit record for that slot; the planned dish stays fresh', () => {
+  it('an off-plan mark cancels no planned record (D3, HST-08)', () => {
     const today = MON;
     const planned = w.days[0]!.slots.breakfast.dishes[0]!.id;
     const off = setOffPlanCooked(w, today, () => true, MON, 'breakfast', 'some-other-dish', true);
@@ -376,7 +377,7 @@ describe('serving history (HST-04, HST-08)', () => {
     if (!off.ok) return;
     const h = overlayWeek({}, off.week);
     expect(h['some-other-dish']?.lastServed).toBe(MON);
-    expect(h[planned]).toBeUndefined();
+    expect(h[planned]?.lastServed).toBe(MON);
     // and a second tap undoes it
     const undone = setOffPlanCooked(off.week, today, () => true, MON, 'breakfast', 'some-other-dish', false);
     expect(undone.ok && overlayWeek({}, undone.week)[planned]).toBeDefined();

@@ -55,7 +55,7 @@ describe('real tier-1 corpus (D5, D6, D7)', () => {
             const season = index.recipeById.get(x.id)?.season;
             if (!season) continue;
             seen++;
-            expect(season).toContain(monthOf(w.weekStart));
+            expect(season).toContain(monthOf(d.date));
           }
         }
       }

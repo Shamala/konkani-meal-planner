@@ -105,7 +105,7 @@ sensible without any model involved.
 
 | Kind | Composition | Frequency |
 |---|---|---|
-| **Plain-rice meal** | Plain rice, plus **one liquid dish** (a saar, kadi, sambar, kolambu or huli), plus **one curry** (a masala, mixed-vegetable or stuffed curry), plus **an optional sauteed vegetable** (plain curries, upkari). The vegetable side is not mandatory | Every day except the standalone day |
+| **Plain-rice meal** | Plain rice, plus **one liquid dish** (a saar, kadi, sambar, kolambu or huli), plus **one curry** (a masala, mixed-vegetable or stuffed curry), plus **one sauteed vegetable** (plain curries, upkari). **Always included in v1** (owner, 2026-11-13, `DECISIONS.md` D5c); seeded omission is a possible later refinement | Every day except the standalone day |
 | **Standalone rice dish** | One dish from *Rice Dishes* (book section 14). It needs no saar or curry beside it | **About once a week**: exactly one day per week, chosen by the week's seed like every other generator decision |
 
 - **Plain rice is not a dish.** The book has no entry for it. It is a fixed part of the
