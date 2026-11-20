@@ -200,7 +200,7 @@ a token-compatible starting point, not as a restyle.
 - **States:** segment selected (`action.primary` fill, `fg.onAccent`, weight 600); unselected (`action.primary` text on `bg.surface`, weight 500); focused. Two segments only; no disabled segment — next week is always reachable, generating on arrival (`DESIGN.md` §3.2.1, LIF-13).
 - **Tokens:** `bg.surface` container, 2px `border.default`, `action.primary`, `fg.onAccent`, nested radius per §1.
 - **Minimum target:** 56px (`DESIGN.md` §2.4). The v3 mocks drew 48px.
-- **Specific accessibility:** both segments are links to the same screen with different content (`DESIGN.md` §3.2.2, §4), so both are `<a>` elements and the selected one carries `aria-current="page"`. The v3 mocks mix a `<button>` and an `<a>`; that is stale. The same control appears in the Add-to-a-meal picker (C24).
+- **Specific accessibility:** both segments are links to the same screen with different content (`DESIGN.md` §3.2.2, §4), so both are `<a>` elements and the selected one carries `aria-current="page"`. The v3 mocks mix a `<button>` and an `<a>`; that is stale. The same control appears in the Add-to-a-meal picker (C24), but there it changes what the picker shows on the same screen and navigates nowhere, so under the rule "links navigate, buttons change things" it is two `<button>` elements with `aria-pressed`, not links (decided 2026-11-20, fix #24).
 - **Token Forge delta:** the gallery's Tabs are underline tabs; the segmented control exists only in Token Forge's own chrome, not in the gallery, and at 5px/11px padding and 13px type. Ask for the segmented control to be promoted into the gallery at 56px.
 
 ### C13 — Day row

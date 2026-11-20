@@ -187,7 +187,7 @@ Evidence tagged *model* comes from `testing/simulations/reference-model.py` (a r
 | `DESIGN.md` §5 | "no per-dish swap (next version, §9.1)" |
 | `ARCHITECTURE.md` §7 | "Swap machinery | Next version" |
 | `REQUIREMENTS.md` §9 | Says swap is now in v1, yet is the only place the numbered "§9.1" could point |
-| `README.md` | "116 acceptance criteria"; `TEST-PLAN.md` has 123 |
+| `README.md` | "116 acceptance criteria"; `TEST-PLAN.md` had 123 (now 130, all mapped in `CRITERIA-MAP.md`) |
 | `TEST-PLAN.md` §11 | NAV-05 mapped to §8 and §9.1 |
 
 **Proposal.** Retire NAV-05 (the plan's own rule: "retire instead of renumber"). Replace with "No per-dish control exists other than Swap with a different dish and Add to a meal". Correct the three stale lines and the criterion count.

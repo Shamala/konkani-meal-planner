@@ -8,6 +8,10 @@ Tells you what to cook each day, from a Konkani cookbook you already own, withou
 
 The main meal is plain rice with a saar or sambar, a curry and a vegetable, or, one day a week, a rice dish on its own. Dishes repeat only after about three weeks, and seasonal dishes (mango, jackfruit and so on) appear only in season.
 
+## Your data stays on your device
+
+Your plan and cooked history live only in this browser's storage. There is no account, no server and no export yet. The app asks the browser to keep that storage, but a browser can still clear it: clearing site data, a long unused spell, or low device storage can wipe your history. If that happens the plan starts fresh. Use the app in one browser, and do not clear site data for it.
+
 ## Run it
 
 ```bash
