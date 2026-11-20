@@ -72,7 +72,7 @@ Goal: next week, swap, regenerate, search.
 | Phase | Done when |
 |---|---|
 | 1 | Phase 1 test matrix green; real corpus loaded, no synthetic data in the build; installs and runs offline on one iOS and one Android device |
-| 2 | LIF, DSH-09 to DSH-11, SRC and NAV-03 criteria green |
+| 2 | LIF, ASN, CAD, DSH-09 to DSH-11, SRC and NAV-03 criteria green. Settings was built early (2026-11-11) and is no longer a Phase 3 item |
 | 3 | Full 130-criterion suite green, accessibility audit passed |
 
 ## Changes from the first draft of this plan

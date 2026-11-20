@@ -1,6 +1,6 @@
 # Phase 1 Design — Read and record
 
-Status: built 2026-11-11 on branch `phase-1`. Deviations: no Dish action slot (DSH-09 to DSH-11 are Phase 2); no tab-bar scroll restore beyond keeping every tab mounted; no browser-back support. Product rules: `REQUIREMENTS.md`. Visuals: `DESIGN.md`. This
+Status: built 2026-11-11 on branch `phase-1`. Update 2026-11-20: the Settings screen and its Today button were built afterwards (commit 7063e6f), so the "Settings out" scope below is historical. See `PHASE-2-DESIGN.md`. Deviations: no Dish action slot (DSH-09 to DSH-11 are Phase 2); no tab-bar scroll restore beyond keeping every tab mounted; no browser-back support. Product rules: `REQUIREMENTS.md`. Visuals: `DESIGN.md`. This
 document only says how Phase 1 is built on top of what already exists.
 
 ## 1. Business objective
